@@ -176,8 +176,10 @@ a.button span {
 #logo {
   height: 100px;
 }
-#logorow {
-  height: 88px;
+#logohead img {
+  text-align: left;
+  float: left;
+  padding-right: 15px;
 }
 
 code, pre {
@@ -273,12 +275,30 @@ h3 {
   margin-bottom: 8px;
 } 
  
-h4 {
+h4{
   font-size: 16px;
   color: #303030;
   font-weight: bold;
 } 
 
+h4 a{
+  color: #303030;
+}
+#linkedin a:hover{
+  color: #0073b2;
+}
+#facebook a:hover{
+  color: #465fa1;
+}
+#hkn a:hover{
+  color: #fdb000;
+}
+#github a:hover{
+  color: #657e8c;
+}
+#schedule a:hover{
+  color: #f7e26b;
+}
 h5 {
   font-size: 1em;
   color: #303030;
