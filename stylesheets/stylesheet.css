@@ -90,7 +90,7 @@ header h2 {
 }
 
 .inner {
-  width: 888px;
+  width: 777px;
   margin: 0 auto;
 }
 
@@ -305,6 +305,24 @@ h4 a{
 }
 #schedule a:hover{
   color: #fdb000;
+}
+
+.proj {
+  margin-bottom: 0px;
+}
+.demo a{
+  text-align: left;
+  float: left;
+  padding-right: 10px;
+}
+.demo a:hover{
+  color: #657e8c;
+}
+.sourcecode a:hover{
+  color: #657e8c;
+}
+.language {
+  margin-bottom: 0px;
 }
 h5 {
   font-size: 1em;
