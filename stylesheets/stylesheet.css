@@ -346,7 +346,22 @@ a {
 p a {
   font-weight: 400;
 }
-
+.blogdates li{
+  list-style:none;
+  padding-left:0;
+  color:#000;
+}
+#may2013 {
+  padding-left: 15px;
+  display:none;
+}
+#june2013 {
+  padding-left:15px;
+  display:block;
+}#july2013 {
+  padding-left:15px;
+  display:block;
+}
 blockquote {
   font-size: 1.6em;
   border-left: 10px solid #e9e9e9;
