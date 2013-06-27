@@ -291,20 +291,33 @@ h4{
 h4 a{
   color: #303030;
 }
-#linkedin a:hover{
+#linkedin:hover{
   color: #0073b2;
 }
-#facebook a:hover{
+#facebook:hover{
   color: #465fa1;
 }
-#hkn a:hover{
+#hkn:hover{
   color: #f7e26b;
 }
-#github a:hover{
+#github:hover{
   color: #657e8c;
 }
-#schedule a:hover{
+#schedule:hover{
   color: #fdb000;
+}
+
+#profile{
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  padding:3px;
+  margin:10px;
 }
 
 .proj {
@@ -346,21 +359,13 @@ a {
 p a {
   font-weight: 400;
 }
-.blogdates li{
+#blog ul li{
   list-style:none;
   padding-left:0;
   color:#000;
 }
-#may2013 {
-  padding-left: 15px;
+.blogdates div{
   display:none;
-}
-#june2013 {
-  padding-left:15px;
-  display:block;
-}#july2013 {
-  padding-left:15px;
-  display:block;
 }
 blockquote {
   font-size: 1.6em;
