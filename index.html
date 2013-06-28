@@ -36,10 +36,10 @@
         <section class="main_content" id="home">
           <h3>Welcome the Official Website of Andrew Fang</h3>
           <p style="padding-left:25px">
-          Feel free to browse through this personal website of mine.</br>
-          A few of my thoughts are posted in my ever expanding Blog.</br>
-          Navigate to the Projects page to see my work.</br>
-          Go to About Me to find out more about me.</p>
+          <span>F</span>eel free to browse through this personal website of mine.</br>
+          <span>A</span> few of my thoughts are posted in my ever expanding Blog.</br>
+          <span>N</span>avigate to the Projects page to see my work.</br>
+          <span>G</span>o to About Me to find out more about me.</p>
         </section>
 
 
@@ -53,14 +53,17 @@
         <ul>
           <li><a class="blogdates" href="#" id="current">June 2013</a></li>
           <div class="blogentry">
-          <h5>Twenty-Sixth of June</h5>
-            <p>It's been such a long time since I've had the time to sit down and work on this website.  Well, mostly because I was trying to come up with something new that I could do.  Today, I taught myself JQuery and I've been so amazed at all the animations that it allows for.  It's so cool that I spent this entire afternoon and night reworking this very website so that it is now one extended HTML document instead of 5 different ones.  Instead of sending you to different pages, the buttons now implement JQuery functions that show and hide the material.  At this point, I am still amazed at what JQuery can do.  More changes to come! </p>
+            <h5>Twenty-Seventh of June</h5>
+              <p>Today, I went to an offsite adventure with the RAW DLP team at Symantec.  We went to Dillon Beach and had a fun-filled day of team-bonding exercises and activities.  I came back home tired and hungry, but somehow found the time to work a little more on this website. I added a fun little animation to my picture in the about page and a secret easter egg on the home page.  See if you can find it!</p>
+              
+            <h5>Twenty-Sixth of June</h5>
+              <p>It's been such a long time since I've had the time to sit down and work on this website.  Well, mostly because I was trying to come up with something new that I could do.  Today, I taught myself JQuery and I've been so amazed at all the animations that it allows for.  It's so cool that I spent this entire afternoon and night reworking this very website so that it is now one extended HTML document instead of 5 different ones.  Instead of sending you to different pages, the buttons now implement JQuery functions that show and hide the material.  At this point, I am still amazed at what JQuery can do.  More changes to come! </p>
 
-          <h5>Sixth of June</h5>
-            <p>More progress made today! Today, I got my domain to redirect correctly so that my andrewbfang.com URL correctly maps to GitHub Pages, where I host the page.  And then I played around with JavaScript in order to get this blog to display nicely.  Note that the months are clickable, so that you can show and hide the blog posts from different months.</p>
+            <h5>Sixth of June</h5>
+              <p>More progress made today! Today, I got my domain to redirect correctly so that my andrewbfang.com URL correctly maps to GitHub Pages, where I host the page.  And then I played around with JavaScript in order to get this blog to display nicely.  Note that the months are clickable, so that you can show and hide the blog posts from different months.</p>
 
-          <h5>Fifth of June</h5>
-            <p>Finally I have time to start the real work on this website.  I have spent the past few hours working on the icon that shows up next to the website URL(in Safari) or on the tab (in Chrome).  It's actually just a 16x16 square grid of pixels that I filled in one by one on <a href="http://favicon.cc">favicon.cc</a>.  I went through 5 different colors and a couple of different line thicknesses and designs before I finally settled on the current one. I sure hope it renders properly. </p>
+            <h5>Fifth of June</h5>
+              <p>Finally I have time to start the real work on this website.  I have spent the past few hours working on the icon that shows up next to the website URL(in Safari) or on the tab (in Chrome).  It's actually just a 16x16 square grid of pixels that I filled in one by one on <a href="http://favicon.cc">favicon.cc</a>.  I went through 5 different colors and a couple of different line thicknesses and designs before I finally settled on the current one. I sure hope it renders properly. </p>
 
           </div>
 
@@ -84,33 +87,40 @@
           <h3>Projects</h3>
             <p>Take around and look at the different projects I've worked on over the years.  Here, you can also find the source code, demos, or downloads to these projects.</p>
 
-          <h3 class="proj">Battleship</h3>
-          <p class="language">Java</p>
-          <h4 class="sourcecode"><a href="https://github.com/andrewfang/Battleship">Source Code</a></h4>
+          <div id="battleship" class="projectBackground">
+            <h3 class="proj">Battleship</h3>
+            <p class="language">Java</p>
+            <h4 class="sourcecode"><a href="https://github.com/andrewfang/Battleship">Source Code</a></h4>
 
-          <p>A personal project that I am currently working on.  It is a text-based game of Battleship that can be played by 0-2 human players in the command line prompt.  Remaining spots are filled in by artificial intelligence players who can setup and play the game based on a predetermined strategy.</p>
+            <p>A personal project that I am currently working on.  It is a text-based game of Battleship that can be played by 0-2 human players in the command line prompt.  Remaining spots are filled in by artificial intelligence players who can setup and play the game based on a predetermined strategy.</p>
+          </div>
 
+          <div id="DrawIt" class="projectBackground">
+            <h3 class="proj">DrawIt Whiteboard</h3>
+            <p class="language">Javascript/HTML/CSS</p>
+            <h4 class="demo"><a href="http://andrewfang.github.io/drawit.html">Demo</a></h4>
+            <h4 class="sourcecode"><a href="http://goo.gl/G6R44">Source Code</a></h4>
 
-          <h3 class="proj">DrawIt Whiteboard</h3>
-          <p class="language">Javascript/HTML/CSS</p>
-          <h4 class="demo"><a href="http://andrewfang.github.io/drawit.html">Demo</a></h4>
-          <h4 class="sourcecode"><a href="http://goo.gl/G6R44">Source Code</a></h4>
+            <p>A hackathon project I worked on with Ryan Higgins.  It is a browser whiteboard app on which you can draw anything.  I then worked on a playback option so that it can show exactly what the user draws.  Also included are a clear and random-color generator options.</p>
+          </div>
 
-          <p>A hackathon project I worked on with Ryan Higgins.  It is a browser whiteboard app on which you can draw anything.  I then worked on a playback option so that it can show exactly what the user draws.  Also included are a clear and random-color generator options.</p>
+          <div id="Magic8" class="projectBackground">
+            <h3 class="proj">Magic 8 Ball</h3>
+            <p class="language">Java: Android</p>
+            <h4 class="demo"><a href="http://andrewfang.github.io/Magic8.apk">Download</a></h4>
+            <h4 class="sourcecode"><a href="https://github.com/andrewfang/Magic8">Packages</a></h4>
 
-          <h3 class="proj">Magic 8 Ball</h3>
-          <p class="language">Java: Android</p>
-          <h4 class="demo"><a href="http://andrewfang.github.io/Magic8.apk">Download</a></h4>
-          <h4 class="sourcecode"><a href="https://github.com/andrewfang/Magic8">Packages</a></h4>
+            <p>Fun project I worked on over because my friend is indecisive.  A response is triggered by either a tap on the screen or a shake of the phone or tablet.  I looked up how to access the accelerometer in order to get the shaking option to work.</p>
+          </div>
 
-          <p>Fun project I worked on over because my friend is indecisive.  A response is triggered by either a tap on the screen or a shake of the phone or tablet.  I looked up how to access the accelerometer in order to get the shaking option to work.</p>
+          <div id="website" class="projectBackground">
+            <h3 class="proj">This Website</h3>
+            <p class="language">JQuery/HTML/CSS</p>
+            <h4 class="demo"><a href="http://andrewfang.github.io/">Demo</a></h4>
+            <h4 class="sourcecode"><a href="https://github.com/andrewfang/andrewfang.github.io">Source Code</a></h4>
 
-          <h3 class="proj">This Website</h3>
-          <p class="language">JQuery/HTML/CSS</p>
-          <h4 class="demo"><a href="http://andrewfang.github.io/">Demo</a></h4>
-          <h4 class="sourcecode"><a href="https://github.com/andrewfang/andrewfang.github.io">Source Code</a></h4>
-
-          <p>This webpage is made and hosted on Github Pages.  The original page was generated from markdown, but I've since expanded it by creating subdomains and altering the CSS and adding JQuery to make it appear as it does now.  It is still a work in progress and I update it whenever I can.</p>
+            <p>This webpage is made and hosted on Github Pages.  The original page was generated from markdown, but I've since expanded it by creating subdomains and altering the CSS and adding JQuery to make it appear as it does now.  It is still a work in progress and I update it whenever I can.</p>
+          </div>
 
         </section>
 

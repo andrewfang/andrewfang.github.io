@@ -12,10 +12,12 @@ function decolorize(){
 	$(this).closest("section").find("#profile").css("background", "none");
 }
 
+
 $(document).ready(function(){
+	$("#logo").hide();
+	$("#logo").fadeIn(1500);
 	$(".main_content").hide();
 	$(".blogentry").hide();
-	$("#profile").hide();
 	$("#current").parent().next().show();
 	$("#home").slideDown(300);
 	$("#homebutton").on("click", {type:"#home"}, show);
@@ -28,7 +30,10 @@ $(document).ready(function(){
 		$(this).parent().next("div").slideToggle();
 	});
 	$("#about").on("mouseover", function(){
-		$(this).find("#profile").fadeIn(2000);
+		$(this).find("#profile").animate({
+			marginTop: "10px",
+			opacity: 1
+		});
 	})
 
 	$("#linkedin").on("mouseover", {color:"#0073b2"}, colorize);
@@ -37,5 +42,14 @@ $(document).ready(function(){
 	$("#github").on("mouseover", {color:"#657e8c"}, colorize);
 	$("#schedule").on("mouseover", {color:"#fdb000"}, colorize);
 	$(".aboutmelink").on("mouseleave", decolorize);
+
+	$("#home").find("p").on("click", function(){
+		var fang = $(this).find("span");
+		if (fang.css("font-weight") == 'bold') {
+			fang.css("font-weight", "normal");
+		} else {
+			fang.css("font-weight", "bold");
+		}
+	})
 
 });
