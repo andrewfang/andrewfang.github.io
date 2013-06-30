@@ -16,19 +16,28 @@ function decolorize(){
 $(document).ready(function(){
 	$("#logo").hide();
 	$("#logo").fadeIn(1500);
-	$(".main_content").hide();
 	$(".blogentry").hide();
 	$("#current").parent().next().show();
 	$("#home").slideDown(300);
+	// To deal with IE and other browser incompatabilities
+	$("#BrowserWarning").hide();
+	// To transisiton between the different "pages"
 	$("#homebutton").on("click", {type:"#home"}, show);
 	$("#blogbutton").on("click", {type:"#blog"}, show);
 	$("#projectbutton").on("click", {type:"#projects"}, show);
 	$("#aboutbutton").on("click", {type:"#about"}, show);
 	$("#bashbutton").on("click", {type:"#bash"}, show);
+
+	// Make the blog entries show up when mouse-ing over or clicking
 	$(".blogdates").on("mouseover", function(){
 		event.preventDefault();
-		$(this).parent().next("div").slideToggle();
+		$(this).parent().next("div").slideToggle(800);
 	});
+	$(".blogdates").on("click", function(){
+		event.preventDefault();
+		$(this).parent().next("div").slideToggle(800);
+	});
+	// Make the profile picture slide up
 	$("#about").on("mouseover", function(){
 		$(this).find("#profile").animate({
 			marginTop: "10px",
@@ -36,6 +45,7 @@ $(document).ready(function(){
 		});
 	})
 
+	// Color the picture border on mouseover/leave of different elements
 	$("#linkedin").on("mouseover", {color:"#0073b2"}, colorize);
 	$("#facebook").on("mouseover", {color:"#465fa1"}, colorize);
 	$("#hkn").on("mouseover", {color:"#f7e26b"}, colorize);
@@ -43,6 +53,7 @@ $(document).ready(function(){
 	$("#schedule").on("mouseover", {color:"#fdb000"}, colorize);
 	$(".aboutmelink").on("mouseleave", decolorize);
 
+	// Easter Egg for front page
 	$("#home").find("p").on("click", function(){
 		var fang = $(this).find("span");
 		if (fang.css("font-weight") == 'bold') {
@@ -51,5 +62,15 @@ $(document).ready(function(){
 			fang.css("font-weight", "bold");
 		}
 	})
+
+	$(".projectContainer").on("mouseover", function(){
+		$(this).find(".projectBackground").css("opacity", .3);
+	})
+
+	$(".projectContainer").on("mouseleave", function(){
+		$(this).find(".projectBackground").css("opacity", 0);
+	})
+
+
 
 });

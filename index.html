@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
     <title>Andrew Fang | UC Berkeley</title>
     <link rel="shortcut icon" href="http://andrewfang.github.io/favicon.ico" />
   </head>
@@ -22,7 +22,7 @@
           <h1>Andrew Fang</h1>
           <h2>My Personal Website</h2>
         </header>
-        <section id="downloads" class="clearfix">
+        <section id="nav" class="clearfix">
           <a href="#" class="button" id="homebutton"><span>Home</span></a>
           <a href="#" class="button" id="blogbutton"><span>Blog</span></a>
           <a href="#" class="button" id="projectbutton"><span>Projects</span></a>
@@ -31,7 +31,14 @@
         </div>
 
         <hr>
-        
+        <!-- Just in case the user's browser is not compatible... -->
+        <div id="BrowserWarning">
+          <h3>Welcome to the Official Website of Andrew Fang</h3>
+          <p>I'm sorry. Your browser is not compatible with the JQuery that this website uses.</br>
+            Please use another browser to view this website. Chrome or Safari is recommended.</br>
+            Thank you for your understand.  Contact me <a href="mailto:andrewbrianfang@gmail.com">here</a> for any issuses.</p>
+        </div>
+
         <!-- This is the section where my home page is.  It shows up first, before anything else can appear. -->
         <section class="main_content" id="home">
           <h3>Welcome the Official Website of Andrew Fang</h3>
@@ -53,6 +60,8 @@
         <ul>
           <li><a class="blogdates" href="#" id="current">June 2013</a></li>
           <div class="blogentry">
+            <h5>Twenty-Ninth of June</h5>
+              <p>I tested my website on different browsers and I found out that Internet Explorer doesn't render JQuery at all.  So until I find a better fix, I'm going to put a message on my home screen that only shows up when the user uses an incompatible browser.  Also, I finally figured out how to put two div elements on top of each other!  With this, I successfully put background images for all of my projects.  Then, I found out about transitions and the magic that they can do, so I implemented that into the project page and the about me page.</p>
             <h5>Twenty-Seventh of June</h5>
               <p>Today, I went to an offsite adventure with the RAW DLP team at Symantec.  We went to Dillon Beach and had a fun-filled day of team-bonding exercises and activities.  I came back home tired and hungry, but somehow found the time to work a little more on this website. I added a fun little animation to my picture in the about page and a secret easter egg on the home page.  See if you can find it!</p>
               
@@ -87,39 +96,62 @@
           <h3>Projects</h3>
             <p>Take around and look at the different projects I've worked on over the years.  Here, you can also find the source code, demos, or downloads to these projects.</p>
 
-          <div id="battleship" class="projectBackground">
-            <h3 class="proj">Battleship</h3>
-            <p class="language">Java</p>
-            <h4 class="sourcecode"><a href="https://github.com/andrewfang/Battleship">Source Code</a></h4>
+          <div class="projectContainer">
+            <div id="bopBackground" class="projectBackground"></div>
+            <div class="projectContent">
+              <h3 class="proj">Bop With Friends</h3>
+              <p class="language">Java: Android</p>
+              <h4 class="demo"><a href="#">Download</a></h4>
+              <h4 class="sourcecode"><a href="https://github.com/danrschlosser/BopWithFriends">Packages</a></h4>
 
-            <p>A personal project that I am currently working on.  It is a text-based game of Battleship that can be played by 0-2 human players in the command line prompt.  Remaining spots are filled in by artificial intelligence players who can setup and play the game based on a predetermined strategy.</p>
+              <p>A project I worked on with "Team We're Feeling Lucky" at the 2013 Google Android Camp.  It is a gesture and motion rich game that is optimized for Android tablet devices.  This app won first place at the Android Camp competition.</p>
+            </div>
           </div>
 
-          <div id="DrawIt" class="projectBackground">
-            <h3 class="proj">DrawIt Whiteboard</h3>
-            <p class="language">Javascript/HTML/CSS</p>
-            <h4 class="demo"><a href="http://andrewfang.github.io/drawit.html">Demo</a></h4>
-            <h4 class="sourcecode"><a href="http://goo.gl/G6R44">Source Code</a></h4>
+          <div class="projectContainer">
+            <div id="battleshipBackground" class="projectBackground"></div>
+            <div class="projectContent">
+              <h3 class="proj">Battleship</h3>
+              <p class="language">Java</p>
+              <h4 class="sourcecode"><a href="https://github.com/andrewfang/Battleship">Source Code</a></h4>
 
-            <p>A hackathon project I worked on with Ryan Higgins.  It is a browser whiteboard app on which you can draw anything.  I then worked on a playback option so that it can show exactly what the user draws.  Also included are a clear and random-color generator options.</p>
+              <p>A personal project that I am currently working on.  It is a text-based game of Battleship that can be played by 0-2 human players in the command line prompt.  Remaining spots are filled in by artificial intelligence players who can setup and play the game based on a predetermined strategy.</p>
+            </div>
+          </div>
+          <div class="projectContainer">
+            <div id="drawItBackground" class="projectBackground"></div>
+            <div class="projectContent">
+              <h3 class="proj">DrawIt Whiteboard</h3>
+              <p class="language">Javascript/HTML/CSS</p>
+              <h4 class="demo"><a href="http://andrewfang.github.io/drawit.html">Demo</a></h4>
+              <h4 class="sourcecode"><a href="http://goo.gl/G6R44">Source Code</a></h4>
+
+              <p>A hackathon project I worked on with Ryan Higgins.  It is a browser whiteboard app on which you can draw anything.  I then worked on a playback option so that it can show exactly what the user draws.  Also included are a clear and random-color generator options.</p>
+            </div>
           </div>
 
-          <div id="Magic8" class="projectBackground">
-            <h3 class="proj">Magic 8 Ball</h3>
-            <p class="language">Java: Android</p>
-            <h4 class="demo"><a href="http://andrewfang.github.io/Magic8.apk">Download</a></h4>
-            <h4 class="sourcecode"><a href="https://github.com/andrewfang/Magic8">Packages</a></h4>
+          <div class="projectContainer">
+            <div id="magic8Background" class="projectBackground"></div>
+            <div class="projectContent">
+              <h3 class="proj">Magic 8 Ball</h3>
+              <p class="language">Java: Android</p>
+              <h4 class="demo"><a href="http://andrewfang.github.io/Magic8.apk">Download</a></h4>
+              <h4 class="sourcecode"><a href="https://github.com/andrewfang/Magic8">Packages</a></h4>
 
-            <p>Fun project I worked on over because my friend is indecisive.  A response is triggered by either a tap on the screen or a shake of the phone or tablet.  I looked up how to access the accelerometer in order to get the shaking option to work.</p>
+              <p>Fun project I worked on over because my friend is indecisive.  A response is triggered by either a tap on the screen or a shake of the phone or tablet.  I looked up how to access the accelerometer in order to get the shaking option to work.</p>
+            </div>
           </div>
 
-          <div id="website" class="projectBackground">
-            <h3 class="proj">This Website</h3>
-            <p class="language">JQuery/HTML/CSS</p>
-            <h4 class="demo"><a href="http://andrewfang.github.io/">Demo</a></h4>
-            <h4 class="sourcecode"><a href="https://github.com/andrewfang/andrewfang.github.io">Source Code</a></h4>
+          <div class="projectContainer">
+            <div id="websiteBackground" class="projectBackground"></div>
+            <div class="projectContent">
+              <h3 class="proj">This Website</h3>
+              <p class="language">JQuery/HTML/CSS</p>
+              <h4 class="demo"><a href="http://andrewfang.github.io/">Demo</a></h4>
+              <h4 class="sourcecode"><a href="https://github.com/andrewfang/andrewfang.github.io">Source Code</a></h4>
 
-            <p>This webpage is made and hosted on Github Pages.  The original page was generated from markdown, but I've since expanded it by creating subdomains and altering the CSS and adding JQuery to make it appear as it does now.  It is still a work in progress and I update it whenever I can.</p>
+              <p>This webpage is made and hosted on Github Pages.  The original page was generated from markdown, but I've since expanded it by creating subdomains and altering the CSS and adding JQuery to make it appear as it does now.  It is still a work in progress and I update it whenever I can.</p>
+            </div>
           </div>
 
         </section>
@@ -129,7 +161,7 @@
 
         <!-- Here is the about me page. Everything you could ever want to know about me slides down on click. -->
         <section class="main_content" id="about">
-          <img id="profile" src="profile.png" />
+          <img id="profile" src="images/profile.png" />
           <h3>Hello!</h3>
             <p>I am currently a student at UC Berkeley in the College of Engineering, studying Electrical Engineering and Computer Science.  I serve as the External Vice President for the Regents' and Chancellor's Scholar Association and the Industrial Relations Officer for Eta Kappa Nu, the Electrical and Computer Engineering Honor Society.  In my free time, I like listening to music, playing at the beach, and watching sunsets. Find out more about me:</p>
           <ul>

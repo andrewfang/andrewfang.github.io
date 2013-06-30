@@ -55,6 +55,9 @@ body {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   color: #6d6d6d;
 }
+.main_content {
+  display: none;
+}
 
 a {
   color: #6d6d6d;
@@ -98,7 +101,7 @@ header h2 {
   max-width: 100%;
 }
 
-#downloads {
+#nav {
   margin-bottom: 0px;
 }
 
@@ -267,21 +270,18 @@ form {
 h1 {
   font-size: 32px;
 } 
-
 h2 {
   font-size: 22px;
   font-weight: bold;
   color: #303030;
   margin-bottom: 8px;
 } 
-
 h3 {
   color: #d5000d;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
 } 
- 
 h4{
   font-size: 16px;
   color: #303030;
@@ -291,6 +291,58 @@ h4{
 h4 a{
   color: #303030;
 }
+h5 {
+  font-size: 1em;
+  color: #303030;
+} 
+h6 {
+  font-size: .8em;
+  color: #303030;
+} 
+p {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+p a {
+  font-weight: 400;
+}
+blockquote {
+  font-size: 1.6em;
+  border-left: 10px solid #e9e9e9;
+  margin-bottom: 20px;
+  padding: 0 0 0 30px;
+}
+ul li {
+  list-style: disc inside;
+  padding-left: 20px;
+}
+ol li {
+  list-style: decimal inside;
+  padding-left: 3px;
+}
+dl dt {
+  color: #303030;
+}
+footer {
+  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 13px;
+  color: #aaa;
+}
+footer a {
+  color: #666;
+}
+footer a:hover {
+  color: #444;
+}
+
+
+/*FOR THE ABOUT ME PAGE*/
 #linkedin:hover{
   color: #0073b2;
 }
@@ -307,13 +359,6 @@ h4 a{
   color: #fdb000;
 }
 
-/*#website:hover{
-  background-image: url("../website.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  opacity: .2;
-}*/
-
 #profile{
   width: 150px;
   height: 150px;
@@ -326,10 +371,56 @@ h4 a{
   padding:3px;
   margin:60px 10px 10px 10px;
   opacity: 0;
+  transition: background .5s;
+  -webkit-transition: bakcground .5s;
 }
 
+/*FOR THE PROJECT PAGE*/
 .proj {
   margin-bottom: 0px;
+}
+.projectContainer {
+    width: 777px;
+    height: 150px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.projectContent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.projectBackground{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+  z-index: 1;
+  opacity: 0;
+}
+.projectContent{
+  z-index: 10;
+}
+#bopBackground{
+  background-image: url("../images/website.png");
+}
+#battleshipBackground{
+  background-image: url("../images/battleship.png");
+  background-size: 150px 131px;
+}
+#drawItBackground{
+  background-image: url("../images/drawit.png");
+  background-size: 222px 150px;
+}
+#magic8Background{
+  background-image: url("../images/magic8.png");
+  background-size: 150px 150px;
+}
+#websiteBackground{
+  background-image: url("../images/website.png");
 }
 .demo a{
   text-align: left;
@@ -345,28 +436,9 @@ h4 a{
 .language {
   margin-bottom: 0px;
 }
-h5 {
-  font-size: 1em;
-  color: #303030;
-} 
 
-h6 {
-  font-size: .8em;
-  color: #303030;
-} 
+/*FOR THE BLOG PAGE*/
 
-p {
-  font-weight: 300;
-  margin-bottom: 20px;
-}
- 
-a {
-  text-decoration: none;
-}
-
-p a {
-  font-weight: 400;
-}
 #blog ul li{
   list-style:none;
   padding-left:0;
@@ -375,42 +447,8 @@ p a {
 .blogdates div{
   display:none;
 }
-blockquote {
-  font-size: 1.6em;
-  border-left: 10px solid #e9e9e9;
-  margin-bottom: 20px;
-  padding: 0 0 0 30px;
-}
 
-ul li {
-  list-style: disc inside;
-  padding-left: 20px;
-}
 
-ol li {
-  list-style: decimal inside;
-  padding-left: 3px;
-}
-
-dl dt {
-  color: #303030;
-}
-
-footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
-  margin-top: 40px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-size: 13px;
-  color: #aaa;
-}
-
-footer a {
-  color: #666;
-}
-footer a:hover {
-  color: #444;
-}
 
 /* MISC */
 .clearfix:after {
@@ -439,12 +477,6 @@ footer a:hover {
   header {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-  #downloads {
-    margin-bottom: 25px;
-  }
-  #download-zip, #download-tar-gz {
-    display: none;
   }
   .inner {
     width: 94%;
