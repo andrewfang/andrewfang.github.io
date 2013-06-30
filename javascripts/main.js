@@ -51,6 +51,7 @@ $(document).ready(function(){
 	$("#hkn").on("mouseover", {color:"#f7e26b"}, colorize);
 	$("#github").on("mouseover", {color:"#657e8c"}, colorize);
 	$("#schedule").on("mouseover", {color:"#fdb000"}, colorize);
+	$("#email").on("mouseover", {color:"#cf2a1c"}, colorize);
 	$(".aboutmelink").on("mouseleave", decolorize);
 
 	// Easter Egg for front page
@@ -62,13 +63,30 @@ $(document).ready(function(){
 			fang.css("font-weight", "bold");
 		}
 	})
-
+	// Background art for project pages
 	$(".projectContainer").on("mouseover", function(){
 		$(this).find(".projectBackground").css("opacity", .3);
 	})
 
 	$(".projectContainer").on("mouseleave", function(){
 		$(this).find(".projectBackground").css("opacity", 0);
+	})
+
+	// Email form for About page
+	$("#emailform").hide();
+	$("#emailconfirmation").hide();
+
+	$("#email").on("click", function(){
+		event.preventDefault();
+		$("#emailform").slideToggle(700);
+	})
+
+	$("#submit").on("click", function(){
+		$("#emailform").fadeOut("slow", function() {
+			$(this).text("I will add this functionality soon. Thanks for your patience").fadeIn("slow");
+
+			// $(this).text("Thanks for sending me an email. I will get back to you shortly.").fadeIn("slow");
+		})
 	})
 
 

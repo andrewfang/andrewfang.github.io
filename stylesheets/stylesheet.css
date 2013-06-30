@@ -261,7 +261,7 @@ td {
 form {
   background: #f2f2f2;
   padding: 20px;
-  
+  font-weight: 300;
 }
 
 
@@ -358,6 +358,12 @@ footer a:hover {
 #schedule:hover{
   color: #fdb000;
 }
+#email:hover{
+  color: #cf2a1c;
+}
+.aboutmelink:hover{
+  margin-left: 5px;
+}
 
 #profile{
   width: 150px;
@@ -372,7 +378,19 @@ footer a:hover {
   margin:60px 10px 10px 10px;
   opacity: 0;
   transition: background .5s;
-  -webkit-transition: bakcground .5s;
+  -webkit-transition: background .5s;
+}
+
+form p{
+  margin-bottom: 0px;
+  text-align: left;
+  float: left;
+  font-size: 15px;
+}
+#msginput {
+  height: 200px;
+  width: 200px;
+  padding: 0.4em 0.4em 0.4em 0;
 }
 
 /*FOR THE PROJECT PAGE*/

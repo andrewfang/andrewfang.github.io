@@ -47,6 +47,7 @@
           <span>A</span> few of my thoughts are posted in my ever expanding Blog.</br>
           <span>N</span>avigate to the Projects page to see my work.</br>
           <span>G</span>o to About Me to find out more about me.</p>
+
         </section>
 
 
@@ -60,6 +61,8 @@
         <ul>
           <li><a class="blogdates" href="#" id="current">June 2013</a></li>
           <div class="blogentry">
+            <h5>Thirtieth of June</h5>
+              <p>I wanted to add a feature where anyone can email me directly straight from the website so I started looking into how to do this.  I added the form, inputs, and animations for this feature but I haven't implemented the actual functionality yet. Soon...!</p>
             <h5>Twenty-Ninth of June</h5>
               <p>I tested my website on different browsers and I found out that Internet Explorer doesn't render JQuery at all.  So until I find a better fix, I'm going to put a message on my home screen that only shows up when the user uses an incompatible browser.  Also, I finally figured out how to put two div elements on top of each other!  With this, I successfully put background images for all of my projects.  Then, I found out about transitions and the magic that they can do, so I implemented that into the project page and the about me page.</p>
             <h5>Twenty-Seventh of June</h5>
@@ -164,13 +167,20 @@
           <img id="profile" src="images/profile.png" />
           <h3>Hello!</h3>
             <p>I am currently a student at UC Berkeley in the College of Engineering, studying Electrical Engineering and Computer Science.  I serve as the External Vice President for the Regents' and Chancellor's Scholar Association and the Industrial Relations Officer for Eta Kappa Nu, the Electrical and Computer Engineering Honor Society.  In my free time, I like listening to music, playing at the beach, and watching sunsets. Find out more about me:</p>
-          <ul>
-            <li> <h4><a class="aboutmelink" id="linkedin" href="https://www.linkedin.com/pub/andrew-brian-fang/1a/655/12">LinkedIn</a></h4> </li>
-            <li> <h4><a class="aboutmelink" id="facebook" href="https://www.facebook.com/andrewbfang">Facebook</a></h4></li>
-            <li> <h4><a class="aboutmelink" id="hkn" href="https://hkn.eecs.berkeley.edu/~andrewfang/">HKN</a></h4></li>
-            <li> <h4><a class="aboutmelink" id="github" href="https://github.com/andrewfang">GitHub</a></h4></li>
-            <li> <h4><a class="aboutmelink" id="schedule" href="http://ninjacourses.com/schedule/view/1304473/?t=688ba0ed">Class Schedule</a></h4></li>
-          </ul>
+            <h4><a class="aboutmelink" id="linkedin" href="https://www.linkedin.com/pub/andrew-brian-fang/1a/655/12">LinkedIn</a></h4>
+            <h4><a class="aboutmelink" id="facebook" href="https://www.facebook.com/andrewbfang">Facebook</a></h4>
+            <h4><a class="aboutmelink" id="hkn" href="https://hkn.eecs.berkeley.edu/~andrewfang/">HKN</a></h4>
+            <h4><a class="aboutmelink" id="github" href="https://github.com/andrewfang">GitHub</a></h4>
+            <h4><a class="aboutmelink" id="schedule" href="http://ninjacourses.com/schedule/view/1304473/?t=688ba0ed">Class Schedule</a></h4>
+            <h4><a class="aboutmelink" id="email" href="#">Email Me</a></h4>
+
+            <!-- Email Form -->
+            <form id="emailform" action="mailto:andrewbrianfang@gmail.com" method="post">
+              <p>Your Email:&nbsp;</p><input type="email" name="senderemail" placeholder="myemail@example.com" size="25"required></br>
+              <p>Message:&nbsp;&nbsp;&nbsp;&nbsp;</p><textarea id="msginput" wrap="hard" type="text" size="200" placeholder="Message" name="message" required></textarea></br>
+              <input id="submit" type="submit" value="Submit">
+              <input type="reset" value="Reset">
+            </form>
         </section>
 
 
