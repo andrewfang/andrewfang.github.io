@@ -83,9 +83,9 @@ $(document).ready(function(){
 
 	$("#submit").on("click", function(){
 		$("#emailform").fadeOut("slow", function() {
-			$(this).text("I will add this functionality soon. Thanks for your patience").fadeIn("slow");
+			// $(this).text("I will add this functionality soon. Thanks for your patience").fadeIn("slow");
 
-			// $(this).text("Thanks for sending me an email. I will get back to you shortly.").fadeIn("slow");
+			$(this).text("Thanks for sending me an email. I will get back to you shortly.").fadeIn("slow");
 		})
 	})
 
