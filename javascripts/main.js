@@ -14,6 +14,7 @@ function decolorize(){
 
 
 $(document).ready(function(){
+	$(".main_content").css("visibility", "visible")
 	$("#logo").hide();
 	$("#logo").fadeIn(1500);
 	$(".blogentry").hide();
@@ -29,11 +30,11 @@ $(document).ready(function(){
 	$("#bashbutton").on("click", {type:"#bash"}, show);
 
 	// Make the blog entries show up when mouse-ing over or clicking
-	$(".blogdates").on("mouseover", function(){
-		event.preventDefault();
-		$(this).parent().next("div").slideToggle(800);
-	});
-	$(".blogdates").on("click", function(){
+	// $(".blogdates").on("mouseover", function(){
+	// 	event.preventDefault();
+	// 	$(this).parent().next("div").slideToggle(800);
+	// });
+	$(".blogdates").click(function(){
 		event.preventDefault();
 		$(this).parent().next("div").slideToggle(800);
 	});
