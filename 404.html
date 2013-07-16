@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    <meta name="author" content="Andrew Fang">
+    <meta name="description" content="You broke my webpage.">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
@@ -9,7 +11,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
-    <title>404</title>
+    <title>404 Error</title>
+    <link rel="shortcut icon" href="http://andrewfang.github.io/favicon.ico" />
+
   </head>
 
   <body>
@@ -22,10 +26,10 @@
           <h2>My Personal Website</h2>
         </header>
         <section id="downloads" class="clearfix">
-          <a href="index.html" class="button"><span>Home</span></a>
-          <a href="index.html" class="button"><span>Blog</span></a>
-          <a href="index.html" class="button"><span>Projects</span></a>
-          <a href="index.html" class="button"><span>About Me</span></a>
+          <a href="index.html#home" class="button"><span>Home</span></a>
+          <a href="index.html#blog" class="button"><span>Blog</span></a>
+          <a href="index.html#projects" class="button"><span>Projects</span></a>
+          <a href="index.html#about" class="button"><span>About Me</span></a>
         </section>
 
         <hr>
@@ -33,7 +37,7 @@
         <section id="main_content">
           <h3>UH OH...</h3>
           <p>It looks like you broke my website.  There is nothing to see here, move along...</p>
-
+          <img id="trollpicture" src="images/profile.png" />
         <footer>
           ©2013 Andrew Fang
         </footer>
@@ -42,4 +46,26 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+  <script>
+    $(document).ready(function(){
+      // $("#logohead").hide();
+
+      $("#trollpicture").hide();
+      $("p").on("mouseover", function(){
+        $("#trollpicture").fadeToggle();
+      });
+      var rotation = function() {
+        $("#trollpicture").rotate({
+          angle:0,
+          animateTo:360,
+          callback:rotation,
+          easing: function(x,t,b,c,d){
+            return c*(t/d)+b;
+          }
+        });
+      }
+      rotation();
+    });
+  </script>
 </html>

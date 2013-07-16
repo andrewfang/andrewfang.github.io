@@ -1,7 +1,15 @@
 function show(event) {
-	event.preventDefault();
-	$(".main_content").slideUp(300).delay(600);
-	$(event.data.type).slideDown(800).delay(400);
+	if ($(this).hasClass("disabled")) {
+		return false;
+	} else {
+		event.preventDefault();
+		var currenthash = $(this).attr("href");
+		$(".main_content").slideUp(300).delay(600);
+		$(currenthash).slideDown(800).delay(400);
+		window.location = currenthash;
+		$(".button").removeClass("disabled");
+		$(this).addClass("disabled");
+	}
 }
 
 function colorize(event){
@@ -14,30 +22,32 @@ function decolorize(){
 
 
 $(document).ready(function(){
-	$(".main_content").css("visibility", "visible")
 	$("#logo").hide();
 	$("#logo").fadeIn(1500);
 	$(".blogentry").hide();
 	$("#current").parent().next().show();
-	$("#home").slideDown(300);
+	$("blog").slideDown(300);
+	var arr = ["#home", "#blog", "#projects", "#about", "#bash"];
+	if (window.location.hash == "") {
+		$("#home").slideDown(300);
+		$("#homebutton").addClass("disabled");
+	} else if ($.inArray(window.location.hash, arr) !== -1) {
+		$(window.location.hash).slideDown(300);
+		$(window.location.hash + "button").addClass("disabled");
+	} else {
+		window.location = "404.html";
+	}
 	// To deal with IE and other browser incompatabilities
 	$("#BrowserWarning").hide();
 	// To transisiton between the different "pages"
-	$("#homebutton").on("click", {type:"#home"}, show);
-	$("#blogbutton").on("click", {type:"#blog"}, show);
-	$("#projectbutton").on("click", {type:"#projects"}, show);
-	$("#aboutbutton").on("click", {type:"#about"}, show);
-	$("#bashbutton").on("click", {type:"#bash"}, show);
+	$("#homebutton, #blogbutton, #projectsbutton, #aboutbutton, #bashbutton").on("click", show);
 
-	// Make the blog entries show up when mouse-ing over or clicking
-	// $(".blogdates").on("mouseover", function(){
-	// 	event.preventDefault();
-	// 	$(this).parent().next("div").slideToggle(800);
-	// });
-	$(".blogdates").click(function(){
+	// Make the blog entries show up when clicking
+	$(".blogdates").click(function(event){
 		event.preventDefault();
 		$(this).parent().next("div").slideToggle(800);
 	});
+
 	// Make the profile picture slide up
 	$("#about").on("mouseover", function(){
 		$(this).find("#profile").animate({
@@ -77,7 +87,7 @@ $(document).ready(function(){
 	$("#emailform").hide();
 	$("#emailconfirmation").hide();
 
-	$("#email").on("click", function(){
+	$("#email").on("click", function(event){
 		event.preventDefault();
 		$("#emailform").slideToggle(700);
 	})
