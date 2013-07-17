@@ -8,7 +8,9 @@ function show(event) {
 		$(currenthash).slideDown(800).delay(400);
 		window.location = currenthash;
 		$(".button").removeClass("disabled");
-		$(this).addClass("disabled");
+		if ($(this).hasClass("button")) {
+			$(this).addClass("disabled");
+		}
 	}
 }
 
@@ -24,29 +26,24 @@ function decolorize(){
 $(document).ready(function(){
 	$("#logo").hide();
 	$("#logo").fadeIn(1500);
-	$(".blogentry").hide();
 	$("#current").parent().next().show();
-	$("blog").slideDown(300);
-	var arr = ["#home", "#blog", "#projects", "#about", "#bash"];
-	if (window.location.hash == "") {
+	// $("blog").slideDown(300);
+	var arr = ["#home", "#blog", "#projects", "#about", "#bash", "#devblog"];
+	if ((window.location.hash == "") && (window.location.href.indexOf("blog") == -1)) {
 		$("#home").slideDown(300);
 		$("#homebutton").addClass("disabled");
 	} else if ($.inArray(window.location.hash, arr) !== -1) {
 		$(window.location.hash).slideDown(300);
 		$(window.location.hash + "button").addClass("disabled");
+	} else if (window.location.href.indexOf("blog") !== -1) {
+		window.location = window.location;
 	} else {
 		window.location = "404.html";
 	}
 	// To deal with IE and other browser incompatabilities
 	$("#BrowserWarning").hide();
-	// To transisiton between the different "pages"
-	$("#homebutton, #blogbutton, #projectsbutton, #aboutbutton, #bashbutton").on("click", show);
-
-	// Make the blog entries show up when clicking
-	$(".blogdates").click(function(event){
-		event.preventDefault();
-		$(this).parent().next("div").slideToggle(800);
-	});
+	// To transition between the different "pages"
+	$("#homebutton, #blogbutton, #projectsbutton, #aboutbutton, #devblogbutton, #bashbutton").on("click", show);
 
 	// Make the profile picture slide up
 	$("#about").on("mouseover", function(){
