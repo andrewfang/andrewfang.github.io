@@ -307,7 +307,7 @@ h2 {
   color: #303030;
   margin-bottom: 8px;
 } 
-h3 {
+h3, #blogtitle {
   color: #d5000d;
   font-size: 18px;
   font-weight: bold;
@@ -372,6 +372,31 @@ footer a:hover {
   color: #444;
 }
 
+
+/*FOR THE BLOG.HTML PAGE*/
+#mainblog h3 {
+  margin-bottom: 0px;
+  margin-top: 25px;
+}
+.date {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-style: italic;
+  font-size: .8em;
+  color: #303030;
+  display: inline;
+}
+#mainblog p {
+  margin-bottom: 5px;
+}
+#blog h4{
+  margin-left: 15px;
+  display: inline;
+}
+
+#blog p{
+  margin-bottom: 5px;
+}
 
 /*FOR THE ABOUT ME PAGE*/
 #linkedin:hover{
