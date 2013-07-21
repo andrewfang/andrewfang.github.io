@@ -183,6 +183,7 @@ a.disabled {
   background: -ms-linear-gradient(top,  #ededed 0%,#e6e6e6 100%); /* IE10+ */
   background: linear-gradient(top,  #ededed 0%,#e6e6e6, 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+  cursor:default;
 }
 a.disabled:active {
   color:#aaaaaa;
@@ -404,6 +405,12 @@ footer a:hover {
 }
 #facebook:hover{
   color: #465fa1;
+}
+#gplus:hover{
+  color: #b43021;
+}
+#twitter:hover{
+  color:#00acee;
 }
 #hkn:hover{
   color: #f7e26b;

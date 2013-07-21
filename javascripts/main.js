@@ -56,6 +56,8 @@ $(document).ready(function(){
 	// Color the picture border on mouseover/leave of different elements
 	$("#linkedin").on("mouseover", {color:"#0073b2"}, colorize);
 	$("#facebook").on("mouseover", {color:"#465fa1"}, colorize);
+	$("#gplus").on("mouseover", {color:"#b43021"}, colorize);
+	$("#twitter").on("mouseover", {color:"#00acee"}, colorize);
 	$("#hkn").on("mouseover", {color:"#f7e26b"}, colorize);
 	$("#github").on("mouseover", {color:"#657e8c"}, colorize);
 	$("#schedule").on("mouseover", {color:"#fdb000"}, colorize);
