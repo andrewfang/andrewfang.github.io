@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+    font-family: "Belgrano", Helvetica,Arial,serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: #353535;
+}
+h2 {
+	font-family: "Oxygen", Helvetica,Arial,serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+p {
+	font-family: "Quattrocento Sans", "Lucinda Grande",Helvetica,Arial,serif;
+	margin-top: 10px	;
+}
+.horizblocks {
+	position: relative;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 45px;
+	width: 94%;
+	height: 550px;
+	/*border: 1px solid red;*/
+}
+.textblocks {
+	position: absolute;
+	display: block;
+	width: 400px;
+	padding: 80px;
+	text-align: center;
+}
+
+#blocktitle{
+	background: url("http://summly.com/static/images/chair.png") no-repeat;
+	background-size: auto auto;
+	background-position: 90% 100px;
+	background-attachment: fixed;
+	background-color: #ffffff;
+}
+#blocktitle p{
+	font-size: 20px;
+	padding-top: 20px;
+	color: #afafaf;
+}
+
+#blockwho{
+	background: #afafaf; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 72%, #bed4e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(72%,#ffffff), color-stop(100%,#bed4e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 72%,#bed4e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 72%,#bed4e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 72%,#bed4e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 72%,#bed4e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bed4e5',GradientType=0 );
+}
+
+#blockwhat{
+	background: url("http://summly.com/static/images/chair.png") no-repeat;
+	background-size: auto auto;
+	background-position: 90% 100px;
+	background-attachment: fixed;
+	background-color: #ffffff;
+}
+
+#texttitle{
+	left: 10px;
+	width: 500px;
+}
+#textwho{
+	right: 20px;
+}
+#textwhat{
+	left: 10px;
+}
+#block2pic{
+}
+footer {
+	background: transparent url('../images/hr.png') 50% 0 no-repeat;
+	font-family: "Quattrocento Sans", "Lucinda Grande",Helvetica,Arial,serif;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 13px;
+	color: #aaa;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-align: center;
+	display: block;
+}
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #888;
+}
