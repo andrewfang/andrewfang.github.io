@@ -502,6 +502,10 @@ form p{
 #websiteBackground{
   background-image: url("../images/website.png");
 }
+#clockBackground{
+  background-image: url("../images/clock.png");
+
+}
 .demo a{
   text-align: left;
   float: left;
