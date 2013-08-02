@@ -17,6 +17,16 @@ p {
 	font-family: "Quattrocento Sans", "Lucinda Grande",Helvetica,Arial,serif;
 	margin-top: 10px	;
 }
+a {
+	text-decoration: none;
+	color: #000099;
+}
+a:hover{
+	color: #0099FF;
+}
+a:active{
+	color: #6699FF;
+}
 .horizblocks {
 	position: relative;
 	margin-right: 0px;
@@ -57,10 +67,19 @@ p {
 	background: linear-gradient(to bottom, #ffffff 72%,#bed4e5 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bed4e5',GradientType=0 );
 }
+#blockwhopic{
+	position: absolute;
+	display: block;
+	/*background: url("../images/andrewfang-fullbody.png") no-repeat;*/
+}
+#blockwhopicture{
+	height: 500px;
+	margin-left: 200px;
+}
 
 #blockwhat{
-	background: url("http://summly.com/static/images/chair.png") no-repeat;
-	background-size: auto auto;
+	background: url("../images/android.png") no-repeat;
+	background-size: 420px auto;
 	background-position: 90% 100px;
 	background-attachment: fixed;
 	background-color: #ffffff;
@@ -76,21 +95,19 @@ p {
 #textwhat{
 	left: 10px;
 }
-#block2pic{
-}
 footer {
 	background: transparent url('../images/hr.png') 50% 0 no-repeat;
 	font-family: "Quattrocento Sans", "Lucinda Grande",Helvetica,Arial,serif;
-	margin-top: 10px;
+	margin-top: 550px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 13px;
 	color: #aaa;
 	border: 0;
 	font-size: 100%;
-	vertical-align: baseline;
+	vertical-align: sub;
 	text-align: center;
-	display: block;
+	/*display: block;*/
 }
 footer a {
   color: #aaa;
