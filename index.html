@@ -1,85 +1,64 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta name="author" content="Andrew Fang">
-    <meta name="description" content="I am Andrew Fang, Electrical Engineering and Computer Science student at UC Berkeley.  This is my homepage.">
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/main.js"></script>
-
-    <title>Andrew Fang | UC Berkeley</title>
-    <link rel="shortcut icon" href="http://andrewfang.github.io/favicon.ico" />
-  </head>
-
-  <body>
-    <div id="container">
-      <div class="inner">
-        <div id="top">
-        <header id="logohead">
-          <a href="index.html" ><img alt="Andrew Fang logo" title="Andrew Fang logo" id="logo" src="images/Andrew-Fang-logo.png" /></a>
-          <h1>Andrew Fang</h1>
-          <h2>My Personal Website</h2>
-        </header>
-        <section id="nav" class="clearfix">
-          <a href="#home" class="button" id="homebutton"><span>Home</span></a>
-          <a href="#blog" class="button" id="blogbutton"><span>Blog</span></a>
-          <a href="#projects" class="button" id="projectsbutton"><span>Projects</span></a>
-          <a href="fangindustries.html" class="button"><span>F. Industries</span></a>
-          <a href="#about" class="button" id="aboutbutton"><span>About Me</span></a>
-        </section>
-        </div>
-
-        <hr>
-        <!-- Just in case the user's browser is not compatible... -->
-        <div id="BrowserWarning">
-          <h3>Welcome to the Official Website of Andrew Fang</h3>
-          <p>I'm sorry. Your browser is not compatible with the JQuery that this website uses.</br>
-            Please use another browser to view this website. Chrome or Safari is recommended.</br>
-            Thank you for your understand.  Contact me <a href="mailto:andrewbrianfang@gmail.com">here</a> for any issuses.</p>
-        </div>
-
-        <!-- This is the section where my home page is.  It shows up first, before anything else can appear. -->
-        <section class="main_content" id="home">
-          <h3>Welcome the Official Website of Andrew Fang</h3>
-          <p style="padding-left:25px">
-          <span>F</span>eel free to browse through this personal website of mine.</br>
-          <span>A</span> few of my thoughts are posted in my ever expanding Blog.</br>
-          <span>N</span>avigate to the Projects page to see my work.</br>
-          <span>G</span>o to About Me to find out more about me.</p>
-        </section>
-
-
-
-        <!-- Here is my blog.  This is what shows up when you click the blog button -->
-        <section class="main_content" id="blog">
-          <h3> <a id="blogtitle" href="blog.html">My Blog Portal</a></h3>
-            <p>Table of contents:</p>
-
-          <h4><a href="blog.html#sftech" class="bloglink">The San Franscico Tech Carnival</a></h4>
-          <p class="date">- 7.18</p><br>
-
-          <br>
-
-          <h3>Other Thoughts</h3>
-          <h4><a href="blog.html#devblog" id="devblogbutton">Website Development Blog</h4><br>
-          <h4><a href="blog.html#bash" id="bashbutton">.bash_profile</a></h4>
-        </section>
+    <head>
+		<meta name="author" content="Andrew Fang">
+	    <meta name="description" content="I am Andrew Fang, Electrical Engineering and Computer Science student at UC Berkeley.  This is my homepage.">
+	    <meta charset='utf-8'>
+	    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	    <link href='http://fonts.googleapis.com/css?family=Belgrano|Istok+Web|Quattrocento+Sans|Oxygen|Chivo:500' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" type="text/css" href="stylesheets/index.css" media="screen" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    	<script type="text/javascript" src="javascripts/index.js"></script>
+    	<title>Andrew Fang | UC Berkeley</title>
+    	<link rel="shortcut icon" href="http://andrewfang.github.io/favicon.ico" />
+	</head>
+	<body>
+		<div id="blocktitle"> 
+			<div class="textblocks" id="texttitle">
+				<h1>Andrew Fang</h1>
+				<section id="nav" class="clearfix">
+		          <a href="#home" class="button" id="homebutton"><span>Home</span></a>
+		          <a href="#projects" class="button" id="projectsbutton"><span>Projects</span></a>
+		          <a href="#about" class="button" id="aboutbutton"><span>About</span></a>
+		        </section>
+			</div>
+		        <img id="profile" alt="Andrew Fang profile picture" title="Andrew Fang profile picture" src="images/Andrew-Fang-profile.png" />
+		</div>
 
 
 
 
+		<div class="horizblocks" id="about"> 
+			<div id="blockaboutpic"><img src="images/andrewfang_full.png" id="blockaboutpicture"/></div>
+			<div class="textblocks" id="textabout">
+				<h2>About me</h2>
+				<p>I am currently a student at UC Berkeley in the College of Engineering, studying Electrical Engineering and Computer Science.  I serve as the External Vice President for the Regents' and Chancellor's Scholar Association and the Industrial Relations Officer for Eta Kappa Nu, the Electrical and Computer Engineering Honor Society.  In my free time, I like listening to music, playing at the beach, and watching sunsets. Find out more about me:</p>
+		            <h4><a class="aboutmelink" id="linkedin" href="https://www.linkedin.com/pub/andrew-brian-fang/1a/655/12">LinkedIn</a></h4>
+		            <h4><a class="aboutmelink" id="facebook" href="https://www.facebook.com/andrewbfang">Facebook</a></h4>
+		            <h4><a class="aboutmelink" id="gplus" href="https://plus.google.com/113777472532999787465/">Google Plus</a></h4>
+		            <h4><a class="aboutmelink" id="twitter" href="https://twitter.com/andrewfang">Twitter</a></h4>
+		            <h4><a class="aboutmelink" id="hkn" href="https://hkn.eecs.berkeley.edu/~andrewfang/">HKN</a></h4>
+		            <h4><a class="aboutmelink" id="github" href="https://github.com/andrewfang">GitHub</a></h4>
+		            <h4><a class="aboutmelink" id="schedule" href="http://ninjacourses.com/schedule/view/1339863/?t=e48dd4d9">Class Schedule</a></h4>
+		            <h4><a class="aboutmelink" id="email" href="#">Email Me</a></h4>
 
-        <!-- Here are my projects.  This section will appear when you click on the projects button -->
-        <section class="main_content" id="projects">
-          <h3>Projects</h3>
-            <p>Take around and look at the different projects I've worked on over the years.  Here, you can also find the source code, demos, or downloads to these projects.</p>
+		            <!-- Email Form -->
 
-          <div class="projectContainer">
+		            <form id="emailform" action="mailto:andrewfang@eecs.berkeley.edu" method="post">
+		              <p>Send me an email at andrewfang AT eecs DOT berkeley DOT edu.</p> </br>
+		              <input id="submit" type="submit" value="Open mail client">
+		            </form>
+
+			</div>
+			<footer>
+          	©2013 <a href="http://andrewbfang.com">Andrew Fang</a>
+        	</footer>
+		</div>
+
+		<div class="horizblocks" id="projects"> 
+			<div class="textblocks" id="textproject">
+				<h2>Projects</h2>
+
+			<div class="projectContainer">
             <div id="clockBackground" class="projectBackground"></div>
             <div class="projectContent">
               <h3 class="proj">Clock Widget</h3>
@@ -149,52 +128,13 @@
             </div>
           </div>
 
-        </section>
+			</div>
+			<footer>
+          	©2013 <a href="http://andrewbfang.com">Andrew Fang</a>
+        	</footer>
+		</div>
 
 
 
-
-        <!-- Here is the about me page. Everything you could ever want to know about me slides down on click. -->
-        <section class="main_content" id="about">
-          <img id="profile" alt="Andrew Fang profile picture" title="Andrew Fang profile picture" src="images/Andrew-Fang-profile.png" />
-          <h3>Hello!</h3>
-            <p>I am currently a student at UC Berkeley in the College of Engineering, studying Electrical Engineering and Computer Science.  I serve as the External Vice President for the Regents' and Chancellor's Scholar Association and the Industrial Relations Officer for Eta Kappa Nu, the Electrical and Computer Engineering Honor Society.  In my free time, I like listening to music, playing at the beach, and watching sunsets. Find out more about me:</p>
-            <h4><a class="aboutmelink" id="linkedin" href="https://www.linkedin.com/pub/andrew-brian-fang/1a/655/12">LinkedIn</a></h4>
-            <h4><a class="aboutmelink" id="facebook" href="https://www.facebook.com/andrewbfang">Facebook</a></h4>
-            <h4><a class="aboutmelink" id="gplus" href="https://plus.google.com/113777472532999787465/">Google Plus</a></h4>
-            <h4><a class="aboutmelink" id="twitter" href="https://twitter.com/andrewfang">Twitter</a></h4>
-            <h4><a class="aboutmelink" id="hkn" href="https://hkn.eecs.berkeley.edu/~andrewfang/">HKN</a></h4>
-            <h4><a class="aboutmelink" id="github" href="https://github.com/andrewfang">GitHub</a></h4>
-            <h4><a class="aboutmelink" id="schedule" href="http://ninjacourses.com/schedule/view/1339863/?t=e48dd4d9">Class Schedule</a></h4>
-            <h4><a class="aboutmelink" id="email" href="#">Email Me</a></h4>
-
-            <!-- Email Form -->
-
-            <form id="emailform" action="mailto:andrewbrianfang@gmail.com" method="post">
-              <p>Send me an email at andrewbrianfang AT gmail DOT com.</p> </br>
-              <input id="submit" type="submit" value="Open mail client">
-            </form>
-        </section>
-        
-
-
-
-
-        <footer>
-          ©2013 Andrew Fang
-        </footer>
-
-        
-      </div>
-    </div>
-  </body>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-42451059-1', 'andrewbfang.com');
-    ga('send', 'pageview');
-  </script>
+	</body>
 </html>
