@@ -60,7 +60,7 @@ $(document).ready(function(){
 	$("#hkn").on("mouseover", {color:"#f7e26b", link:"HKN WebPage"}, colorize);
 	$("#github").on("mouseover", {color:"#657e8c", link:"GitHub"}, colorize);
 	$("#schedule").on("mouseover", {color:"#fdb000", link:"Class Schedule"}, colorize);
-	$("#email").on("mouseover", {color:"#cf2a1c", link:"Email me"}, colorize);
+	$("#email").on("mouseover", {color:"#cf2a1c", link:"Email me at andrewfang AT eecs DOT berkeley DOT edu"}, colorize);
 	$(".aboutmelink").on("mouseleave", {color:"#000000"}, decolorize);
 
 
