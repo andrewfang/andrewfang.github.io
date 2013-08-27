@@ -193,15 +193,6 @@ a.disabled:active {
 	background: linear-gradient(to bottom, #ffffff 72%,#bed4e5 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bed4e5',GradientType=0 );
 }
-#about footer{
-	margin-top: 550px;
-}
-#blockaboutpic{
-	position: absolute;
-	display: block;
-	/*background: url("../images/andrewfang-fullbody.png") no-repeat;*/
-
-}
 #blockaboutpicture{
 	height: 500px;
 	margin-left: 150px;
@@ -219,31 +210,81 @@ a.disabled:active {
 
 }
 #linkedin:hover{
-  color: #0073b2;
+  	background-color: #0073b2;
+	border:2px solid #2295d4;
 }
 #facebook:hover{
-  color: #465fa1;
+	background-color: #465fa1;
+	border:2px solid #243d80;
 }
 #gplus:hover{
-  color: #b43021;
+	background-color:#b43021;
+	border:2px solid #d83526;
 }
 #twitter:hover{
-  color:#00acee;
+  	background-color:#00acee;
+	border:2px solid #22ceff;
 }
 #hkn:hover{
-  color: #f7e26b;
+	background-color: #f7e26b;
+	border:2px solid #c5c049;
 }
 #github:hover{
-  color: #657e8c;
+	background-color: #657e8c;
+	border:2px solid #435c6a;
 }
 #schedule:hover{
-  color: #fdb000;
+	background-color: #fdb000;
+	border:2px solid #db9000;
 }
 #email:hover{
-  color: #cf2a1c;
+	background-color:#cf2a1c;
+	border:2px solid #d83526;
 }
 .aboutmelink:hover{
-  margin-left: 5px;
+	position: relative;
+	top: 2px;
+}
+.aboutmelink {
+	-moz-box-shadow:inset 0px 0px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #f29c93;
+	box-shadow:inset 0px 0px 0px 0px #f29c93;
+	-webkit-border-top-left-radius:42px;
+	-moz-border-radius-topleft:42px;
+	border-top-left-radius:42px;
+	-webkit-border-top-right-radius:42px;
+	-moz-border-radius-topright:42px;
+	border-top-right-radius:42px;
+	-webkit-border-bottom-right-radius:42px;
+	-moz-border-radius-bottomright:42px;
+	border-bottom-right-radius:42px;
+	-webkit-border-bottom-left-radius:42px;
+	-moz-border-radius-bottomleft:42px;
+	border-bottom-left-radius:42px;
+	text-indent:0;
+	display:inline-block;
+	color:#ffffff;
+	border: 2px solid #afafaf;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:39px;
+	line-height:39px;
+	width:39px;
+	text-decoration:none;
+	text-align:center;
+	display: inline-block;
+}
+#infoOnLinks{
+	background: #e3e3e3;
+  	padding: 20px;
+  	font-weight: 300;
+  	text-align: center;
+  	opacity: 0;
+}
+.abouth4{
+	display:inline-block;
 }
 form {
   background: #e3e3e3;
@@ -359,3 +400,55 @@ footer a {
 footer a:hover {
   color: #888;
 }
+	
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	h1{
+	font-size: 30px;
+	}
+	#texttitle{
+		left: 2%;
+		width: 300px;
+		position: fixed;
+		padding: 25px;
+		left: 100px;
+		top: 130px;
+	}
+	#blocktitle{
+		height: 300px;
+		position: relative;
+		margin-right: 0px;
+		margin-left: 0px;
+		width: 94%;
+	}
+	#profile{
+		height: 200px;
+		width: 200px;
+		right: 200px;
+		top: 100px;
+		border-radius: 150px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+	}
+	#blockaboutpicture{
+		height: 250px;
+		margin-left: 50px;
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
