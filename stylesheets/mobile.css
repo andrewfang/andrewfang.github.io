@@ -1,3 +1,6 @@
+p {
+ 	line-height: 1.6;
+}
 /*TITLEBLOCK*/
 #texttitle{
 	position: relative;
@@ -44,6 +47,7 @@
 }
 #about{
 	text-align: center;
+	height: 600px;
 }
 #textabout{
 	display: inline-block;
