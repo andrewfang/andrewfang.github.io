@@ -3,25 +3,26 @@
 	position: relative;
 	width: 500px;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0px;
 }
 #blocktitle{
 	height: 500px;
 	position: relative;
-	margin-right: 0px;
-	margin-left: 0px;
 	padding: 45px;
 	width: 94%;
-	position: relative;
+	text-align: center;
 }
 #profile{
-	height: 200px;
-	width: 200px;
-	position: fixed;
-	right: 230px;
+	height: 40%;
+	width: auto;
+	position: static;
+	display: inline-block;
 	border-radius: 200px;
 	-webkit-border-radius: 200px;
 	-moz-border-radius: 200px;
-	padding: 5px;
+	right: 0px;
 }
 .horizblocks {
 	position: relative;
@@ -30,7 +31,6 @@
 	padding: 45px;
 	width: 94%;
 	height: 550px;
-	border: 1px solid red;
 }
 .textblocks {
 	position: absolute;
@@ -38,5 +38,20 @@
 	width: 400px;
 	padding: 80px;
 	text-align: center;
-	border: 1px solid red;
+}
+#blockaboutpicture{
+	opacity: 0;
+}
+#about{
+	text-align: center;
+}
+#textabout{
+	display: inline-block;
+	padding-top: 100px;
+	width: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }

@@ -11,13 +11,7 @@ function colorize(event){
 		opacity: 1
 	});
 }
-function decolorize(event){
-	$(this).closest("div").find("h2").css("color", event.data.color);
-}
-function colorizephoto(event){
-	var randomcolor = '#'+Math.floor(Math.random()*16777215).toString(16);
-	$(this).closest(".horizblocks").find("#profile").css("background", randomcolor);
-}
+
 
 function show(event) {
 	if ($(this).hasClass("disabled")) {
@@ -60,20 +54,13 @@ $(document).ready(function(){
 	$("#hkn").on("mouseover", {color:"#f7e26b", link:"HKN WebPage"}, colorize);
 	$("#github").on("mouseover", {color:"#657e8c", link:"GitHub"}, colorize);
 	$("#schedule").on("mouseover", {color:"#fdb000", link:"Class Schedule"}, colorize);
-	$("#email").on("mouseover", {color:"#cf2a1c", link:"Email me at andrewfang AT eecs DOT berkeley DOT edu"}, colorize);
-	$(".aboutmelink").on("mouseleave", {color:"#000000"}, decolorize);
+	$("#email").on("mouseover", {color:"#cf2a1c", link:"Email me at andrewfang@eecs.berkeley.edu"}, colorize);
 
-
-	// Color the main profile picture
-	$("#homebutton").on("mouseover", colorizephoto);
-	$("#projectsbutton").on("mouseover", colorizephoto);
-	$("#aboutbutton").on("mouseover", colorizephoto);
 
 	// For navigating about the website
 	$("#homebutton").on("click", show);
 	$("#projectsbutton").on("click", show);
 	$("#aboutbutton").on("click", show);
-
 
 	// Background art for project pages
 	$(".projectContainer").on("mouseover", function(){
