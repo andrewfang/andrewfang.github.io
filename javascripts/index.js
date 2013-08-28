@@ -55,6 +55,7 @@ $(document).ready(function(){
 	$("#github").on("mouseover", {color:"#657e8c", link:"GitHub"}, colorize);
 	$("#schedule").on("mouseover", {color:"#fdb000", link:"Class Schedule"}, colorize);
 	$("#email").on("mouseover", {color:"#cf2a1c", link:"Email me at andrewfang@eecs.berkeley.edu"}, colorize);
+	$(".aboutmelink").on("mouseleave", {color:"#000000", link:""}, colorize);
 
 
 	// For navigating about the website

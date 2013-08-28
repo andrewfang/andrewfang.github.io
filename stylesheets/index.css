@@ -274,7 +274,6 @@ a.disabled:active {
 	display: inline-block;
 }
 #infoOnLinks{
-	border: 2px solid #afafaf;
   	padding: 20px;
   	font-weight: 300;
   	text-align: center;
