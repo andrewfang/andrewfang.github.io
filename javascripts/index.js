@@ -42,6 +42,8 @@ $(document).ready(function(){
 	} else if ($.inArray(window.location.hash, arr) !== -1) {
 		$(window.location.hash).slideDown(300);
 		$(window.location.hash + "button").addClass("disabled");
+	} else if (window.location.hash =="#resume") {
+		window.location = "resources/Resume_AndrewFang.pdf";
 	} else {
 		window.location = "404.html";
 	}
