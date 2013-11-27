@@ -294,7 +294,7 @@ a.disabled:active {
 	background: -ms-linear-gradient(top, #ffffff 72%,#deadbe 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #ffffff 72%,#deadbe 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#deadbe',GradientType=0 );
-	height: 1375px;
+	height: auto;
 	padding-left: auto;
 	padding-right: auto;
 }
@@ -352,9 +352,14 @@ a.disabled:active {
 #websiteBackground{
   background-image: url("../images/website.png");
 }
+#angusBackground{
+  background-image: url("../images/angus.png");
+}
 #clockBackground{
   background-image: url("../images/clock.png");
-
+}
+#dospssBackground{
+  background-image: url("../images/dospss.png");
 }
 .demo a{
   text-align: left;
