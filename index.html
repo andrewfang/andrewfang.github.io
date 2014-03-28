@@ -9,7 +9,8 @@
       <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1080px)" href="stylesheets/mobile.css" />
   		<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="stylesheets/mobile.css" />
 		  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="stylesheets/mobile.css" />
-		  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		  // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <!-- // <script type="text/javascript" src="jquery.js"></script> -->
     	<script type="text/javascript" src="javascripts/index.js"></script>
     	<title>Andrew Fang | UC Berkeley</title>
     	<link rel="shortcut icon" href="http://andrewfang.github.io/favicon.ico" />
@@ -31,10 +32,10 @@
 
 
 		<div class="horizblocks" id="about"> 
-			<img src="images/andrewfang_full.png" id="blockaboutpicture"/>
+			<img src="images/involvement.png" id="blockaboutpicture"/>
 			<div class="textblocks" id="textabout">
 				<h2>About me</h2>
-				<p>I am currently a student at UC Berkeley in the College of Engineering, studying Electrical Engineering and Computer Science.  I serve as the External Vice President for the Regents' and Chancellor's Scholar Association and the Industrial Relations Officer for Eta Kappa Nu, the Electrical and Computer Engineering Honor Society.  In my free time, I like listening to music, playing at the beach, and watching sunsets. Find out more about me:</p>
+				<p>I am currently a student at UC Berkeley in the College of Engineering, studying Electrical Engineering and Computer Science and Applied Math.  I serve as the External Vice President for the Regents' and Chancellor's Scholar Association and a committee member for Eta Kappa Nu, the Electrical and Computer Engineering Honor Society.  In my free time, I like listening to music, playing at the beach, and watching sunsets. Find out more about me:</p>
 		            <h4 class="abouth4"><a class="aboutmelink" id="linkedin" href="https://www.linkedin.com/pub/andrew-brian-fang/1a/655/12">In</a></h4>
 		            <h4 class="abouth4"><a class="aboutmelink" id="facebook" href="https://www.facebook.com/andrewbfang">Fb</a></h4>
 		            <h4 class="abouth4"><a class="aboutmelink" id="gplus" href="https://plus.google.com/113777472532999787465/">G+</a></h4>
@@ -46,14 +47,40 @@
 
 		            <p id="infoOnLinks">INFO</p>
 			</div>
-			     <footer>
-          	©2013 <a href="http://andrewbfang.com">Andrew Fang</a>
+            <footer>
+          	©2014 <a href="http://andrewbfang.com">Andrew Fang</a>
         	</footer>
 		</div>
 
 		<div class="horizblocks" id="projects"> 
 			<div class="textblocks" id="textproject">
 				<h2>Projects</h2>
+
+
+          <div class="projectContainer">
+            <div id="clapcamBackground" class="projectBackground"></div>
+            <div class="projectContent">
+              <h3 class="proj">ClapCam Application</h3>
+              <p class="language">Android</p>
+              <h4 class="demo"><a href="">Download</a></h4>
+              <h4 class="sourcecode"><a href="">Source Code</a></h4>
+
+              <p>A camera application for Android devices.  To activate the camera, the user must clap twice.  This allows the user to take pictures from afar, perfect for taking group pictures or selfies from far away.</p>
+            </div>
+          </div>
+
+          <div class="projectContainer">
+            <div id="greyMeBackground" class="projectBackground"></div>
+            <div class="projectContent">
+              <h3 class="proj">GreyMeOut Application</h3>
+              <p class="language">Android</p>
+              <h4 class="demo"><a href="https://play.google.com/store/apps/details?id=edu.berkeley.cs160.andrewfang.greymeout">Download</a></h4>
+              <h4 class="sourcecode"><a href="https://github.com/andrewfang/GreyMeOut">Source Code</a></h4>
+
+              <p>A coloring application for Android devices.  The app comes preloaded with five colorful images, and users can paint over the image to remove the color (greyscale the picture), or change the picture to color again.  Users can save or reset the canvas.</p>
+            </div>
+          </div>
+
 
           <div class="projectContainer">
             <div id="angusBackground" class="projectBackground"></div>
@@ -83,11 +110,11 @@
             <div id="clockBackground" class="projectBackground"></div>
             <div class="projectContent">
               <h3 class="proj">Clock Widget</h3>
-              <p class="language">Java: Android</p>
+              <p class="language">Android</p>
               <h4 class="demo"><a href="https://play.google.com/store/apps/details?id=com.andrewbfang.clockwidget">Download</a></h4>
               <h4 class="sourcecode"><a href="https://github.com/andrewfang/ClockWidget">Packages</a></h4>
 
-              <p>A clock widget for Android phones.  Minimalistic in design, this widget allows the user to tap on the time to open up the internal clock application, and tap on the date to open up the calendar application.  Get it on the Play Store today!</p>
+              <p>A clock widget for Android phones.  Minimalistic in design, this widget allows the user to tap on the time to open up the internal clock application, and tap on the date to open up the calendar application.  Currently has over 1000 active installs.  Get it on the Play Store today!</p>
             </div>
           </div>
 
@@ -95,7 +122,7 @@
             <div id="magic8Background" class="projectBackground"></div>
             <div class="projectContent">
               <h3 class="proj">Magic 8 Ball</h3>
-              <p class="language">Java: Android</p>
+              <p class="language">Android</p>
               <h4 class="demo"><a href="https://play.google.com/store/apps/details?id=com.andrewbfang.magic8">Download</a></h4>
               <h4 class="sourcecode"><a href="https://github.com/andrewfang/Magic8">Packages</a></h4>
 
@@ -107,7 +134,7 @@
             <div id="bopBackground" class="projectBackground"></div>
             <div class="projectContent">
               <h3 class="proj">Bop With Friends</h3>
-              <p class="language">Java: Android</p>
+              <p class="language">Android</p>
               <h4 class="demo"><a href="#">Download</a></h4>
               <h4 class="sourcecode"><a href="https://github.com/danrschlosser/BopWithFriends">Packages</a></h4>
 
@@ -151,7 +178,7 @@
 
 			</div>
 			<footer>
-          	©2013 <a href="http://andrewbfang.com">Andrew Fang</a>
+          	©2014 <a href="http://andrewbfang.com">Andrew Fang</a>
         	</footer>
 		</div>
 

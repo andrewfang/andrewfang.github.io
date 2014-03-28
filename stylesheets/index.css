@@ -352,6 +352,9 @@ a.disabled:active {
 #websiteBackground{
   background-image: url("../images/website.png");
 }
+#greyMeBackground{
+  background-image: url("../images/greyMeOut.png");
+}
 #angusBackground{
   background-image: url("../images/angus.png");
 }
