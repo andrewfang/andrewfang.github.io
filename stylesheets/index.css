@@ -193,8 +193,9 @@ a.disabled:active {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bed4e5',GradientType=0 );
 }
 #blockaboutpicture{
-	height: 500px;
-	margin-left: 150px;
+	height: 300px;
+	margin-left: 100px;
+    margin-top: -20px;
 }
 #textabout{
 	padding-top: 100px;
@@ -354,6 +355,11 @@ a.disabled:active {
 }
 #greyMeBackground{
   background-image: url("../images/greyMeOut.png");
+  background-size: 150px 150px;
+}
+#clapcamBackground{
+  background-image: url("../images/ClapCam.png");
+  background-size: 150px 150px;
 }
 #angusBackground{
   background-image: url("../images/angus.png");
@@ -392,6 +398,9 @@ footer {
 	font-size: 100%;
 	vertical-align: sub;
 	text-align: center;
+    position: absolute;
+    bottom: 10;
+    width: 100%;
 }
 footer a {
   color: #aaa;
