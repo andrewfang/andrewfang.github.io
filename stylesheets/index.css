@@ -70,7 +70,7 @@ a:active{
 a.button span {
   display: block;
   font-family: 'Roboto', Helvetica, Arial, serif;
-  text-align: center;
+  text-align: right;
   height: 20px;
 }
 
@@ -170,22 +170,22 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bed4e5',GradientType=0 );
 }
 #blockaboutpicture{
-	height: 300px;
+	height: 250px;
 	margin-left: 100px;
-    margin-top: -20px;
+    margin-top: 10px;
 }
 #textabout{
 	padding-top: 100px;
 	top: -10px;
 	right: 150px;
-	width: 500px;
+	width: 450px;
 }
 
 #textabout a{
 	color: #303030;
 	font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 600;
-
 }
+
 #linkedin:hover{
   	background-color: #0073b2;
 	border:2px solid #2295d4;
@@ -283,7 +283,6 @@ body {
 	margin-right: auto;
 	position: static;
 }
-
 .proj {
   margin-bottom: 0px;
   text-align: left;
