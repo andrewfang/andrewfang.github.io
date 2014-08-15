@@ -373,7 +373,7 @@ body {
 
 footer {
 	background: transparent url('../images/hr.png') 50% 0 no-repeat;
-	font-family: "Quattrocento Sans", "Lucinda Grande",Helvetica,Arial,serif;
+	font-family: "Roboto", "Lucinda Grande",Helvetica,Arial,serif;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 13px;
@@ -384,10 +384,11 @@ footer {
 	text-align: center;
     position: absolute;
     bottom: 10;
-    width: 100%;
+    width: 94%;
 }
 footer a {
   color: #aaa;
+  font-family: "Roboto", "Lucinda Grande",Helvetica,Arial,serif;
   text-decoration: none;
 }
 footer a:hover {
