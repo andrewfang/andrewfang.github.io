@@ -353,6 +353,25 @@ body {
 #rcsaBackground{
   background-image: url("../images/rcsa.png");
 }
+#colorizeBackground{
+  background-image: url("../images/colorize.jpg");
+  background-size: 150px auto;
+}
+#pinholeBackground{
+  background-image: url("../images/box.jpg");
+  background-size: 150px auto;
+}
+#blendBackground{
+  background-image: url("../images/blend.jpg");
+  background-size: 150px auto;
+}
+#seamBackground{
+  background-image: url("../images/seam.jpg");
+  background-size: 150px auto;
+}
+#qBackground{
+  background-image: url("../kpcb/images/speed.png");
+}
 .demo a{
   text-align: left;
   float: left;
