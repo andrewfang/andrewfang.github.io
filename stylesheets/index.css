@@ -7,14 +7,22 @@
   font-family: "square";
   src: url("sqmarket.woff") format('woff');
 }
+@font-face {
+  font-family: "squareLight";
+  src: url("sqmarket-light.woff") format('woff');
+}
+@font-face {
+  font-family: "squareBold";
+  src: url("sqmarket-bold.woff") format('woff');
+}
 h1 {
-    font-family: square, Helvetica,Arial,serif;
-    font-weight: normal;
+    font-family: squareLight, Helvetica,Arial,serif;
+    font-weight: 100;
     font-size: 65px;
     color: #fff;
 }
 .h1bold {
-    font-weight: bold;
+    font-family: square, Helvetica,Arial,serif;
 }
 h2 {
 	font-family: "Roboto", Helvetica,Arial,serif;
