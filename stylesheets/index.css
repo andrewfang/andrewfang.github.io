@@ -28,10 +28,10 @@ h2 {
 	font-family: "Roboto", Helvetica,Arial,serif;
     font-weight: bold;
     font-size: 30px;
-    -webkit-transition:color .5s;  
-   	-moz-transition:color .5s;  
-   	-o-transition:color .5s;  
-   	transition:color .5s;  
+    -webkit-transition:color .5s;
+   	-moz-transition:color .5s;
+   	-o-transition:color .5s;
+   	transition:color .5s;
 	margin-bottom: 10px;
 }
 h3 {
@@ -121,7 +121,7 @@ a.disabled:active {
 	margin-right: 0px;
 	margin-left: 0px;
 	padding: 45px;
-	width: 94%;
+	width: 93%;
 	height: 550px;
 }
 .textblocks {
@@ -150,7 +150,7 @@ a.disabled:active {
 	margin-right: 0px;
 	margin-left: 0px;
 	padding: 45px;
-	width: 94%;
+	width: 90%;
 }
 body {
     background: #0266C8;
@@ -313,7 +313,7 @@ body {
     height: 100%;
     position: absolute;
     z-index: 10;
-}	
+}
 .projectBackground{
   width: 100%;
   height: 100%;
