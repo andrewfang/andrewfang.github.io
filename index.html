@@ -57,6 +57,40 @@
 				<h2>Projects</h2>
 
           <div class="projectContainer">
+            <div id="mosaicBackground" class="projectBackground"></div>
+            <div class="projectContent">
+              <h3 class="proj">Image Warping and Mosaicing</h3>
+              <p class="language">Matlab + HTML/CSS</p>
+              <h4 class="demo"><a href=""></a></h4>
+              <h4 class="sourcecode"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj7B/cs194-fx/">Demo</a></h4>
+              <p>I explored image warping to rectify images and eventually build a mosaic. First, I defined the homography for a projectional transformation, and I warp an image using that homography. Then, I use this technique to warp images into an mosaic.</p>
+            </div>
+          </div>
+
+          <div class="projectContainer">
+            <div id="lightfieldBackground" class="projectBackground"></div>
+            <div class="projectContent">
+              <h3 class="proj">Lightfield Camera</h3>
+              <p class="language">Matlab + HTML/CSS</p>
+              <h4 class="demo"><a href=""></a></h4>
+              <h4 class="sourcecode"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj6/cs194-fx/">Demo</a></h4>
+              <p>Inspired by the paper that brought us the Lytro, I programatically computed the focus an image. Each image is composed of 289 images taken with 17 different horizontal and vertical shifts. To compute the focus, I shifted each of the images proportional to the grid distance of the image from the center image.</p>
+            </div>
+          </div>
+
+          <div class="projectContainer">
+            <div id="morphBackground" class="projectBackground"></div>
+            <div class="projectContent">
+              <h3 class="proj">Face Morphing</h3>
+              <p class="language">Matlab + HTML/CSS</p>
+              <h4 class="demo"><a href=""></a></h4>
+              <h4 class="sourcecode"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj5/cs194-fx/">Demo</a></h4>
+
+              <p>I computed face morphs by using a mix of cross fading and Delaunay triangulation.  I first compute the average face, and then usse the triangulation to define grid correspondances between the images. Bit by bit, I then morph and fade one image to the next.</p>
+            </div>
+          </div>
+
+          <div class="projectContainer">
             <div id="qBackground" class="projectBackground"></div>
             <div class="projectContent">
               <h3 class="proj">Qtqueue</h3>

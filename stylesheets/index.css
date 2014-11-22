@@ -387,6 +387,19 @@ body {
 #qBackground{
   background-image: url("../kpcb/images/speed.png");
 }
+#morphBackground{
+  background-image: url("../images/morph.gif");
+  background-size: auto 150px;
+}
+#lightfieldBackground{
+  background-image: url("../images/lightfield.gif");
+  background-size: auto 150px;
+}
+#mosaicBackground{
+  background-image: url("../images/mosaic.jpg");
+  background-size: auto 150px;
+}
+
 .demo a{
   text-align: left;
   float: left;
