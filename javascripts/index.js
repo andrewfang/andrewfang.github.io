@@ -1,6 +1,7 @@
 function initialize(event){
 	$(".horizblocks").hide();
 	$("#emailform").hide();
+  $("#about")[0].style.height = Math.max(555, window.innerHeight);
 }
 
 function colorize(event){
@@ -55,7 +56,6 @@ $(document).ready(function(){
 	$("#twitter").on("mouseover", {color:"#00acee", link:"Twitter"}, colorize);
 	$("#hkn").on("mouseover", {color:"#f7e26b", link:"HKN WebPage"}, colorize);
 	$("#github").on("mouseover", {color:"#657e8c", link:"GitHub"}, colorize);
-	$("#schedule").on("mouseover", {color:"#fdb000", link:"Class Schedule"}, colorize);
 	$("#email").on("mouseover", {color:"#cf2a1c", link:"Email me at andrewfang@eecs.berkeley.edu"}, colorize);
 	$(".aboutmelink").on("mouseleave", {color:"#000000", link:""}, colorize);
 

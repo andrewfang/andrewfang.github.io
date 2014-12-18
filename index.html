@@ -5,10 +5,14 @@
 	    <meta charset='utf-8'>
 	    <meta http-equiv="X-UA-Compatible" content="chrome=1">
 	    <link href='http://fonts.googleapis.com/css?family=Roboto:100|Belgrano|Istok+Web|Quattrocento+Sans|Oxygen|Chivo:500' rel='stylesheet' type='text/css'>
+      <link href="stylesheets/ihover.min.css" rel="stylesheet">
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	    <link rel="stylesheet" type="text/css" href="stylesheets/index.css" media="screen" />
-      <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1200px)" href="stylesheets/mobile.css" />
+      <!-- 
+      <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1108px)" href="stylesheets/mobile.css" />
   		<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="stylesheets/mobile.css" />
 		  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 768px)" href="stylesheets/mobile.css" />
+      -->
 		  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
       <!-- // <script type="text/javascript" src="jquery.js"></script> -->
     	<script type="text/javascript" src="javascripts/index.js"></script>
@@ -35,14 +39,13 @@
 			<img src="images/involvement.png" id="blockaboutpicture"/>
 			<div class="textblocks" id="textabout">
 				<h2>About me</h2>
-                <p>I am currently a student at UC Berkeley in the College of Engineering, studying Electrical Engineering and Computer Science and Applied Math.  I teach <a href="http://teaching.paulos.net/cs160_FL2014/">CS160/CS260, Introduction to Human Computer Interaction</a> as a Graduate Student Instructor.  I serve as President for the <a href="http://rcsa.berkeley.edu/leadership"/>Regents' and Chancellor's Scholar Association</a> and Industrial Relations Officer for <a href="http://hkn.eecs.berkeley.edu/indrel/contact-us">Eta Kappa Nu</a>, the Electrical and Computer Engineering Honor Society.  In my free time, I like building Android apps, listening to music, and playing at the beach. Find out more about me:</p>
+                <p>I am currently a student at UC Berkeley in the College of Engineering, studying Electrical Engineering and Computer Science and Applied Math.  I teach <a href="http://teaching.paulos.net/cs160_FL2014/">CS160/CS260, Introduction to Human Computer Interaction</a> as a Graduate Student Instructor.  I serve as President for the <a href="http://rcsa.berkeley.edu/leadership"/>Regents' and Chancellor's Scholar Association</a> and Department Relations Officer for <a href="http://hkn.mu">Eta Kappa Nu</a>, the Electrical and Computer Engineering Honor Society.  In my free time, I like building Android apps, listening to music, and playing at the beach. Find out more about me:</p>
 		            <h4 class="abouth4"><a class="aboutmelink" id="linkedin" href="https://www.linkedin.com/pub/andrew-brian-fang/1a/655/12">In</a></h4>
 		            <h4 class="abouth4"><a class="aboutmelink" id="facebook" href="https://www.facebook.com/andrewbfang">Fb</a></h4>
 		            <h4 class="abouth4"><a class="aboutmelink" id="gplus" href="https://plus.google.com/113777472532999787465/">G+</a></h4>
 		            <h4 class="abouth4"><a class="aboutmelink" id="twitter" href="https://twitter.com/andrewfang">T</a></h4>
 		            <h4 class="abouth4"><a class="aboutmelink" id="hkn" href="https://hkn.eecs.berkeley.edu/~andrewfang/">HKN</a></h4>
 		            <h4 class="abouth4"><a class="aboutmelink" id="github" href="https://github.com/andrewfang">Git</a></h4>
-		            <h4 class="abouth4"><a class="aboutmelink" id="schedule" href="http://ninjacourses.com/schedule/view/2013406/?t=9a4c17f6">Sch</a></h4>
 		            <h4 class="abouth4"><a class="aboutmelink" id="email" href="mailto:andrewfang@eecs.berkeley.edu">E</a></h4>
 
 		            <p id="infoOnLinks">INFO</p>
@@ -54,249 +57,223 @@
 
 		<div class="horizblocks" id="projects"> 
 			<div class="textblocks" id="textproject">
-				<h2>Projects</h2>
-
+        <h2>Top Projects</h2>
           <div class="projectContainer">
             <div id="mosaicBackground" class="projectBackground"></div>
             <div class="projectContent">
-              <h3 class="proj">Image Warping and Mosaicing</h3>
-              <p class="language">Matlab + HTML/CSS</p>
-              <h4 class="demo"><a href=""></a></h4>
-              <h4 class="sourcecode"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj7B/cs194-fx/">Demo</a></h4>
-              <p>I explored image warping to rectify images and eventually build a mosaic. First, I defined the homography for a projectional transformation, and I warp an image using that homography. Then, I use this technique to warp images into an mosaic.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="lightfieldBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Lightfield Camera</h3>
-              <p class="language">Matlab + HTML/CSS</p>
-              <h4 class="demo"><a href=""></a></h4>
-              <h4 class="sourcecode"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj6/cs194-fx/">Demo</a></h4>
-              <p>Inspired by the paper that brought us the Lytro, I programatically computed the focus an image. Each image is composed of 289 images taken with 17 different horizontal and vertical shifts. To compute the focus, I shifted each of the images proportional to the grid distance of the image from the center image.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="morphBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Face Morphing</h3>
-              <p class="language">Matlab + HTML/CSS</p>
-              <h4 class="demo"><a href=""></a></h4>
-              <h4 class="sourcecode"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj5/cs194-fx/">Demo</a></h4>
-
-              <p>I computed face morphs by using a mix of cross fading and Delaunay triangulation.  I first compute the average face, and then usse the triangulation to define grid correspondances between the images. Bit by bit, I then morph and fade one image to the next.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="qBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Qtqueue</h3>
-              <p class="language">Python + HTML/CSS</p>
-              <h4 class="demo"><a href=""></a></h4>
-              <h4 class="sourcecode"><a href="kpcb/readme.html">Readme</a></h4>
-
-              <p>A queue data structure for integers I built in Python from primitive types with O(1) insert and O(1) removal, for the KPCB Fellows program. I also took the liberty to build a readme using the bootstrap framework.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="seamBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Seam Resizing</h3>
-              <p class="language">Matlab + HTML/CSS</p>
-              <h4 class="demo"><a href=""></a></h4>
-              <h4 class="sourcecode"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj4/cs194-fx/">Demo</a></h4>
-
-              <p>When we imagine resizing an image, we usually think of stretching/compressing or cropping an image.  What we would like, however, is to resize an image without there being artifacts, maintaining as much of the focus of the original image as possible.  This is done by seam insertion and removal.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="blendBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Image Blending</h3>
-              <p class="language">Matlab + HTML/CSS</p>
-              <h4 class="demo"><a href=""></a></h4>
-              <h4 class="sourcecode"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fx/">Demo</a></h4>
-
-              <p>I played around with changing images by using gaussian or laplacian filters.  I sharpened an image using the unsharp masking technique.  I blended the high frequencies of one image with the low frequencies of another. I blended two images together by using a filter over a mask and then by stacking filters together.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="pinholeBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Pinhole Camera</h3>
-              <p class="language">Shoebox + HTML/CSS</p>
-              <h4 class="demo"><a href=""></a></h4>
-              <h4 class="sourcecode"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj2/cs194-fx/proj2/">Demo</a></h4>
-
-              <p>With a team of 2 others, I built a pinhole camera using a shoebox, some construction paper, and some tape.  We put a camera into the box and took pictures of the inside of the box, which captured the light from the surroundings.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="colorizeBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Colorize Prokudin-Gorskii Glass Plate Images</h3>
-              <p class="language">Matlab + HTML/CSS</p>
-              <h4 class="demo"><a href=""></a></h4>
-              <h4 class="sourcecode"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj1/cs194-fx/fang_andrew_proj1/">Demo</a></h4>
-
-              <p>I used Matlab to colorize Prokudin-Gorskii glass plate images by aligning each image layer (corresponding to either R, G, or b) using a sum-of-squared-distance metric. I then enhanced these images using some autocontrasting and cropped out borders.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="rcsaBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">RCSA Leadership Page</h3>
-              <p class="language">JQuery/HTML/CSS</p>
-              <h4 class="demo"><a href=""></a></h4>
-              <h4 class="sourcecode"><a href="http://rcsa.berkeley.edu/leadership">Demo</a></h4>
-
-              <p>I used and tweaked the iHover library to build this profile page for the RCSA Leadership of 2014-2015.  All animation is done through CSS, and JQuery is only used to show/hide parts of the page.  Most of the rest of the site is built with Bootstrap on Django.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="ListenUpBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">ListenUp Application</h3>
-              <p class="language">Android</p>
-              <h4 class="demo"><a href="https://play.google.com/store/apps/details?id=edu.berkeley.cs160.jaguars.listenup">Download</a></h4>
-              <h4 class="sourcecode"><a href="https://github.com/andrewfang/ListenUp">Source Code</a></h4>
-
-              <p>Project for Computer Science 160: User Interface Design and Development. This app is targeted at bikers who need to be aware of their surroundings; it can detect loud sounds and pause any music that is playing to replay the detected sound.  CallerID is built in so that the name of the caller is spoken on incoming calls.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="clapcamBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">ClapCam Application</h3>
-              <p class="language">Android</p>
-              <h4 class="demo"><a href="https://play.google.com/store/apps/details?id=com.andrewbfang.clapcam">Download</a></h4>
-              <h4 class="sourcecode"><a href="https://github.com/andrewfang/ClapCam">Source Code</a></h4>
-
-              <p>A clap activated camera application for Android devices.  Using the TarsosDSP library, the app listens for two distinct claps.  Upon hearing such an activity, a timer goes off which eventually triggers the camera.  This allows the user to take pictures from afar, perfect for taking group pictures or selfies from far away.</p>
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div id="greyMeBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">GreyMeOut Application</h3>
-              <p class="language">Android</p>
-              <h4 class="demo"><a href="https://play.google.com/store/apps/details?id=edu.berkeley.cs160.andrewfang.greymeout">Download</a></h4>
-              <h4 class="sourcecode"><a href="https://github.com/andrewfang/GreyMeOut">Source Code</a></h4>
-
-              <p>A coloring application for Android devices.  The app comes preloaded with five colorful images, and users can paint over the image to remove the color (greyscale the picture), or change the picture to color again.  Users can save or reset the canvas.</p>
+              <h3 class="proj">ConsoleJson</h3>
+              <p class="language">Javascript</p>
+              <h4 class="demo"><a href="http://consolejson.herokuapp.com">Demo</a></h4>
+              <h4 class="sourcecode"><a href="https://github.com/riyazdf/consolejson">Source</a></h4>
+              <p>Winner of the Computer Science 164 class choice award</p>
             </div>
           </div>
 
 
-          <div class="projectContainer">
-            <div id="angusBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Angus Hildreth's Website</h3>
-              <p class="language">JQuery/HTML/CSS</p>
-              <h4 class="demo"><a href="http://angushildreth.github.io/">Demo</a></h4>
-              <h4 class="sourcecode"><a href="https://github.com/angushildreth/angushildreth.github.io">Source Code</a></h4>
-
-              <p>A website I built for my research advisor, using the Bootstrap framework.  I had a lot of fun playing around with the different features that Bootstrap came with, and I used them and modified them to give this webpage a unique taste.</p>
-            </div>
+				<h2>Matlab & Image Processing</h2>
+        <div class="row">
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj5/cs194-fx/">
+                <div class="img"><img src="images/morph.gif" alt="img"></div>
+                <div class="info">
+                  <h3>Face Morphing</h3>
+                  <p>Delaunay triangulation</p>
+                </div></a></div>
           </div>
-
-
-          <div class="projectContainer">
-            <div id="dospssBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Do SPSS</h3>
-              <p class="language">Python</p>
-              <h4 class="sourcecode"><a href="https://github.com/andrewfang/DoSPSS">Source Code</a></h4>
-
-              <p>This python script was originally built to process data output from an SPSS file.  Using the XLRD package, it is a interactive system that allows you to pull data from specific cells that are a certain number of rows and columns away from a unique identifier.</p>
-            </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj7B/cs194-fx/">
+                <div class="img"><img src="images/mosaic.jpg" alt="img"></div>
+                <div class="info">
+                  <h3>Mosaicing</h3>
+                  <p>Homographic Image Warping</p>
+                </div></a></div>
           </div>
-
-			<div class="projectContainer">
-            <div id="clockBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Clock Widget</h3>
-              <p class="language">Android</p>
-              <h4 class="demo"><a href="https://play.google.com/store/apps/details?id=com.andrewbfang.clockwidget">Download</a></h4>
-              <h4 class="sourcecode"><a href="https://github.com/andrewfang/ClockWidget">Packages</a></h4>
-
-              <p>A clock widget for Android phones.  Minimalistic in design, this widget allows the user to tap on the time to open up the internal clock application, and tap on the date to open up the calendar application.  Currently has over 1000 active installs.  Get it on the Play Store today!</p>
-            </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj6/cs194-fx/">
+                <div class="img"><img src="images/lightfield.gif" alt="img"></div>
+                <div class="info">
+                  <h3>Focus Adjustment</h3>
+                  <p>Lightfield Camera</p>
+                </div></a></div>
           </div>
+        <!-- end One Project-->
+        </div>
 
-          <div class="projectContainer">
-            <div id="magic8Background" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Magic 8 Ball</h3>
-              <p class="language">Android</p>
-              <h4 class="demo"><a href="https://play.google.com/store/apps/details?id=com.andrewbfang.magic8">Download</a></h4>
-              <h4 class="sourcecode"><a href="https://github.com/andrewfang/Magic8">Packages</a></h4>
-
-              <p>Fun project I worked on because my friend is indecisive.  A response is triggered by either a tap on the screen or a shake of the phone or tablet.  I looked up how to access the accelerometer in order to get the shaking option to work. Get it on the Play Store today!</p>
-            </div>
+        <div class="row">
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj4/cs194-fx/">
+                <div class="img"><img src="images/seam.jpg" alt="img"></div>
+                <div class="info">
+                  <h3>Seam Resizing</h3>
+                  <p>Dynamic Image Resizing</p>
+                </div></a></div>
           </div>
-
-          <div class="projectContainer">
-            <div id="bopBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Bop With Friends</h3>
-              <p class="language">Android</p>
-              <h4 class="demo"><a href="#">Download</a></h4>
-              <h4 class="sourcecode"><a href="https://github.com/danrschlosser/BopWithFriends">Packages</a></h4>
-
-              <p>A project I worked on with "Team We're Feeling Lucky" at the 2013 Google Android Camp.  It is a gesture and motion rich game that is optimized for Android tablet devices.  This app won first place at the Android Camp competition.</p>
-            </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fx/">
+                <div class="img"><img src="images/blend.jpg" alt="img"></div>
+                <div class="info">
+                  <h3>Image Blending</h3>
+                  <p>Gaussian/Laplacian masking</p>
+                </div></a></div>
           </div>
-
-          <div class="projectContainer">
-            <div id="battleshipBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">Battleship</h3>
-              <p class="language">Java</p>
-              <h4 class="sourcecode"><a href="https://github.com/andrewfang/Battleship">Source Code</a></h4>
-
-              <p>A text-based game of Battleship that can be played by 0-2 human players in the command line prompt.  Remaining spots are filled in by artificial intelligence players.</p>
-            </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/projFinalUndergrad/cs194-fx/">
+                <div class="img"><img src="images/gradientBlending.jpg" alt="img"></div>
+                <div class="info">
+                  <h3>Domain Fusion</h3>
+                  <p>Gradient-domain processing</p>
+                </div></a></div>
           </div>
-          <div class="projectContainer">
-            <div id="drawItBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">DrawIt Whiteboard</h3>
-              <p class="language">JQuery/HTML/CSS</p>
-              <h4 class="demo"><a href="http://andrewfang.github.io/drawit.html">Demo</a></h4>
-              <h4 class="sourcecode"><a href="http://goo.gl/G6R44">Source Code</a></h4>
+        <!-- end One Project-->
+        </div>
 
-              <p>A hackathon project I worked on with Ryan Higgins.  It is a browser whiteboard app on which you can draw anything.  I then worked on a playback option so that it can show exactly what the user draws.  Also included are a clear and random-color generator options.</p>
-            </div>
+      <h2>Android</h2>
+        <div class="row">
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://play.google.com/store/apps/details?id=edu.berkeley.cs160.jaguars.listenup">
+                <div class="img"><img src="images/ListenUp.png" alt="img"></div>
+                <div class="info">
+                  <h3>ListenUp</h3>
+                  <p>Awareness for Bikers</p>
+                </div></a></div>
           </div>
-
-          <div class="projectContainer">
-            <div id="websiteBackground" class="projectBackground"></div>
-            <div class="projectContent">
-              <h3 class="proj">This Website</h3>
-              <p class="language">JQuery/HTML/CSS</p>
-              <h4 class="demo"><a href="http://andrewfang.github.io/">Demo</a></h4>
-              <h4 class="sourcecode"><a href="https://github.com/andrewfang/andrewfang.github.io">Source Code</a></h4>
-
-              <p>This webpage is made and hosted on Github Pages.  The original page was generated from markdown, but I've since expanded it by creating subdomains and altering the CSS and adding JQuery to make it appear as it does now.  It is still a work in progress and I update it whenever I can.</p>
-            </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://play.google.com/store/apps/details?id=com.andrewbfang.clapcam">
+                <div class="img"><img src="images/ClapCam.png" alt="img"></div>
+                <div class="info">
+                  <h3>ClapCam</h3>
+                  <p>Clap Activated Camera</p>
+                </div></a></div>
           </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://play.google.com/store/apps/details?id=edu.berkeley.cs160.andrewfang.greymeout">
+                <div class="img"><img src="images/greyMeOut.png" alt="img"></div>
+                <div class="info">
+                  <h3>GreyMeOut</h3>
+                  <p>Color-removal App</p>
+                </div></a></div>
+          </div>
+        <!-- end One Project-->
+        </div>
 
-			</div>
+        <div class="row">
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://play.google.com/store/apps/details?id=com.andrewbfang.clockwidget">
+                <div class="img"><img src="images/clock.png" alt="img"></div>
+                <div class="info">
+                  <h3>Clock Widget</h3>
+                  <p>Over 1500 active installs</p>
+                </div></a></div>
+          </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://play.google.com/store/apps/details?id=com.andrewbfang.magic8">
+                <div class="img"><img src="images/magic8.png" alt="img"></div>
+                <div class="info">
+                  <h3>Magic 8 Ball</h3>
+                  <p>Shake Activated</p>
+                </div></a></div>
+          </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://play.google.com/store/apps/details?id=com.andrewbfang.bop">
+                <div class="img"><img src="images/Bop.png" alt="img"></div>
+                <div class="info">
+                  <h3>Bop</h3>
+                  <p>Tap and Shake to Score</p>
+                </div></a></div>
+          </div>
+        <!-- end One Project-->
+        </div>
+
+      <h2>HTML + CSS + Javascript</h2>
+        <div class="row">
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="#">
+                <div class="img"><img src="images/andrewLogoGold.png" alt="img"></div>
+                <div class="info">
+                  <h3>andrewbfang.com</h3>
+                  <p>This website</p>
+                </div></a></div>
+          </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="http://consolejson.herokuapp.com">
+                <div class="img"><img src="images/consoleJSON.png" alt="img"></div>
+                <div class="info">
+                  <h3>ConsoleJSON</h3>
+                  <p>Beautiful JSON logging</p>
+                </div></a></div>
+          </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj2/cs194-fx/proj2/">
+                <div class="img"><img src="images/pinhole.png" alt="img"></div>
+                <div class="info">
+                  <h3>Pinhole Camera</h3>
+                  <p>Light capture</p>
+                </div></a></div>
+          </div>
+        <!-- end One Project-->
+      </div>
+      <div class="row">
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="http://angushildreth.com">
+                <div class="img"><img src="images/.png" alt="img"></div>
+                <div class="info">
+                  <h3>Angus Hildreth</h3>
+                  <p>In Progress</p>
+                </div></a></div>
+          </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="http://andrewfang.github.io/drawit.html">
+                <div class="img"><img src="images/drawit.png" alt="img"></div>
+                <div class="info">
+                  <h3>DrawIt</h3>
+                  <p>Whiteboard with Playback</p>
+                </div></a></div>
+          </div>
+        <!-- end One Project-->
+        <!-- One Project -->
+          <div class="col-md-4 projectCircle" align="center">
+            <div class="ih-item circle colored effect10 bottom_to_top"><a href="http://rcsa.berkeley.edu/leadership">
+                <div class="img"><img src="images/rcsa.png" alt="img"></div>
+                <div class="info">
+                  <h3>RCSA Leadership Page</h3>
+                  <p>Built with iHover</p>
+                </div></a></div>
+          </div>
+        <!-- end One Project-->
+        </div>
+
+      </div>
 			<footer>
-          	©2014 <a href="http://andrewbfang.com">Andrew Fang</a>
-        	</footer>
+          ©2014 <a href="http://andrewbfang.com">Andrew Fang</a>
+      </footer>
 		</div>
 
 
