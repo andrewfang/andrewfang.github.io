@@ -38,7 +38,7 @@ h3 {
   font-family: "Helvetica Neue", Helvetica,Arial,serif;
   font-weight: 300;
   font-size: 20px;
-  color: #d5000d;
+  color: #0266C8;
 }
 p {
 	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
@@ -49,14 +49,12 @@ p {
 }
 a {
 	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-weight: 300;
 	text-decoration: none;
-	color: #5C5C62;
+	color: #000;
 }
 a:hover{
-	color: #0099FF;
-}
-a:active{
-	color: #6699FF;
+  color: #0266C8;
 }
 
 /*NAVIGATION*/
@@ -93,23 +91,18 @@ a.disabled {
 	background-color:#dfdfdf;
 	color: #000000;
 	cursor: default;
+  text-decoration: none;
 }
 a.disabled:hover {
-  	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
-	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
 	background-color:#dfdfdf;
 	color: #000000;
 	cursor: default;
+  text-decoration: none;
 }
 a.disabled:active {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
-	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
 	background-color:#dfdfdf;
 	color: #000000;
-	position:relative;
-	top:0px;
+  text-decoration: none;
 }
 #nav{
 	display: inline-block;
@@ -129,17 +122,33 @@ a.disabled:active {
 	display: block;
 	width: 400px;
 	padding: 50px;
+}
+.textblocks p {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.textblocks h2 {
 	text-align: center;
 }
-.textblocks p,h4 {
-	margin-bottom: 5px;
+.language {
+  color: #afafaf;
+}
+.projectPicture {
+  height: 200px;
+}
+.row {
+  margin-top: 10px;
+  padding-top:10px;
+}
+.justifiedText {
+  text-align: justify;
 }
 
 /*BLOCK IDS*/
 
 /*TITLEBLOCK*/
 #texttitle{
-	left: 6%;
+	left: 10%;
 	width: 500px;
 	position: fixed;
 }
@@ -152,13 +161,13 @@ a.disabled:active {
 	width: 100%;
 }
 body {
-    background: #0266C8;
+  background: #0266C8;
 }
 #profile{
 	height: 300px;
 	width: 300px;
 	position: fixed;
-	right: 200px;
+	right: 15%;
 	border-radius: 300px;
 	-webkit-border-radius: 300px;
 	-moz-border-radius: 300px;
@@ -191,7 +200,7 @@ body {
 #textabout{
 	padding-top: 100px;
 	top: -10px;
-	right: 150px;
+	right: 10%;
 	width: 500px;
 }
 
@@ -398,22 +407,12 @@ body {
   background-size: auto 150px;
 }
 
-.demo a{
-  text-align: left;
-  float: left;
-  padding-right: 10px;
+.noA:hover{
+  text-decoration: none;
 }
-.demo a:hover{
-  color: #953333;
+.noA:active{
+  text-decoration: none;
 }
-.sourcecode a:hover{
-  color: #953333;
-}
-.language {
-  margin-bottom: 0px;
-}
-
-
 
 footer {
 	background: transparent url('../images/hr.png') 50% 0 no-repeat;
