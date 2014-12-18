@@ -3,26 +3,15 @@
 	margin: 0;
 	padding: 0;
 }
-@font-face {
-  font-family: "square";
-  src: url("sqmarket.woff") format('woff');
-}
-@font-face {
-  font-family: "squareLight";
-  src: url("sqmarket-light.woff") format('woff');
-}
-@font-face {
-  font-family: "squareBold";
-  src: url("sqmarket-bold.woff") format('woff');
-}
 h1 {
-    font-family: squareLight, Helvetica,Arial,serif;
+    font-family: "Helvetica Neue", Helvetica,Arial,serif;
     font-weight: 100;
     font-size: 65px;
     color: #fff;
 }
 .h1bold {
-    font-family: square, Helvetica,Arial,serif;
+    font-family: "Helvetica Neue", Helvetica,Arial,serif;
+    font-weight: 800;
 }
 h2 {
 	font-family: "Helvetica Neue", Helvetica,Arial,serif;
@@ -60,16 +49,16 @@ a:hover{
 /*NAVIGATION*/
 .button {
 	background-color:#fff;
-    border-radius:42px;
-    -moz-border-radius:42px;
-    -webkit-border-radius:42px;
-    display:inline-block;
-    cursor:pointer;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color:#9c9c9c
-    font-size:17px;
-    padding:10px 25px;
-    text-decoration: none;
+  border-radius:42px;
+  -moz-border-radius:42px;
+  -webkit-border-radius:42px;
+  display:inline-block;
+  cursor:pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#9c9c9c
+  font-size:17px;
+  padding:10px 25px;
+  text-decoration: none;
 }
 .button:hover {
 	background-color:#e0e0e0;
@@ -175,7 +164,7 @@ body {
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
 	padding: 5px;
-    background:#fff;
+  background:#fff;
 	transition: background .5s;
 	-webkit-transition: background .5s;
 }
@@ -206,11 +195,11 @@ body {
 
 #textabout a{
 	color: #303030;
-	font-family: 'Chivo', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 600;
+  font-weight: 600;
 }
 
 #linkedin:hover{
-  	background-color: #0073b2;
+  background-color: #0073b2;
 	border:2px solid #2295d4;
 }
 #facebook:hover{
@@ -309,104 +298,6 @@ body {
 .projectCircle {
   padding: 15px !important;
 }
-.projectContainer {
-    width: 100%;
-    height: 175px;
-    margin-bottom: 20px;
-    position: relative;
-}
-.projectContent {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 10;
-}
-.projectBackground{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: opacity .5s;
-  -webkit-transition: opacity .5s;
-  z-index: 1;
-  opacity: 0;
-}
-#bopBackground{
-  background-image: url("../images/Bop.png");
-  background-size: 150px 150px;
-}
-#battleshipBackground{
-  background-image: url("../images/battleship.png");
-  background-size: 150px 131px;
-}
-#drawItBackground{
-  background-image: url("../images/drawit.png");
-  background-size: 222px 150px;
-}
-#magic8Background{
-  background-image: url("../images/magic8.png");
-  background-size: 150px 150px;
-}
-#websiteBackground{
-  background-image: url("../images/website.png");
-}
-#greyMeBackground{
-  background-image: url("../images/greyMeOut.png");
-  background-size: 150px 150px;
-}
-#clapcamBackground{
-  background-image: url("../images/ClapCam.png");
-  background-size: 150px 150px;
-}
-#angusBackground{
-  background-image: url("../images/angus.png");
-}
-#clockBackground{
-  background-image: url("../images/clock.png");
-}
-#dospssBackground{
-  background-image: url("../images/dospss.png");
-}
-#ListenUpBackground{
-  background-image: url("../images/ListenUp.png");
-  background-size: 150px 150px;
-}
-#rcsaBackground{
-  background-image: url("../images/rcsa.png");
-}
-#colorizeBackground{
-  background-image: url("../images/colorize.jpg");
-  background-size: 150px auto;
-}
-#pinholeBackground{
-  background-image: url("../images/box.jpg");
-  background-size: 150px auto;
-}
-#blendBackground{
-  background-image: url("../images/blend.jpg");
-  background-size: 150px auto;
-}
-#seamBackground{
-  background-image: url("../images/seam.jpg");
-  background-size: 150px auto;
-}
-#qBackground{
-  background-image: url("../kpcb/images/speed.png");
-}
-#morphBackground{
-  background-image: url("../images/morph.gif");
-  background-size: auto 150px;
-}
-#lightfieldBackground{
-  background-image: url("../images/lightfield.gif");
-  background-size: auto 150px;
-}
-#mosaicBackground{
-  background-image: url("../images/mosaic.jpg");
-  background-size: auto 150px;
-}
-
 .noA:hover{
   text-decoration: none;
 }
