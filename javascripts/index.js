@@ -5,7 +5,7 @@ function initialize(event){
 }
 
 function colorize(event){
-	$(this).closest("div").find("h2").css("color", event.data.color);
+	$(this).closest("#textabout").find("h2").css("color", event.data.color);
 	$("#infoOnLinks").text(event.data.link);
 	$("#infoOnLinks").animate({
 		marginTop: "5px",
