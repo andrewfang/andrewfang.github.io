@@ -151,6 +151,12 @@ a.disabled:active {
 }
 body {
   background: #0266C8;
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+
 }
 #profile{
 	height: 300px;

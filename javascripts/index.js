@@ -6,6 +6,9 @@ function initialize(event){
 
 function colorize(event){
 	$(this).closest("#textabout").find("h2").css("color", event.data.color);
+  if (event.data.link.length > 0) {
+    $("body").css("background", event.data.color);
+  }
 	$("#infoOnLinks").text(event.data.link);
 	$("#infoOnLinks").animate({
 		marginTop: "5px",
