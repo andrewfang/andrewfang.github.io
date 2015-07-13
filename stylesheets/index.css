@@ -205,19 +205,27 @@ body {
 }
 
 #linkedin:hover{
-  background-color: #0073b2;
-	border:2px solid #2295d4;
+  background-color: #0077b6;
+	border:2px solid #2299d9;
 }
 #facebook:hover{
-	background-color: #465fa1;
-	border:2px solid #243d80;
+	background-color: #3b5998;
+	border:2px solid #5d7bba;
+}
+#instagram:hover{
+	background-color: #517fa4;
+	border:2px solid #729fc6;
+}
+#pinterest:hover{
+	background-color: #cb2027;
+	border:2px solid #ed4249;
 }
 #gplus:hover{
-	background-color:#b43021;
-	border:2px solid #d83526;
+	background-color:#dd4b39;
+	border:2px solid #ff6d5b;
 }
 #twitter:hover{
-  	background-color:#00acee;
+  	background-color:#00aced;
 	border:2px solid #22ceff;
 }
 #hkn:hover{
@@ -225,8 +233,8 @@ body {
 	border:2px solid #c5c049;
 }
 #github:hover{
-	background-color: #657e8c;
-	border:2px solid #435c6a;
+	background-color: #4183c4;
+	border:2px solid #62a5e6;
 }
 #email:hover{
 	background-color:#cf2a1c;

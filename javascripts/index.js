@@ -53,12 +53,14 @@ $(document).ready(function(){
 	}
 
 	// Color the picture border on mouseover/leave of different elements
-	$("#linkedin").on("mouseover", {color:"#0073b2", link:"LinkedIn"}, colorize);
-	$("#facebook").on("mouseover", {color:"#465fa1", link:"Facebook"}, colorize);
+	$("#linkedin").on("mouseover", {color:"#0077b6", link:"LinkedIn"}, colorize);
+	$("#facebook").on("mouseover", {color:"#3b5998", link:"Facebook"}, colorize);
 	$("#gplus").on("mouseover", {color:"#b43021", link:"Google Plus"}, colorize);
 	$("#twitter").on("mouseover", {color:"#00acee", link:"Twitter"}, colorize);
 	$("#hkn").on("mouseover", {color:"#f7e26b", link:"HKN WebPage"}, colorize);
-	$("#github").on("mouseover", {color:"#657e8c", link:"GitHub"}, colorize);
+	$("#instagram").on("mouseover", {color:"#517fa4", link:"Instagram"}, colorize);
+	$("#pinterest").on("mouseover", {color:"#cb2027", link:"Pinterest"}, colorize);
+	$("#github").on("mouseover", {color:"#4183c4", link:"GitHub"}, colorize);
 	$("#email").on("mouseover", {color:"#cf2a1c", link:"Email me at andrewfang@eecs.berkeley.edu"}, colorize);
 	$(".aboutmelink").on("mouseleave", {color:"#000000", link:""}, colorize);
 
