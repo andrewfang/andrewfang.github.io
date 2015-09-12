@@ -62,7 +62,7 @@ $(document).ready(function(){
 	$("#instagram").on("mouseover", {color:"#517fa4", link:"Instagram"}, colorize);
 	$("#pinterest").on("mouseover", {color:"#cb2027", link:"Pinterest"}, colorize);
 	$("#github").on("mouseover", {color:"#4183c4", link:"GitHub"}, colorize);
-	$("#email").on("mouseover", {color:"#cf2a1c", link:"Email me at andrewfang@eecs.berkeley.edu"}, colorize);
+	$("#email").on("mouseover", {color:"#cf2a1c", link:"Email me at me@andrewbfang.com"}, colorize);
 	$(".aboutmelink").on("mouseleave", {color:"#000000", link:""}, colorize);
 
 
