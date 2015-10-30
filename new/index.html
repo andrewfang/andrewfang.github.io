@@ -1,0 +1,403 @@
+<html>
+  <head>
+    <!-- Meta -->
+    <meta name="author" content="Andrew Fang">
+    <meta name="description" content="Andrew Fang is a Master's student at Stanford University. Find him as andrewfang on Github and Twitter">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Andrew Fang</title>
+
+    <!-- config -->
+    <link rel="shortcut icon" href="assets/andrewLogoGold.png" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+
+    <!-- Plugins -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="plugins/typed/js/typed.js"></script>
+    <script src="plugins/waypoints/lib/noframework.waypoints.js"></script>
+
+    <!-- Polymer -->
+    <script src="./plugins/bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="./plugins/bower_components/paper-button/paper-button.html">
+    <link rel="import" href="./polymer/project-item.html">
+
+    <!-- Custom stuff -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="import" href="./polymer/project-item.html" >
+    <link rel="import" href="./polymer/project-item-small.html" >
+  </head>
+  <body>
+
+  <div id="splash" class="flexCenter toBlur">
+    <h1>I am Andrew Fang.</h1>
+    <h2> I design and build <span class="typy"></span> Apps.</h2>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default toBlur">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" data-toggle="modal" data-target="#infoModal">
+          <img id="navbarIcon" src="assets/andrewLogoGold.png">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <p class="navbar-text navbarname">Andrew Fang</p>
+        <a id="infoa" href="#" data-toggle="modal" data-target="#infoModal"><p class="navbar-text navbar-right navbarinfo hvr-pulse"><i class="fa fa-ellipsis-v"></i></p></a>
+      </div>
+    </div>
+  </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div align="center">
+          <h3>About Me</h3>
+          <img class="img-responsive img-circle modalProfile" src="./assets/Andrew-Fang-profile.png" />
+          <hr class="modalhr">
+          <h4>Andrew Fang</h4>
+          <hr class="modalhr">
+          <h5>Master's Student @ Stanford</h5>
+          <h6>Engineer • Designer • Teacher</h6>
+          <h6><a href="http://web.stanford.edu/~abfang/" class="noA" style="margin-right:5px">Stanford MS '16</a> 🎓 <a class="noa" href="http://cal.berkeley.edu/andrewfang">Berkeley BS '15</a></h6>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Projects -->
+  <div class="container-fluid toBlur" id="iOSProjects">
+    <div class="fifthSection flexCenter">
+      <h3>iOS</h3>
+    </div>
+    <div class="row halfSection">
+      <div class="col-md-3 col-sm-6 col-xs-12 project" style="background-color: #27ae60">
+        <project-item
+        projectname="Nutri-GOOD"
+        tagline="Stay Healthy"
+        buttontitle="Check it out"
+        imageurl="../assets/ios/nutrigood.png"
+        hreflink="http://web.stanford.edu/class/cs147/projects/health/nutri-good/"
+        ></project-item>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project" style="background-color: #607D8B">
+        <project-item
+        projectname="Graphing Calc"
+        tagline="Do Math"
+        buttontitle="Coming Soon"
+        imageurl="../assets/ios/gcalc.png"
+        hreflink="#iOSProjects"
+        ></project-item>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project" style="background-color: #16a085">
+        <project-item
+        projectname="iTrackEasy"
+        tagline="Find Stuff"
+        buttontitle="Download"
+        imageurl="../assets/ios/iTrack.png"
+        hreflink="https://itunes.apple.com/us/app/itrack-easy-easily-find-your/id1009170318?mt=8"
+        ></project-item>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project" style="background-color: #b71c1c">
+        <project-item
+        projectname="FoodFinder"
+        tagline="Get food"
+        buttontitle="Check It Out"
+        imageurl="../assets/ios/FoodFinder.png"
+        hreflink="http://andrewbfang.com/foodfinder/index.html"
+        ></project-item>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid toBlur" id="androidProjects">
+    <div class="fifthSection flexCenter">
+      <h3>Android</h3>
+    </div>
+    <div class="row halfSection">
+      <div class="col-md-4 col-sm-6 col-xs-12 project" style="background-color: #c0392b">
+        <project-item
+        projectname="BopIt"
+        tagline="Have Fun"
+        buttontitle="Download"
+        imageurl="../assets/android/bop.png"
+        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.bop"
+        ></project-item>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 project" style="background-color: #2980b9">
+        <project-item
+        projectname="ClapCam"
+        tagline="Take Pictures"
+        buttontitle="Download"
+        imageurl="../assets/android/clapcam.png"
+        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.clapcam"
+        ></project-item>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 project" style="background-color: #8e44ad">
+        <project-item
+        projectname="ClockWidget"
+        tagline="Be Timely"
+        buttontitle="Download"
+        imageurl="../assets/android/clock.png"
+        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.clockwidget"
+        ></project-item>
+      </div>
+    </div>
+    <div class="row quarterSection">
+      <div class="col-md-3 col-sm-6 col-xs-12 project projectSmall" style="background-color: #7f8c8d">
+        <project-item-small
+        projectname="GreyMeOut"
+        buttontitle="Download"
+        imageurl="../assets/android/grey.png"
+        hreflink="https://play.google.com/store/apps/details?id=edu.berkeley.cs160.andrewfang.greymeout"
+        ></project-item-small>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project projectSmall" style="background-color: #2c3e50">
+        <project-item-small
+        projectname="ListenUp"
+        buttontitle="Download"
+        imageurl="../assets/android/listenup.png"
+        hreflink="https://play.google.com/store/apps/details?id=edu.berkeley.cs160.jaguars.listenup"
+        ></project-item-small>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project projectSmall" style="background-color: #232323">
+        <project-item-small
+        projectname="Magic8"
+        buttontitle="Download"
+        imageurl="../assets/android/magic8.png"
+        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.magic8"
+        ></project-item-small>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project projectSmall" style="background-color: #d35400">
+        <project-item-small
+        projectname="ClockWidgetPlus"
+        buttontitle="Download"
+        imageurl="../assets/android/clockPlus.png"
+        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.clockwidgetplus"
+        ></project-item-small>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid toBlur" id="androidProjects">
+    <div class="fifthSection flexCenter">
+      <h3>Web</h3>
+    </div>
+    <div class="row halfSection">
+      <div class="col-md-4 col-sm-6 col-xs-12 project" style="background-color: #2980b9">
+        <project-item
+        projectname="ConsoleJSON"
+        tagline="Print Pretty JSON"
+        buttontitle="Check it out"
+        imageurl="../assets/web/consolejson.png"
+        hreflink="http://www.consolejson.com"
+        ></project-item>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 project" style="background-color: #27ae60">
+        <project-item
+        projectname="STCK"
+        tagline="Make Money"
+        buttontitle="Check it out"
+        imageurl="../assets/web/stck.png"
+        hreflink="http://stck.herokuapp.com/"
+        ></project-item>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 project" style="background-color: #37474f">
+        <project-item
+        projectname="GroupIt"
+        tagline="Make Teams"
+        buttontitle="Check it out"
+        imageurl="../assets/web/groupit.png"
+        hreflink="http://groupit.pythonanywhere.com"
+        ></project-item>
+      </div>
+    </div>
+    <div class="row quarterSection">
+      <div class="col-md-3 col-sm-6 col-xs-12 project projectSmall" style="background-color: #7f8c8d">
+        <project-item-small
+        projectname="Proximity App"
+        buttontitle="Check it out"
+        imageurl="../assets/web/proximity.png"
+        hreflink="http://www.proximity-app.com"
+        ></project-item-small>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project projectSmall" style="background-color: #607d8b">
+        <project-item-small
+        projectname="Nvelop"
+        buttontitle="Check it out"
+        imageurl="../assets/web/nvelop.png"
+        hreflink="http://nvelop.herokuapp.com"
+        ></project-item-small>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project projectSmall" style="background-color: #2980b9">
+        <project-item-small
+        projectname="Angus Hildreth"
+        buttontitle="Check it out"
+        imageurl="../assets/web/lab.jpg"
+        hreflink="http://www.angushildreth.com"
+        ></project-item-small>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project projectSmall" style="background-color: #232323">
+        <project-item-small
+        projectname="This Website"
+        buttontitle="You're here"
+        imageurl="../assets/andrewLogoGold.png"
+        hreflink="#"
+        ></project-item-small>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid toBlur" id="arduinoProjects">
+    <div class="fifthSection flexCenter">
+      <h3>Arduino</h3>
+    </div>
+    <div class="row halfSection">
+      <div class="col-md-4 col-sm-4 col-xs-12 project" style="background-color: #27ae60">
+        <project-item
+        projectname="Zenrack"
+        tagline="Smart Dishrack"
+        buttontitle="Check it out"
+        imageurl="../assets/arduino/zenrack.png"
+        hreflink="http://www.hackster.io/zenrack/zenrack"
+        ></project-item>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 project" style="background-color: #34495e">
+        <project-item
+        projectname="Old Sole"
+        tagline="Sync Steps"
+        buttontitle="Check it out"
+        imageurl="../assets/arduino/oldsole.png"
+        hreflink="http://www.hackster.io/old-sole/old-sole"
+        ></project-item>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 project" style="background-color: #9b59b6">
+        <project-item
+        projectname="SKRT"
+        tagline="Moving Skirt"
+        buttontitle="Check it out"
+        imageurl="../assets/arduino/skrt.png"
+        hreflink="http://www.hackster.io/team-skrt/skrt"
+        ></project-item>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid toBlur" id="matlabProjects">
+    <div class="fifthSection flexCenter">
+      <h3>Matlab and Image Processing</h3>
+    </div>
+    <div class="row halfSection">
+      <div class="col-md-3 col-sm-6 col-xs-12 project" style="background-color: #3498db">
+        <project-item
+        projectname="Face Morphing"
+        tagline="Delaunay Triangulation"
+        buttontitle="Check it out"
+        imageurl="../assets/matlab/morph.gif"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj5/cs194-fx/"
+        ></project-item>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project" style="background-color: #95a5a6">
+        <project-item
+        projectname="Coin Count"
+        tagline="Coin Detector"
+        buttontitle="Check it out"
+        imageurl="../assets/matlab/coin.jpg"
+        hreflink="http://andrewbfang.com/resources/coin.pdf"
+        ></project-item>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project" style="background-color: #232323">
+        <project-item
+        projectname="Domain Fusion"
+        tagline="Gradient-domain Processing"
+        buttontitle="Check it out"
+        imageurl="../assets/matlab/gradientBlending.jpg"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/projFinalUndergrad/cs194-fx/"
+        ></project-item>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12 project" style="background-color: #c0392b">
+        <project-item
+        projectname="Image Blending"
+        tagline="Gaussian Masking"
+        buttontitle="Check it out"
+        imageurl="../assets/matlab/blend.jpg"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fx/"
+        ></project-item>
+      </div>
+    </div>
+    <div class="row quarterSection">
+      <div class="col-md-2 col-sm-6 col-xs-12 project projectSmall" style="background-color: #7f8c8d">
+        <project-item-small
+        projectname="Prokudin-Gorskii"
+        buttontitle="Check it out"
+        imageurl="../assets/matlab/color.jpg"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj1/cs194-fx/fang_andrew_proj1/"
+        ></project-item-small>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-12 project projectSmall" style="background-color: #9b59b6">
+        <project-item-small
+        projectname="Mosaicing"
+        buttontitle="Check it out"
+        imageurl="../assets/matlab/mosaic.jpg"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj7B/cs194-fx/"
+        ></project-item-small>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-12 project projectSmall" style="background-color: #34495e">
+        <project-item-small
+        projectname="Lightfield"
+        buttontitle="Check it out"
+        imageurl="../assets/matlab/lightfield.gif"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj6/cs194-fx/"
+        ></project-item-small>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-12 project projectSmall" style="background-color: #7f8c8d">
+        <project-item-small
+        projectname="Pinhole Camera"
+        buttontitle="Check it out"
+        imageurl="../assets/matlab/pinhole.png"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj2/cs194-fx/proj2/"
+        ></project-item-small>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-12 project projectSmall" style="background-color: #f1c40f">
+        <project-item-small
+        projectname="Seam Resizing"
+        buttontitle="Check it out"
+        imageurl="../assets/matlab/seam.jpg"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj4/cs194-fx/"
+        ></project-item-small>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-12 project projectSmall" style="background-color: #232323">
+        <project-item-small
+        projectname="Fake Miniatures"
+        buttontitle="Check it out"
+        imageurl="../assets/matlab/fakeMini.gif"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/projFinalUndergrad/cs194-fx/"
+        ></project-item-small>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div id="about" class="toBlur">
+<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="linkedIn" href="https://www.linkedin.com/in/andrewbfang"><i class="fa fa-linkedin"></i></a></h4><p class="aboutDesc" id="linkedInabout"></p></div>
+<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="github" href="https://github.com/andrewfang"><i class="fa fa-github"></i></a></h4><p class="aboutDesc" id="githubabout"></p></div>
+<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="facebook" href="https://www.facebook.com/andrewbfang"><i class="fa fa-facebook"></i></a></h4><p class="aboutDesc" id="facebookabout"></p></div>
+<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="twitter" href="https://twitter.com/andrewfang"><i class="fa fa-twitter"></i></a></h4><p class="aboutDesc" id="twitterabout"></p></div>
+<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="pinterest" href="https://www.pinterest.com/andrewbfang/"><i class="fa fa-pinterest"></i></a></h4><p class="aboutDesc" id="pinterestabout"></p></div>
+<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="instagram" href="https://instagram.com/andrewbfang/"><i class="fa fa-instagram"></i></a></h4><p class="aboutDesc" id="instagramabout"></p></div>
+<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="email" href="mailto:me@andrewbfang.com"><i class="fa fa-envelope"></i></a></h4><p class="aboutDesc" id="emailabout"></p><div>
+  </div>
+
+  </body>
+    <script src="js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+</html>

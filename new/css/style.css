@@ -1,0 +1,263 @@
+h1, h2, h3, h4, h5, h6{
+  font-weight: 100;
+  font-family: "acumin-pro", "Helvetica Neue", sans-serif;
+}
+h1, h2 {
+  color: #fff;
+}
+h1 {
+  font-size: 400%;
+}
+h3 {
+  font-size: 300%;
+}
+h4 {
+  font-size: 200%;
+}
+h5 {
+  font-size: 150%;
+}
+h6 {
+  font-size: 100%;
+}
+.noA {
+  color: #232323;
+}
+.noA:hover {
+  text-decoration: none;
+}
+#splash {
+  height: calc(100%);
+  background-image: url("../assets/desk.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.offsetNav {
+  margin-top: 80px;
+}
+.navbar {
+   background-color: rgba(0,0,0,.8);
+   border: 0px solid;
+   border-radius: 0px;
+   height: 60px;
+}
+.navbar-brand {
+  padding: 10px;
+  height: calc(100%);
+}
+.navbarname {
+  color: #fff !important;
+  font-size: 120%;
+  font-weight: 100;
+  margin-left: 0;
+}
+.navbarinfo {
+  margin-top: 10px;
+  line-height: 65px;
+  font-size: 150%;
+  padding: 10px !important;
+  color: #fff !important;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+.navbarinfo:hover {
+  color: #cdcdcd !important;
+}
+#infoa:focus {
+  outline: none;
+}
+#navbarIcon {
+  height: calc(100%);
+}
+
+/* Modal */
+.modal-header {
+  border-bottom: 0px;
+}
+.modal-dialog {
+  background-color: rgba(0,0,0,0) !important;
+}
+.modal-content {
+  background-color: rgba(255,255,255,.9) !important;
+}
+.modalProfile {
+  height: calc(30%);
+}
+.close:focus {
+  outline: none;
+}
+.modal-body {
+  padding-bottom: 55px;
+}
+.modal-body h2{
+  color: #232323;
+}
+.modalhr {
+  border-color: #cdcdcd;
+  margin-left: calc(30%);
+  margin-right: calc(30%);
+}
+.doBlur {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+body {
+  -webkit-transition: margin .5s linear;
+}
+.shrink {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Project */
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fullHeight {
+  height: calc(100%);
+}
+.halfSection {
+  height: calc(50%);
+}
+.fortySection {
+  height: calc(40%);
+}
+.quarterSection {
+  height: calc(25%);
+}
+.fifthSection {
+  height: calc(20%);
+}
+.imgThumb {
+  width: calc(50%);
+  height: calc(50%);
+}
+.project {
+  height: calc(100%);
+  padding: 20px 0;
+}
+.projectSmall {
+  padding: 30px 0;
+}
+.flexAcross {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flexDown{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(50%);
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+}
+#foodFind {
+  background-image: url("../assets/nutrigood.png");
+  width: calc(50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* ABOUT */
+#about {
+  height: calc(100%);
+  background-attachment: fixed;
+  background-image: url("../assets/andrewfang.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#linkedin:hover{
+  color: #0073b2;
+}
+#facebook:hover{
+  color: #465fa1;
+}
+#twitter:hover{
+  color:#00acee;
+}
+#github:hover{
+  color: #657e8c;
+}
+#pinterest:hover{
+  color: #bd081c;
+}
+#email:hover{
+  color: #cf2a1c;
+}
+.aboutmelink {
+  font-size: 120%;
+  color: #fff;
+}
+.abouth4 {
+  margin-left: 5%;
+}
+.aboutmelink:hover{
+}
+.aboutitem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutDesc {
+  color:#fff;
+  line-height: 30px;
+  margin: 0 20px;
+  font-size: 120%;
+}
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
