@@ -8,13 +8,13 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="author" content="Andrew Fang">
-  <meta name="description" content="I am Andrew Fang, Electrical Engineering and Computer Science student at UC Berkeley.  This is my homepage.">
+  <meta name="description" content="Andrew Fang is a Master's student at Stanford. This is his mobile website.">
   <meta charset='utf-8'>
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <title>Andrew Fang</title>
-  <link rel="shortcut icon" href="images/andrewLogoGold.png" />
+  <link rel="shortcut icon" href="./mobile/images/andrewLogoGold.png" />
 
-  <script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
+  <script src="../mobile/bower_components/webcomponentsjs/webcomponents.js"></script>
   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
   <link rel="import" href="https://www.polymer-project.org/0.5/components/core-scroll-header-panel/core-scroll-header-panel.html">
   <link rel="import" href="https://www.polymer-project.org/0.5/components/core-scroll-header-panel/demos/sample-content.html">
@@ -24,8 +24,8 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
   <link rel="import" href="https://www.polymer-project.org/0.5/components/core-icons/social-icons.html">
   <link rel="import" href="https://www.polymer-project.org/0.5/components/paper-shadow/paper-shadow.html">
   <link rel="import" href="https://www.polymer-project.org/0.5/components/font-roboto/roboto.html">
-  <link rel="import" href="./elements/project-item.html" >
-  <link rel="import" href="./elements/experience-item.html" >
+  <link rel="import" href="./mobile/elements/project-item.html" >
+  <link rel="import" href="./mobile/elements/experience-item.html" >
 
   <style shim-shadowdom="">
 
@@ -50,7 +50,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
     /* background for toolbar when it is at its full size */
     core-scroll-header-panel::shadow #headerBg {
-      background-image: url("images/greenAndrew.jpg");
+      background-image: url("./mobile/images/greenAndrew.jpg");
     }
 
     /* background for toolbar when it is condensed */
@@ -122,7 +122,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
   <core-scroll-header-panel condenses="">
 
     <core-toolbar class="tall">
-      <img id="logo" src="images/andrewLogoGold.png" />
+      <img id="logo" src="./mobile/images/andrewLogoGold.png" />
       <div class="bottom indent title" style="-webkit-transform: scale(1) translateZ(0px); transform: scale(1) translateZ(0px);">Andrew Fang</div>
       <div flex></div>
       <core-icon-button id="toggleContent" onclick="toggleContent()" icon="perm-media"></core-icon-button>
@@ -141,7 +141,7 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         <!-- End Item -->
         <!-- Item -->
         <div class="aboutli position" style="margin-left: 30px">
-            <core-icon src="images/diploma.png"></core-icon>
+            <core-icon src="./mobile/images/diploma.png"></core-icon>
             Computer Sci., M.S.
         </div>
         <!-- End Item -->
@@ -155,13 +155,13 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         <!-- End Item -->
         <!-- Item -->
         <div class="aboutli position" style="margin-left: 30px">
-            <core-icon src="images/diploma.png"></core-icon>
+            <core-icon src="./mobile/images/diploma.png"></core-icon>
             EECS, B.S.
         </div>
         <!-- End Item -->
         <!-- Item -->
         <div class="aboutli position" style="margin-left:30px">
-            <core-icon src="images/diploma.png"></core-icon>
+            <core-icon src="./mobile/images/diploma.png"></core-icon>
             Applied Math, B.A.
         </div>
         <!-- End Item -->
@@ -172,27 +172,27 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         <experience-item 
           expname="UCB CompSci 160" 
           hreflink="http://pact.eecs.berkeley.edu/cs160/" 
-          iconlink="../images/berkeleyLogo.gif" 
+          iconlink="../mobile/images/berkeleyLogo.gif" 
           position="Student Instructor"></experience-item>
         <experience-item 
           expname="LinkedIn Corp." 
           hreflink="http://linkedin.com" 
-          iconlink="../images/linkedin.png" 
+          iconlink="../mobile/images/linkedin.png" 
           position="iOS Intern"></experience-item>
-        <experience-item 
+        <experience-mobile/item 
           expname="Box Inc." 
           hreflink="http://box.com" 
-          iconlink="../images/box.png" 
+          iconlink="../mobile/images/box.png" 
           position="Android Intern"></experience-item>
         <experience-item 
           expname="Symantec Corp." 
           hreflink="http://symantec.com" 
-          iconlink="../images/symantec.png" 
+          iconlink="../mobile/images/symantec.png" 
           position="Software Eng. Intern"></experience-item>
         <experience-item 
           expname="Google Inc." 
           hreflink="http://googleforstudents.blogspot.com/2013/02/google-android-camp-for-current.html" 
-          iconlink="../images/google.png" 
+          iconlink="../mobile/images/google.png" 
           position="Android Camp"></experience-item>
 
       </paper-shadow>
@@ -202,22 +202,22 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
         <experience-item
           expname="RCSA"
           hreflink="http://rcsa.berkeley.edu/leadership"
-          iconlink="../images/rcsa.png"
+          iconlink="../mobile/images/rcsa.png"
           position="President"></experience-item>
         <experience-item
           expname="HKN"
           hreflink="http://hkn.eecs.berkeley.edu"
-          iconlink="../images/HKN.png"
+          iconlink="../mobile/images/HKN.png"
           position="Department Relations"></experience-item>
         <experience-item
           expname="Social Psych Lab"
           hreflink="http://angushildreth.com"
-          iconlink="../images/haas.jpg"
+          iconlink="../mobile/images/haas.jpg"
           position="Research Assistant"></experience-item>
         <experience-item
           expname="Boy Scouts"
           hreflink="http://www.scouting.org/"
-          iconlink="../images/boyscouts.jpg"
+          iconlink="../mobile/images/boyscouts.jpg"
           position="Eagle Scout with Palms"></experience-item>
       </paper-shadow>
 
@@ -257,25 +257,25 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
           projectname="GroupIt" 
           desc="sorts students into groups" 
           link="http://groupit.pythonanywhere.com" 
-          iconlink="../images/groupit.png">
+          iconlink="../mobile/images/groupit.png">
         </project-item>
         <project-item 
           projectname="ConsoleJSON" 
           desc="customizable tool for JSON visualization" 
           link="http://consolejson.com" 
-          iconlink="../images/consoleJSON.png">
+          iconlink="../mobile/images/consoleJSON.png">
         </project-item>
         <project-item 
           projectname="Proximity App" 
           desc="locating and chatting with friends using Bluetooth" 
           link="http://proximity-app.com" 
-          iconlink="../images/proximity.png">
+          iconlink="../mobile/images/proximity.png">
         </project-item>
         <project-item 
           projectname="This Website" 
           desc="check out the desktop version too!" 
           link="http://andrewbfang.com" 
-          iconlink="../images/andrewLogoGold.png">
+          iconlink="../mobile/images/andrewLogoGold.png">
         </project-item>
       </paper-shadow>
 
@@ -285,7 +285,19 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
           projectname="FoodFinder" 
           desc="random restaurant generator" 
           link="./foodfinder/index.html" 
-          iconlink="../images/FoodFinder.png">
+          iconlink="../mobile/images/FoodFinder.png">
+        </project-item>
+        <project-item 
+          projectname="Nutri-GOOD" 
+          desc="dietary tracking" 
+          link="http://web.stanford.edu/class/cs147/projects/health/nutri-good" 
+          iconlink="../mobile/images/nutrigood.png">
+        </project-item>
+        <project-item 
+          projectname="iTrack Easy" 
+          desc="bluetooth item finder" 
+          link="https://itunes.apple.com/us/app/itrack-easy-easily-find-your/id1009170318?mt=8" 
+          iconlink="http://a5.mzstatic.com/us/r30/Purple3/v4/29/82/76/2982769c-a250-621f-be61-f7253afc2a8d/icon175x175.png">
         </project-item>
       </paper-shadow>
       <paper-shadow class="card">
@@ -294,19 +306,19 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
           projectname="Clock Widget" 
           desc="over 6400 installations" 
           link="https://play.google.com/store/apps/details?id=com.andrewbfang.clockwidget" 
-          iconlink="images/clock.png">
+          iconlink="./mobile/images/clock.png">
         </project-item>
         <project-item 
           projectname="ClapCam" 
           desc="clap activated camera" 
           link="https://play.google.com/store/apps/details?id=com.andrewbfang.clapcam" 
-          iconlink="images/clapCam.png">
+          iconlink="./mobile/images/clapCam.png">
         </project-item>
         <project-item 
           projectname="Bop" 
           desc="tap and shake to score" 
           link="https://play.google.com/store/apps/details?id=com.andrewbfang.bop" 
-          iconlink="images/bop.png">
+          iconlink="./mobile/images/bop.png">
         </project-item>
       </paper-shadow>
 
