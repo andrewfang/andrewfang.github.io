@@ -29,6 +29,14 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="import" href="./polymer/project-item.html" >
     <link rel="import" href="./polymer/project-item-small.html" >
+
+    <script type="text/javascript">
+    if (screen.width < 700) {
+      document.location = "mobile.html";
+    } else if (typeof InstallTrigger !== 'undefined') {
+      document.location = "firefox/index.html"
+    }
+    </script>
   </head>
   <body>
 
