@@ -18,7 +18,6 @@
     <script src="js/script.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script src="plugins/typed/typed.js"></script>
-    <script src="plugins/waypoints/lib/noframework.waypoints.js"></script>
 
     <!-- Polymer -->
     <script src="./plugins/bower_components/webcomponentsjs/webcomponents.js"></script>
@@ -35,7 +34,10 @@
       document.location = "mobile.html";
     } else if (typeof InstallTrigger !== 'undefined') {
       document.location = "firefox/index.html"
+    } else if (/*@cc_on!@*/false || !!document.documentMode) {
+      document.location = "firefox/index.html"
     }
+
     </script>
   </head>
   <body>
