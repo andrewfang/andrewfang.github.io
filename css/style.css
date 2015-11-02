@@ -1,6 +1,12 @@
 h1, h2, h3, h4, h5, h6{
   font-weight: 100;
   font-family: "acumin-pro", "Helvetica Neue", sans-serif;
+  text-rendering: optimizeLegibility; 
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  text-rendering: optimizeLegibility; 
+  -webkit-font-smoothing: antialiased;
 }
 h1, h2 {
   color: #fff;
@@ -49,7 +55,7 @@ h6 {
 .navbarname {
   color: #fff !important;
   font-size: 120%;
-  font-weight: 100;
+  font-weight: 200;
   margin-left: 0;
 }
 .navbarinfo {

@@ -6,7 +6,7 @@
   <style>
     .fullHeight {
       padding: 20px;
-      height: calc(94%);
+      height: calc(92%);
     }
     .smallImg {
       height: calc(80%);
@@ -24,6 +24,8 @@
     h4 {
       font-weight: 200;
       font-size: 160%;
+      text-rendering: optimizeLegibility; 
+      -webkit-font-smoothing: antialiased;
     }
     a {
       text-decoration: none;
@@ -38,6 +40,8 @@
       color: #fff;
       margin: 0;
       font-weight: 200;
+      text-rendering: optimizeLegibility; 
+      -webkit-font-smoothing: antialiased;
     }
     paper-button:hover {
       background: rgba(0,0,0,.2);
@@ -101,8 +105,15 @@
             hreflink: {
               type: String
             }
+          },
+          ready: function() {
+            if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+              $(".smallImg").hide();
+              $(".fullHeight").css("paddingTop", "0px");
+            }
           }
       });
+
   </script>
 </dom-module>
 
