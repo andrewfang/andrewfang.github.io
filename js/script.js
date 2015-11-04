@@ -47,11 +47,11 @@ function typeOut(idx) {
 $(window).scroll(function() {
   if (window.pageYOffset > $("#splash").height()) {
     $(".navbar").addClass("navbar-fixed-top");
-    $("#iOSProjects").addClass("offsetNav");
+    $("#iosTitle").addClass("offsetNav");
     $(".navbarinfo").css("marginRight", "14px");
   } else {
     $(".navbar").removeClass("navbar-fixed-top");
-    $("#iOSProjects").removeClass("offsetNav");
+    $("#iosTitle").removeClass("offsetNav");
     $(".navbarinfo").css("marginRight", "-1px");
   }
 });
