@@ -1,52 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <title>Around for iOS</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href="around.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        background-color: #673AB7;
-      }
-      h1, h2, h3, h4, h5, p, a {
-        font-family: "Open Sans", "Helvetica Neue", sans-serif;
-        font-weight: 300;
-        color: #fff;
-      }
-      #logo {
-        height: 150px;
-      }
-      .seventy {
-        height: calc(70%);
-      }
-      .fifty {
-        height: calc(50%);
-      }
-      .thirty {
-        height: calc(30%);
-      }
-      .containerCentering {
-        position: relative;
-        height: calc(100%);
-      }
-      .centerCenter {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="containerCentering">
-      <div class="centerCenter" align="center">
-        <img id="logo" src="around.png" />
-        <h1>Coming Soon...</h1>
-      </div>
-    </div>
-  </body>
+	<head>
+		<title>Around by Andrew Fang</title>
+		<meta charset="utf-8" />
+    <meta name="author" content="Andrew Fang">
+    <meta name="description" content="Around is an iOS Application built by Andrew Fang.">
+    <link rel="shortcut icon" href="images/aroundPurple.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Around</a></h1>
+						<nav>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+              <div class="logo"><img style="height:80px" src="images/around.png" /></div>
+							<h2>Around</h2>
+              <p>Discover and Create New Moments Around You</p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<span class="image"><img src="images/discover.png" alt="" /></span>
+									<div class="content">
+										<h2 class="major">Discover</h2>
+										<p>Explore the area around you through Instagram photos.</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<span class="image"><img src="images/draw.png" alt="" /></span>
+									<div class="content">
+										<h2 class="major">Create</h2>
+										<p>Take and draw on new photos using a wide variety of brush colors. Save or share on your favorite social media accounts.</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<span class="image"><img src="images/personalize.png" alt="" /></span>
+									<div class="content">
+										<h2 class="major">Personalize</h2>
+										<p>Log onto Instagram for a personalized experience.</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Built for iOS</h2>
+									<p>Around was built purely for learning purposes, so it include as many iOS APIs as I could shove in. Camera, Gestures, Motions, 3DTouch, MapKit, Location, Drawing, Animations, they're all here! It will soon be on the App Store (hopefully). If you have an Apple Watch, a companion app is also available.</p>
+									<section class="features">
+										<article>
+											<span class="image"><img src="images/feed.png" alt="" /></span>
+											<h3 class="major">Discover - Feed</h3>
+                      <p>Scroll to see beautiful pictures taken around you in a simplified, clutter free layout. Or explore the area through a map view with pins indicating photo events.</p>
+										</article>
+										<article>
+											<span class="image"><img src="images/photo.png" alt="" /></span>
+											<h3 class="major">Discover - Photo</h3>
+											<p>Pinch, pan, force touch, or tilt your device to interact with the photo. View the post in a custom webview, or share it with your social network!</p>
+										</article>
+										<article>
+											<span class="image"><img src="images/camera.png" alt="" /></span>
+											<h3 class="major">Create - Photo</h3>
+											<p>Take a photo using either camera on your device. Share it through your favorite apps, save the photo into your camera roll, or shake the device to take a new photo.</p>
+										</article>
+										<article>
+											<span class="image"><img src="images/drawScreen.png" alt="" /></span>
+											<h3 class="major">Create - Draw</h3>
+											<p>Before you share, you can draw on your photo using brushes of all different colors. Undo any color changes or brush marks with the tap of a button.</p>
+										</article>
+										<article>
+											<span class="image"><img src="images/location.png" alt="" /></span>
+											<h3 class="major">Explore</h3>
+											<p>After you're done exploring your area, explore the world. Tap the current location to bring up a popover and long press on the map to choose a new location.</p>
+										</article>
+										<article>
+											<span class="image"><img src="images/watch.png" alt="" /></span>
+											<h3 class="major">Watch</h3>
+											<p>Get a quick glimpse of images posted around you on your Apple Watch. Because why not.</p>
+										</article>
+									</section>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+            <div class="inner">
+              <a href="http://goo.gl/forms/Z8vF0YUJ4C" class="button special icon fa-envelope">Sign up for Beta access</a>
+							<ul class="copyright">
+                <li>&copy; <a href="http://andrewbfang.com">Andrew Fang</a></li><li>Layout: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
