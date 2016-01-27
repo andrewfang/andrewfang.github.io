@@ -14,11 +14,17 @@
     flex-direction: column;
     justify-content: center;;
   }
+  .imgContainer {
+    height: 50%;
+  }
   img {
+    height: 100%;
+  }
+  /*img {
     height: 45%;
     margin-top: 5px;
     margin-bottom: 5px;
-  }
+  }*/
   h4 {
     font-weight: 200;
     margin-bottom: 0;
@@ -46,7 +52,9 @@
     <div class="projectItem" align="center">
       <h4 style$="color:{{color}}" >{{projectname}}</h4>
       <p id="tagline" style$="color:{{color}}" >{{tagline}}</p>
-        <img class="img-rounded" src="{{imageurl}}" />
+        <div class="imgContainer">
+          <img class="img-rounded" src="{{imageurl}}" />
+        </div>
       <p id="platform" style$="color:{{color}}">{{platform}}</p>
     </div>
   </a>

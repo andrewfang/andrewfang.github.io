@@ -42,7 +42,7 @@ h6 {
   text-decoration: none;
 }
 #splash {
-  height: calc(100%);
+  height: 100%;
   background-image: url("../assets/desk.jpg");
   background-size: cover;
   background-position: center center;
@@ -60,7 +60,7 @@ h6 {
 }
 .navbar-brand {
   padding: 10px;
-  height: calc(100%);
+  height: 100%;
 }
 .navbarname {
   color: #fff !important;
@@ -85,7 +85,7 @@ h6 {
   outline: none;
 }
 #navbarIcon {
-  height: calc(100%);
+  height: 100%;
 }
 
 /* Modal */
@@ -99,7 +99,7 @@ h6 {
   background-color: rgba(255,255,255,.9) !important;
 }
 .modalProfile {
-  height: calc(30%);
+  height: 30%;
 }
 .close:focus {
   outline: none;
@@ -112,8 +112,8 @@ h6 {
 }
 .modalhr {
   border-color: #cdcdcd;
-  margin-left: calc(30%);
-  margin-right: calc(30%);
+  margin-left: 30%;
+  margin-right: 30%;
 }
 .doBlur {
   -webkit-filter: blur(1px);
@@ -140,26 +140,26 @@ body {
   flex-direction: column;
 }
 .fullHeight {
-  height: calc(100%);
+  height: 100%;
 }
 .halfSection {
-  height: calc(50%);
+  height: 50%;
 }
 .fortySection {
-  height: calc(40%);
+  height: 40%;
 }
 .quarterSection {
-  height: calc(25%);
+  height: 25%;
 }
 .fifthSection {
-  height: calc(20%);
+  height: 20%;
 }
 .imgThumb {
-  width: calc(50%);
-  height: calc(50%);
+  width: 50%;
+  height: 50%;
 }
 .project {
-  height: calc(50%);
+  height: 50%;
   padding: 20px 0;
 }
 .project:hover {
@@ -186,14 +186,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(50%);
+  width: 50%;
   text-align: center;
   color: #fff;
   font-weight: 200;
 }
 #foodFind {
   background-image: url("../assets/nutrigood.png");
-  width: calc(50%);
+  width: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -201,13 +201,13 @@ body {
 .projectTitle {
   color: #fff;
   background: rgba(0, 0, 0, .9);
-  width: calc(100%);
+  width: 100%;
   margin: 0;
 }
 
 /* ABOUT */
 #about {
-  height: calc(100%);
+  height: 100%;
   background-attachment: fixed;
   background-image: url("../assets/andrewfang.jpg");
   background-size: cover;
@@ -323,7 +323,7 @@ body {
   background-color: transparent;
 }
 project-carousel {
-  height: calc(40%);
+  height: 40%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
