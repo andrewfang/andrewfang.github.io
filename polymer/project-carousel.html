@@ -1,0 +1,75 @@
+<link rel="import" herf="../plugins/bower_components/polymer/polymer.html">
+<link rel="import" href="../plugins/bower_components/paper-button/paper-button.html">
+<meta name="author" content="Andrew Fang">
+
+<dom-module id="project-carousel">
+  <style>
+    .projectItem {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .imgContainer {
+      height: 50%;
+    }
+    img {
+      width: 50%;
+    }
+    h4 {
+      font-weight: 200;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    #type {
+      margin-top: 10px;
+      font-style: oblique;
+      font-weight: 200;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+  <template>
+    <a href$="{{hreflink}}">
+      <div class="projectItem" align="center">
+        <h4 style$="color:{{color}}" >{{projectname}}</h4>
+        <p id="type" style$="color:{{color}}" >{{type}}</p>
+        <div class="imgContainer">
+          <img class="img-rounded" src="{{imageurl}}" />
+        </div>
+      </div>
+    </a>
+  </template>
+ <script>
+      Polymer({
+          is: 'project-carousel',
+          properties: {
+            projectname: {
+              type: String
+            },
+            tagline: {
+              type: String
+            },
+            imageurl: {
+              type: String
+            },
+            hreflink: {
+              type: String
+            },
+            type: {
+              type: String
+            }
+          },
+          compute: function(imageurl) {
+            return 'background-image: url(' + imageurl + ');';
+          }
+      });
+  </script>
+</dom-module>

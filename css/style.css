@@ -1,6 +1,6 @@
 body {
   background-color: #6f7577;
-  background-image: url("../assets/andrewfang.jpg");
+  background-image: url("https://source.unsplash.com/random");
   background-attachment: fixed;
   background-size: cover;
   background-position: center right;
@@ -8,13 +8,14 @@ body {
 }
 h1, h2, h3, h4, h5, h6{
   font-weight: 100;
-  font-family: "acumin-pro", "Helvetica Neue", sans-serif;
-  text-rendering: optimizeLegibility; 
+  font-family: "Helvetica Neue", sans-serif;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 p {
-  text-rendering: optimizeLegibility; 
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", sans-serif;
 }
 h1, h2 {
   color: #fff;
@@ -78,7 +79,7 @@ h6 {
   transition-property: color;
 }
 .navbarinfo:hover {
-  color: #cdcdcd !important;
+  color: #EEC42C !important;
 }
 #infoa:focus {
   outline: none;
@@ -129,6 +130,10 @@ body {
 /* Project */
 
 .flexCenter {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,18 +159,29 @@ body {
   height: calc(50%);
 }
 .project {
-  height: calc(100%);
+  height: calc(50%);
   padding: 20px 0;
+}
+.project:hover {
+  opacity: 0.9;
 }
 .projectSmall {
   padding: 30px 0;
 }
 .flexAcross {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .flexDown{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,13 +213,17 @@ body {
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
   #about {
     background-attachment: scroll;
@@ -238,6 +258,10 @@ body {
 .aboutmelink:hover{
 }
 .aboutitem {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -291,4 +315,62 @@ body {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+/* Carousel */
+#projects {
+  background-color: transparent;
+}
+project-carousel {
+  height: calc(40%);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#projectTitle {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+#projectTitle i {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.projectJump {
+  cursor: pointer;
+}
+.projectJump:hover {
+  color: #EEC42C;
+}
+.owl-item > div:hover {
+  opacity: 0.9;
+}
+.owl-controls {
+  margin-top: 0 !important;
+  background-attachment: fixed;
+  background-image: url("../assets/andrewfang.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1em) {
+  .smallProject {
+    display: none;
+  }
+  .smallProjectNormalVersion {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .smallProject {
+    display: block;
+  }
+  .smallProjectNormalVersion {
+    display: none;
+  }
 }

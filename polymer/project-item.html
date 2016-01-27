@@ -6,7 +6,7 @@
   <style>
     .fullHeight {
       padding: 20px;
-      height: calc(93%);
+      height: calc(100%);
     }
     .flexAcross {
       display: flex;
@@ -31,9 +31,10 @@
     }
     h4 {
       font-weight: 200;
-      font-size: 160%;
-      text-rendering: optimizeLegibility; 
+      font-size: 2.5em;
+      text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
+      margin-bottom: 0;
     }
     a {
       text-decoration: none;
@@ -41,64 +42,28 @@
     a:hover {
       text-decoration: none;
     }
-    paper-button {
-      background: rgba(0,0,0,.1);
-      width: calc(100%);
-      text-transform: none;
-      color: #fff;
-      margin: 0;
+    #tagline {
       font-weight: 200;
-      text-rendering: optimizeLegibility; 
-      -webkit-font-smoothing: antialiased;
+      margin-bottom: 0px;
+      font-size: 1.5em;
     }
-    paper-button:hover {
-      background: rgba(0,0,0,.2);
-    }
-    /* Underline From Center */
-    .hvr-underline-from-center {
-      display: inline-block;
-      vertical-align: middle;
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0);
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      -moz-osx-font-smoothing: grayscale;
-      position: relative;
-      overflow: hidden;
-    }
-    .hvr-underline-from-center:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 50%;
-      right: 50%;
-      bottom: 0;
-      background: rgba(255,255,255,.5);
-      height: 4px;
-      -webkit-transition-property: left, right;
-      transition-property: left, right;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-      left: 0;
-      right: 0;
+    #platform {
+      font-weight: 200;
+      font-style: oblique;
+      opacity: 0.9;
     }
   </style>
   <template>
+  <a href$="{{hreflink}}">
   <div class="flexAcross fullHeight">
     <div class="flexDown imageLogo" style$='{{computebackground}}'>
     </div>
     <div class="flexDown">
-      <h4>{{projectname}}</h4>
-      <p>{{tagline}}</p>
+      <h4 style$="color:{{color}}" >{{projectname}}</h4>
+      <p id="tagline" style$="color:{{color}}" >{{tagline}}</p>
+      <p id="platform" style$="color:{{color}}" >{{platform}}</p>
     </div>
   </div>
-  <a href$="{{hreflink}}">
-    <paper-button class="hvr-underline-from-center">{{buttontitle}}</paper-button>
   </a>
   </template>
  <script>
@@ -107,10 +72,10 @@
           properties: {
             projectname: {
               type: String
-            }, 
+            },
             tagline: {
               type: String
-            }, 
+            },
             buttontitle: {
               type: String
             },
@@ -120,9 +85,15 @@
             hreflink: {
               type: String
             },
-            computebackground: { 
-             type: String, 
-             computed: 'compute(imageurl)' 
+            platform: {
+              type: String
+            },
+            color: {
+              type: String
+            },
+            computebackground: {
+             type: String,
+             computed: 'compute(imageurl)'
             }
           },
           compute: function(imageurl) {
@@ -131,4 +102,3 @@
       });
   </script>
 </dom-module>
-

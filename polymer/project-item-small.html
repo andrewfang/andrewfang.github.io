@@ -3,99 +3,61 @@
 <meta name="author" content="Andrew Fang">
 
 <dom-module id="project-item-small">
-  <style>
-    .fullHeight {
-      padding: 20px;
-      height: calc(92%);
-    }
-    .smallImg {
-      height: calc(80%);
-    }
-    .flexDown{
-      width: calc(100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-      font-weight: 200;
-    }
-    h4 {
-      font-weight: 200;
-      font-size: 160%;
-      text-rendering: optimizeLegibility; 
-      -webkit-font-smoothing: antialiased;
-    }
-    a {
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: none;
-    }
-    paper-button {
-      background: rgba(0,0,0,.1);
-      width: calc(100%);
-      text-transform: none;
-      color: #fff;
-      margin: 0;
-      font-weight: 200;
-      text-rendering: optimizeLegibility; 
-      -webkit-font-smoothing: antialiased;
-    }
-    paper-button:hover {
-      background: rgba(0,0,0,.2);
-    }
-    /* Underline From Center */
-    .hvr-underline-from-center {
-      display: inline-block;
-      vertical-align: middle;
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0);
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      -moz-osx-font-smoothing: grayscale;
-      position: relative;
-      overflow: hidden;
-    }
-    .hvr-underline-from-center:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 50%;
-      right: 50%;
-      bottom: 0;
-      background: rgba(255,255,255,.5);
-      height: 4px;
-      -webkit-transition-property: left, right;
-      transition-property: left, right;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-    }
-    .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-      left: 0;
-      right: 0;
-    }
-  </style>
-  <template>
-  <div class="flexDown fullHeight">
-    <img src="{{imageurl}}" class="img-rounded smallImg" />
-    <h4>{{projectname}}</h4>
-  </div>
+<style>
+  .projectItem {
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+  }
+  img {
+    height: 45%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  h4 {
+    font-weight: 200;
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  #tagline {
+    font-weight: 200;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+  }
+  #platform {
+    font-weight: 200;
+    font-style: oblique;
+    opacity: 0.9;
+  }
+</style>
+<template>
   <a href$="{{hreflink}}">
-    <paper-button class="hvr-underline-from-center">{{buttontitle}}</paper-button>
+    <div class="projectItem" align="center">
+      <h4 style$="color:{{color}}" >{{projectname}}</h4>
+      <p id="tagline" style$="color:{{color}}" >{{tagline}}</p>
+        <img class="img-rounded" src="{{imageurl}}" />
+      <p id="platform" style$="color:{{color}}">{{platform}}</p>
+    </div>
   </a>
-  </template>
+</template>
  <script>
       Polymer({
           is: 'project-item-small',
           properties: {
             projectname: {
               type: String
-            }, 
+            },
             buttontitle: {
               type: String
             },
@@ -104,16 +66,17 @@
             },
             hreflink: {
               type: String
+            },
+            tagline: {
+              type: String
+            },
+            platform: {
+              type:String
             }
           },
           ready: function() {
-            if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-              $(".smallImg").hide();
-              $(".fullHeight").css("paddingTop", "0px");
-            }
           }
       });
 
   </script>
 </dom-module>
-
