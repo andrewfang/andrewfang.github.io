@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>body {transition: opacity ease-in 0.2s; } 
-body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+<style>body {transition: opacity ease-in 0.2s; }
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; }
 </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes">
@@ -14,7 +14,10 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
   <title>Andrew Fang</title>
   <link rel="shortcut icon" href="./mobile/images/andrewLogoGold.png" />
 
-  <script src="../mobile/bower_components/webcomponentsjs/webcomponents.js"></script>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/grids-responsive-min.css">
+
+  <script src="./plugins/bower_components/webcomponentsjs/webcomponents.js"></script>
   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
   <link rel="import" href="https://www.polymer-project.org/0.5/components/core-scroll-header-panel/core-scroll-header-panel.html">
   <link rel="import" href="https://www.polymer-project.org/0.5/components/core-scroll-header-panel/demos/sample-content.html">
@@ -26,9 +29,9 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
   <link rel="import" href="https://www.polymer-project.org/0.5/components/font-roboto/roboto.html">
   <link rel="import" href="./mobile/elements/project-item.html" >
   <link rel="import" href="./mobile/elements/experience-item.html" >
+  <!-- <link rel="import" href="./polymer/project-item.html" > -->
 
   <style shim-shadowdom="">
-
     html, body {
       height: 100%;
     }
@@ -103,6 +106,9 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
       font-family: "Helvetica-Neue", sans-serif;
       font-weight: 300;
     }
+    .projectCard {
+      height: 200px;
+    }
     .iconA {
       color: #000;
     }
@@ -169,30 +175,30 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
       <paper-shadow class="card">
         <h2>Past Experience</h2>
-        <experience-item 
-          expname="UCB CompSci 160" 
-          hreflink="http://pact.eecs.berkeley.edu/cs160/" 
-          iconlink="../mobile/images/berkeleyLogo.gif" 
+        <experience-item
+          expname="UCB CompSci 160"
+          hreflink="http://pact.eecs.berkeley.edu/cs160/"
+          iconlink="../mobile/images/berkeleyLogo.gif"
           position="Student Instructor"></experience-item>
-        <experience-item 
-          expname="LinkedIn Corp." 
-          hreflink="http://linkedin.com" 
-          iconlink="../mobile/images/linkedin.png" 
+        <experience-item
+          expname="LinkedIn Corp."
+          hreflink="http://linkedin.com"
+          iconlink="../mobile/images/linkedin.png"
           position="iOS Intern"></experience-item>
-        <experience-mobile/item 
-          expname="Box Inc." 
-          hreflink="http://box.com" 
-          iconlink="../mobile/images/box.png" 
+        <experience-mobile/item
+          expname="Box Inc."
+          hreflink="http://box.com"
+          iconlink="../mobile/images/box.png"
           position="Android Intern"></experience-item>
-        <experience-item 
-          expname="Symantec Corp." 
-          hreflink="http://symantec.com" 
-          iconlink="../mobile/images/symantec.png" 
+        <experience-item
+          expname="Symantec Corp."
+          hreflink="http://symantec.com"
+          iconlink="../mobile/images/symantec.png"
           position="Software Eng. Intern"></experience-item>
-        <experience-item 
-          expname="Google Inc." 
-          hreflink="http://googleforstudents.blogspot.com/2013/02/google-android-camp-for-current.html" 
-          iconlink="../mobile/images/google.png" 
+        <experience-item
+          expname="Google Inc."
+          hreflink="http://googleforstudents.blogspot.com/2013/02/google-android-camp-for-current.html"
+          iconlink="../mobile/images/google.png"
           position="Android Camp"></experience-item>
 
       </paper-shadow>
@@ -237,9 +243,9 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
 
     <div class="content" id="projects">
-      <paper-shadow class="card">
-        <h2>Technical Fluency</h2>
-        <div align="center">
+      <paper-shadow class="card" align="center">
+        <h2>Projects</h2>
+        <!-- <div align="center">
           <core-image class="techIcon" src="https://cdn3.iconfinder.com/data/icons/picons-social/57/16-apple-48.png"></core-image>
           <core-image class="techIcon" name="Java" src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/1416364765_java_coffee_x_cup_application-2-48.png"></core-image>
           <core-image class="techIcon" src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/Python_logo-48.png"></core-image>
@@ -248,91 +254,112 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
           <core-image class="techIcon" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-48.png"></core-image>
           <core-image class="techIcon" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_polymer_48px-48.png"></core-image>
           <core-image class="techIcon" src="https://cdn1.iconfinder.com/data/icons/simple-icons/48/heroku-48-black.png"></core-image>
-        </div>
+        </div> -->
       </paper-shadow>
 
-      <paper-shadow class="card">
-        <h2>Web</h2>
-        <project-item 
-          projectname="GroupIt" 
-          desc="sorts students into groups" 
-          link="http://groupit.pythonanywhere.com" 
-          iconlink="../mobile/images/groupit.png">
-        </project-item>
-        <project-item 
-          projectname="ConsoleJSON" 
-          desc="customizable tool for JSON visualization" 
-          link="http://consolejson.com" 
-          iconlink="../mobile/images/consoleJSON.png">
-        </project-item>
-        <project-item 
-          projectname="Proximity App" 
-          desc="locating and chatting with friends using Bluetooth" 
-          link="http://proximity-app.com" 
-          iconlink="../mobile/images/proximity.png">
-        </project-item>
-        <project-item 
-          projectname="This Website" 
-          desc="check out the desktop version too!" 
-          link="http://andrewbfang.com" 
-          iconlink="../mobile/images/andrewLogoGold.png">
-        </project-item>
-      </paper-shadow>
+      <div class="pure-u-1 pure-u-sm-1 pure-u-md-3-5 pure-u-lg-9-24 project" style="background-color: #8e44ad">
+        <project-item
+        projectname="Shortcuts"
+        tagline="3D Touch"
+        imageurl="../assets/ios/shortcut.png"
+        hreflink="./shortcuts/"
+        platform="iOS - Swift"
+        color="#fff"
+        ></project-item>
+      </div>
+      <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-2-5 pure-u-lg-6-24 project" style="background-color: #37474f">
+        <project-item class="smallProjectNormalVersion"
+        projectname="GroupIt"
+        tagline="Random Group Generator"
+        imageurl="./assets/web/groupit.png"
+        hreflink="http://groupit.pythonanywhere.com"
+        platform="Web - Flask, HTML, CSS, Javascript"
+        color="#fff"
+        ></project-item>
+      </div>
+      <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-9-24 pure-u-lg-9-24 project" style="background-color: #673AB7">
+        <project-item
+        projectname="Around"
+        tagline="Discover Moments"
+        imageurl="../assets/ios/around.png"
+        hreflink="./around/"
+        platform="iOS, WatchOS - Swift"
+        color="#fff"
+        ></project-item>
+      </div>
+      <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-6-24 pure-u-lg-5-24 project" style="background-color: #c0392b">
+        <project-item-small class="smallProject"
+        projectname="SKRT"
+        tagline="Moving Skirt"
+        imageurl="../assets/arduino/skrt.png"
+        hreflink="http://www.hackster.io/team-skrt/skrt"
+        platform="Arduino"
+        color="#fff"
+        ></project-item-small>
+        <project-item class="smallProjectNormalVersion"
+        projectname="SKRT"
+        tagline="Moving Skirt"
+        imageurl="../assets/arduino/skrt.png"
+        hreflink="http://www.hackster.io/team-skrt/skrt"
+        platform="Arduino"
+        color="#fff"
+        ></project-item>
+      </div>
+      <div class="pure-u-1 pure-u-sm-1-2 pure-u-md-9-24 pure-u-lg-6-24 project" style="background-color: #2980b9">
+        <project-item-small class="smallProject"
+        projectname="ConsoleJSON"
+        tagline="Pretty JSON Printing"
+        imageurl="../assets/web/consoleJSON.png"
+        hreflink="http://www.consolejson.co"
+        platform= "Web - HTML, CSS, Javascript"
+        color="#fff"
+        ></project-item-small>
+        <project-item class="smallProjectNormalVersion"
+        projectname="ConsoleJSON"
+        tagline="Pretty JSON Printing"
+        imageurl="../assets/web/consoleJSON.png"
+        hreflink="http://www.consolejson.co"
+        platform= "Web - HTML, CSS, Javascript"
+        color="#fff"
+        ></project-item>
+      </div>
+      <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-8-24 project" style="background-color: #27ae60">
+        <project-item
+        projectname="Nutri-GOOD"
+        tagline="Stay Healthy"
+        imageurl="../assets/ios/nutrigood.png"
+        hreflink="http://nutri-good.stanford.edu"
+        platform="iOS - Swift"
+        color="#fff"
+        ></project-item>
+      </div>
 
-      <paper-shadow class="card">
-        <h2>iOS</h2>
-        <project-item 
-          projectname="FoodFinder" 
-          desc="random restaurant generator" 
-          link="./foodfinder/index.html" 
-          iconlink="../mobile/images/FoodFinder.png">
-        </project-item>
-        <project-item 
-          projectname="Nutri-GOOD" 
-          desc="dietary tracking" 
-          link="http://web.stanford.edu/class/cs147/projects/health/nutri-good" 
-          iconlink="../mobile/images/nutrigood.png">
-        </project-item>
-        <project-item 
-          projectname="iTrack Easy" 
-          desc="bluetooth item finder" 
-          link="https://itunes.apple.com/us/app/itrack-easy-easily-find-your/id1009170318?mt=8" 
-          iconlink="http://a5.mzstatic.com/us/r30/Purple3/v4/29/82/76/2982769c-a250-621f-be61-f7253afc2a8d/icon175x175.png">
-        </project-item>
-      </paper-shadow>
-      <paper-shadow class="card">
-        <h2>Android</h2>
-        <project-item 
-          projectname="Clock Widget" 
-          desc="over 6400 installations" 
-          link="https://play.google.com/store/apps/details?id=com.andrewbfang.clockwidget" 
-          iconlink="./mobile/images/clock.png">
-        </project-item>
-        <project-item 
-          projectname="ClapCam" 
-          desc="clap activated camera" 
-          link="https://play.google.com/store/apps/details?id=com.andrewbfang.clapcam" 
-          iconlink="./mobile/images/clapCam.png">
-        </project-item>
-        <project-item 
-          projectname="Bop" 
-          desc="tap and shake to score" 
-          link="https://play.google.com/store/apps/details?id=com.andrewbfang.bop" 
-          iconlink="./mobile/images/bop.png">
-        </project-item>
-      </paper-shadow>
-
-      <paper-shadow class="card">
-        <h2>More</h2>
-        <p>Additional projects can be found on the desktop version of this website.</p>
-      </paper-shadow>
-
+      <div class="pure-u-1 project" style="background-color: #795548">
+        <project-item class="smallProjectNormalVersion"
+        projectname="Coin Count"
+        tagline="Read the paper"
+        imageurl="./assets/matlab/coin.jpg"
+        hreflink="http://andrewbfang.com/resources/coin.pdf"
+        platform = "Matlab - Machine Learning"
+        color="#fff"
+        ></project-item>
+      </div>
+      <div class="pure-u-1 project" style="background-color: #bdc3c7">
+        <project-item class="smallProjectNormalVersion"
+        projectname="Bop"
+        tagline="Swipe, Tap, Shake"
+        imageurl="./assets/android/bop.png"
+        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.bop"
+        platform = "Android"
+        color="#000"
+        ></project-item>
+      </div>
     </div>
   </core-scroll-header-panel>
 
   <script>
     $(document).ready(function() {
-      mainShowing = false;
+      mainShowing = true;
       toggleContent();
     });
     // custom transformation: scale header's title
