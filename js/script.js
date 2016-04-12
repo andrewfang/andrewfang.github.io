@@ -1,4 +1,8 @@
 $(document).ready(function(){
+  if (window.location.hash == "#resume") {
+    window.
+    window.location.href = "resources/Resume_AndrewFang.pdf"
+  }
   $(".typy").typed({
     strings: ["iOS", "Android", "Web"],
     typeSpeed: 50,
