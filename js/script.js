@@ -33,15 +33,15 @@ $(document).ready(function(){
   });
 
   $("#web").on("click", function() {
-    owl.jumpTo(15);
+    owl.jumpTo(16);
   });
 
   $("#matlab").on("click", function() {
-    owl.jumpTo(22);
+    owl.jumpTo(23);
   });
 
   $("#arduino").on("click", function() {
-    owl.jumpTo(31);
+    owl.jumpTo(32);
   });
 
 
