@@ -375,3 +375,19 @@ project-carousel {
     display: none;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #splash {
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 300%;
+  }
+  h2 {
+    font-size: 240%;
+  }
+  .halfSection {
+    display: none;
+  }
+}
