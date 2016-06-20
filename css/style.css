@@ -390,4 +390,12 @@ project-carousel {
   .halfSection {
     display: none;
   }
+  .owl-controls,
+  #about {
+    background-image: none;
+    background-color: #000;
+  }
+  project-carousel {
+    height: 60%;
+  }
 }
