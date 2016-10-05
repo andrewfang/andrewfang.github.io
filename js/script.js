@@ -29,19 +29,19 @@ $(document).ready(function(){
   });
 
   $("#android").on("click", function() {
-    owl.jumpTo(9);
+    owl.jumpTo(10);
   });
 
   $("#web").on("click", function() {
-    owl.jumpTo(16);
+    owl.jumpTo(17);
   });
 
   $("#matlab").on("click", function() {
-    owl.jumpTo(23);
+    owl.jumpTo(24);
   });
 
   $("#arduino").on("click", function() {
-    owl.jumpTo(32);
+    owl.jumpTo(33);
   });
 
 
