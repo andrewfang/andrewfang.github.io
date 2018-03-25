@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, p, a {
+  font-family: 'Raleway', 'Helvetica Neue';
+}
+
+h1, a {
+  color: #EEC42C;
+}
+
+a:hover {
+  color: #FFD53D;
+}
+
+.social {
+  margin-right: 20px;
+}
+
+#mainPage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #FFF8E1;
+}
+
+#logoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  max-width: 60%;
+  margin: auto;
+  margin-left: 37%;
+}
+
+/* CSS Breakpoints */
+
+#descriptionContent {
+  max-width: 70%;
+}
+
+h1, p {
+  text-align: center;
+}
+h1 {
+  font-size: 300%;
+}
+p {
+  font-size: 120%;
+}
+
+#descriptionContent {
+  margin: auto;
+}
+
+#logoContainer {
+  height: 40%;
+}
+
+#socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 48em) {
+
+  h1, p {
+    text-align: left;
+  }
+  p {
+    font-size: 100%;
+  }
+
+  #descriptionContent {
+    margin: 0;
+  }
+
+  #logoContainer {
+    height: auto;
+  }
+
+  #socialIcons {
+    justify-content: flex-start;
+  }
+
+}
