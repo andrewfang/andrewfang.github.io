@@ -34,7 +34,7 @@ a:hover {
 #logo {
   max-width: 60%;
   margin: auto;
-  margin-left: 37%;
+  margin-left: 30%;
 }
 
 /* CSS Breakpoints */
@@ -45,12 +45,6 @@ a:hover {
 
 h1, p {
   text-align: center;
-}
-h1 {
-  font-size: 300%;
-}
-p {
-  font-size: 120%;
 }
 
 #descriptionContent {
@@ -70,9 +64,6 @@ p {
 
   h1, p {
     text-align: left;
-  }
-  p {
-    font-size: 100%;
   }
 
   #descriptionContent {
