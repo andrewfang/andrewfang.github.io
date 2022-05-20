@@ -52,15 +52,17 @@ h6 {
   margin-top: 60px !important;
 }
 .navbar {
-   background-color: rgba(0,0,0,.9);
+   background-color: rgba(0,0,0);
    border: 0px solid;
    border-radius: 0px;
    height: 60px;
    margin-bottom: 0px;
 }
-.navbar-brand {
+.navbarIcon-container {
   padding: 10px;
   height: 100%;
+  display:flex;
+  justify-content: center;
 }
 .navbarname {
   color: #fff !important;
@@ -85,35 +87,7 @@ h6 {
   outline: none;
 }
 #navbarIcon {
-  height: 100%;
-}
-
-/* Modal */
-.modal-header {
-  border-bottom: 0px;
-}
-.modal-dialog {
-  background-color: rgba(0,0,0,0) !important;
-}
-.modal-content {
-  background-color: rgba(255,255,255,.9) !important;
-}
-.modalProfile {
-  height: 30%;
-}
-.close:focus {
-  outline: none;
-}
-.modal-body {
-  padding-bottom: 55px;
-}
-.modal-body h2{
-  color: #232323;
-}
-.modalhr {
-  border-color: #cdcdcd;
-  margin-left: 30%;
-  margin-right: 30%;
+  height: 80%;
 }
 .doBlur {
   -webkit-filter: blur(1px);
@@ -198,59 +172,35 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.projectTitle {
-  color: #fff;
-  background: rgba(0, 0, 0, .9);
-  width: 100%;
-  margin: 0;
-}
 
 /* ABOUT */
 #about {
-  height: 100%;
-  background-attachment: fixed;
-  background-image: url("../assets/andrewfang.jpg");
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  color: #fff;
+  background: rgba(0, 0, 0, .95);
+  width: 100%;
+  padding: 50px;
 }
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-  #about {
-    background-attachment: scroll;
-  }
+
+#aboutPhoto {
+  width: 50%;
+  margin-left: 25%;
+  clip-path: circle(50% at center);
+  margin-bottom: 25px;
 }
 
 #linkedin:hover{
   color: #0073b2;
 }
-#facebook:hover{
-  color: #465fa1;
-}
-#twitter:hover{
-  color:#00acee;
-}
 #github:hover{
   color: #657e8c;
-}
-#pinterest:hover{
-  color: #bd081c;
 }
 #email:hover{
   color: #cf2a1c;
 }
 .aboutmelink {
-  font-size: 120%;
+  font-size: 150%;
   color: #fff;
+  padding-right: 10px;
 }
 .abouth4 {
   margin-left: 5%;
@@ -351,11 +301,8 @@ project-carousel {
 }
 .owl-controls {
   margin-top: 0 !important;
-  background-attachment: fixed;
-  background-image: url("../assets/andrewfang.jpg");
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
+  background-color: #000;
+  opacity: 0.9;
 }
 
 @media screen and (min-width: 1em) {

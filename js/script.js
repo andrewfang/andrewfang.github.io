@@ -4,7 +4,7 @@ $(document).ready(function(){
     window.location.href = "resources/Resume_AndrewFang.pdf"
   }
   $(".typy").typed({
-    strings: ["iOS", "Android", "Web"],
+    strings: ["engineering manager.", "iOS engineer.", "software consultant."],
     typeSpeed: 50,
     backSpeed: 40,
     showCursor: false,
@@ -80,11 +80,11 @@ function typeOut(idx) {
 $(window).scroll(function() {
   if (window.pageYOffset > $("#splash").height()) {
     $(".navbar").addClass("navbar-fixed-top");
-    $("#iosTitle").addClass("offsetNav");
+    $("#about").addClass("offsetNav");
     $(".navbarinfo").css("marginRight", "14px");
   } else {
     $(".navbar").removeClass("navbar-fixed-top");
-    $("#iosTitle").removeClass("offsetNav");
+    $("#about").removeClass("offsetNav");
     $(".navbarinfo").css("marginRight", "-1px");
   }
 });

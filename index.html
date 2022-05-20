@@ -2,11 +2,11 @@
   <head>
     <!-- Meta -->
     <meta name="author" content="Andrew Fang">
-    <meta name="description" content="Andrew Fang is a Software Engineer at LinkedIn. He graduated with a MS from Stanford and a BA/BS from UC Berkeley. Find him as andrewfang on Github and Twitter">
+    <meta name="description" content="Andrew Fang is a Software Engineering Manager at LinkedIn. He graduated with a MS from Stanford and a BA/BS from UC Berkeley. Find him as andrewfang on Github and Twitter">
     <meta property="og:image" content="/assets/Andrew-Fang-profile.png" />
     <meta property="og:image" content="/assets/andrewfang.jpg" />
     <meta property="og:title" content="Andrew Fang" />
-    <meta property="og:description" content="Andrew Fang is a Software Engineer at LinkedIn. He graduated with a MS from Stanford and a BA/BS from UC Berkeley. Find him as andrewfang on Github and Twitter" />
+    <meta property="og:description" content="Andrew Fang is a Software Engineering Manager at LinkedIn. He graduated with a MS from Stanford and a BA/BS from UC Berkeley. Find him as andrewfang on Github and Twitter" />
     <link rel="image_src" href="/assets/Andrew-Fang-profile.png" />
     <link rel="image_src" href="/assets/andrewfang.jpg" />
     <meta charset='utf-8'>
@@ -48,55 +48,37 @@
 
   <div id="splash" class="flexCenter toBlur">
     <h1>I am Andrew Fang.</h1>
-    <h2> I design and build <span class="typy"></span> apps.</h2>
+    <h2>I am a <span class="typy"></span></h2>
   </div>
 
   <!-- Navbar -->
   <nav class="navbar navbar-default toBlur">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#" data-toggle="modal" data-target="#infoModal">
-          <img id="navbarIcon" src="assets/andrewLogoGold.png" alt="Andrew Fang Logo">
-        </a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <p class="navbar-text navbarname">Andrew Fang</p>
-        <a id="infoa" href="#" data-toggle="modal" data-target="#infoModal"><p class="navbar-text navbar-right navbarinfo hvr-pulse"><i class="fa fa-ellipsis-v"></i></p></a>
+      <div class="navbarIcon-container">
+        <img id="navbarIcon" src="assets/andrewLogoGold.png" alt="Andrew Fang Logo">
       </div>
     </div>
   </nav>
 
-<!-- Modal -->
-<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body">
-        <div align="center">
-          <h3>About Me</h3>
-          <img class="img-responsive img-circle modalProfile" src="/assets/Andrew-Fang-profile.png" alt="Andrew Fang"/>
-          <hr class="modalhr">
-          <h4>Andrew Fang</h4>
-          <hr class="modalhr">
-          <h5>Software Engineer @ LinkedIn</h5>
-          <h6>Engineer • Designer • Teacher</h6>
-          <h6><a href="#" class="noA" style="margin-right:5px">Stanford MS '16</a> 🎓 <a class="noa" href="https://cal.berkeley.edu/andrewfang">Berkeley BA+BS '15</a></h6>
-
-        </div>
+  <!-- About -->
+  <div class="pure-g" id="about">
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-3 pure-u-lg-1-3">
+      <img id="aboutPhoto" src="assets/andrewfang.jpg" />
+    </div>
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-2-3 pure-u-lg-2-3" id="aboutContent">
+      <p>I am a manager of software engineering at LinkedIn, formerly a technical lead for several iOS products at LinkedIn and graduate student instructor for the iOS course at Stanford.</p>
+      <p>Check out my projects on Github and below. Want to chat or hire me as a consultant on a project you're working on? Reach out via LinkedIn or send me an email!</p>
+      <div>
+        <a class="aboutmelink noA" id="github" href="https://github.com/andrewfang"><i class="fa fa-github"></i></a>
+        <a class="aboutmelink noA" id="linkedIn" href="https://www.linkedin.com/in/andrewbfang"><i class="fa fa-linkedin"></i></a>
+        <a class="aboutmelink noA" id="email" href="mailto:contact@andrewbfang.com"><i class="fa fa-envelope"></i></a>
       </div>
     </div>
-  </div>
-</div>
-
-  <!-- Projects -->
-  <div class="fifthSection flexCenter projectTitle" id="iosTitle">
-    <h3>Projects</h3>
+    
   </div>
 
   <div id="myProjects" class="pure-g">
-    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1 pure-u-lg-1-2 project" style="background-color: #F76B1B">
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2 project" style="background-color: #F76B1B">
       <project-item
       projectname="Memories"
       tagline="Photo Widget for iOS 14"
@@ -106,7 +88,7 @@
       color="#fff"
       ></project-item>
     </div>
-    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1 pure-u-lg-1-2 project" style="background-color: #8e44ad">
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2 project" style="background-color: #8e44ad">
       <project-item
       projectname="Shortcuts"
       tagline="3D Touch"
@@ -116,17 +98,17 @@
       color="#fff"
       ></project-item>
     </div>
-    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1 pure-u-lg-1-2 project" style="background-color: #673AB7">
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2 project" style="background-color: #673AB7">
       <project-item
       projectname="Next Caltrain"
       tagline="RealTime Estimates"
       imageurl="../assets/ios/caltrainapp.png"
       hreflink="http://nextcaltrain.herokuapp.com"
-      platform="Web - NodeJS, iOS"
+      platform="iOS, Web (NodeJS)"
       color="#fff"
       ></project-item>
     </div>
-    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1 pure-u-lg-1-2 project" style="background-color: #fff">
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2 project" style="background-color: #fff">
       <project-item
       projectname="Mo"
       tagline="Stickers"
@@ -138,16 +120,6 @@
     </div>
   </div>
 
-  <div class="fifthSection flexCenter projectTitle">
-    <h3>More Projects</h3>
-    <div id="projectTitle">
-      <i id="apple" class="fa fa-apple fa-2x projectJump" title="iOS"></i>
-      <i id="android" class="fa fa-android fa-2x projectJump" title="android"></i>
-      <i id="web" class="fa fa-html5 fa-2x projectJump" title="web"></i>
-      <i id="matlab" class="fa fa-picture-o fa-2x projectJump" title="matlab"></i>
-      <i id="arduino" class="fa fa-usb fa-2x projectJump" title="arduino"></i>
-    </div>
-  </div>
   <div id="projects">
     <div id="carousel">
       <!-- iOS -->
@@ -169,11 +141,11 @@
         type="iOS - Swift"
         ></project-carousel>
       </div>
-      <div style="background: #fff">
+      <div style="background: #48C469">
         <project-carousel
         projectname="Buckets"
         imageurl="./assets/ios/buckets.png"
-        color="#000"
+        color="#fff"
         hreflink="https://vimeo.com/157857212"
         type="iOS - Swift, HTML/CSS"
         ></project-carousel>
@@ -268,7 +240,7 @@
         projectname="ClapCam"
         imageurl="./assets/android/clapcam.png"
         color="#ffffff"
-        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.clapcam"
+        hreflink="https://github.com/andrewfang/ClapCam"
         type="Android"
         ></project-carousel>
       </div>
@@ -277,7 +249,7 @@
         projectname="ClockWidget"
         imageurl="./assets/android/clock.png"
         color="#ffffff"
-        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.clockwidget"
+        hreflink="https://github.com/andrewfang/ClockWidget"
         type="Android"
         ></project-carousel>
       </div>
@@ -286,7 +258,7 @@
         projectname="Bop"
         imageurl="./assets/android/bop.png"
         color="#000"
-        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.bop"
+        hreflink="https://github.com/andrewfang/bop"
         type="Android"
         ></project-carousel>
       </div>
@@ -295,7 +267,7 @@
         projectname="GreyMeOut"
         imageurl="./assets/android/grey.png"
         color="#ffffff"
-        hreflink="https://play.google.com/store/apps/details?id=edu.berkeley.cs160.andrewfang.greymeout"
+        hreflink="https://github.com/andrewfang/GreyMeOut"
         type="Android"
         ></project-carousel>
       </div>
@@ -304,7 +276,7 @@
         projectname="ListenUp"
         imageurl="./assets/android/listenup.png"
         color="#ffffff"
-        hreflink="https://play.google.com/store/apps/details?id=edu.berkeley.cs160.jaguars.listenup"
+        hreflink="https://github.com/andrewfang/ListenUp"
         type="Android"
         ></project-carousel>
       </div>
@@ -313,16 +285,7 @@
         projectname="Magic8"
         imageurl="./assets/android/magic8.png"
         color="#ffffff"
-        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.magic8"
-        type="Android"
-        ></project-carousel>
-      </div>
-      <div style="background: #d35400">
-        <project-carousel
-        projectname="ClockWidgetPlus"
-        imageurl="./assets/android/clockplus.png"
-        color="#ffffff"
-        hreflink="https://play.google.com/store/apps/details?id=com.andrewbfang.clockwidgetplus"
+        hreflink="https://github.com/andrewfang/Magic8"
         type="Android"
         ></project-carousel>
       </div>
@@ -338,21 +301,12 @@
         type="Web - Angular, HTML, CSS, Javascript"
         ></project-carousel>
       </div>
-      <div style="background: #37474f">
-        <project-carousel
-        projectname="GroupIt"
-        imageurl="./assets/web/groupit.png"
-        color="#ffffff"
-        hreflink="http://groupit.pythonanywhere.com"
-        type="Web - Flask, HTML, CSS, Javascript"
-        ></project-carousel>
-      </div>
       <div style="background: #fd6051">
         <project-carousel
         projectname="RunSnap"
         imageurl="./assets/web/runsnap.png"
         color="#ffffff"
-        hreflink="https://web.stanford.edu/~abfang/247/runsnap/"
+        hreflink="https://github.com/andrewfang/runsnap"
         type="Web - HTML, CSS, Javascript"
         ></project-carousel>
       </div>
@@ -365,30 +319,12 @@
         type="Web - Polymer, HTML, CSS, Javascript"
         ></project-carousel>
       </div>
-      <div style="background: #7f8c8d">
-        <project-carousel
-        projectname="Proximity App"
-        imageurl="./assets/web/proximity.png"
-        color="#ffffff"
-        hreflink="http://www.proximity-app.com"
-        type="Web - HTML, CSS, Javascript"
-        ></project-carousel>
-      </div>
       <div style="background: #607d8b">
         <project-carousel
         projectname="Nvelop"
         imageurl="./assets/web/nvelop.png"
         color="#ffffff"
         hreflink="http://nvelop.herokuapp.com"
-        type="Web - HTML, CSS, Javascript"
-        ></project-carousel>
-      </div>
-      <div style="background: #2980b9">
-        <project-carousel
-        projectname="Angus Hildreth"
-        imageurl="./assets/web/lab.jpg"
-        color="#ffffff"
-        hreflink="http://www.angushildreth.com"
         type="Web - HTML, CSS, Javascript"
         ></project-carousel>
       </div>
@@ -418,7 +354,7 @@
         projectname="Face Morphing"
         imageurl="./assets/matlab/morph.gif"
         color="#ffffff"
-        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj5/cs194-fx/"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj5-morph/index.html"
         type="Image Processing - Matlab"
         ></project-carousel>
       </div>
@@ -427,7 +363,7 @@
         projectname="Domain Fusion"
         imageurl="./assets/matlab/gradientBlending.jpg"
         color="#ffffff"
-        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/projFinalUndergrad/cs194-fx/"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj4g-gradient/index.html"
         type="Image Processing - Matlab"
         ></project-carousel>
       </div>
@@ -436,7 +372,7 @@
         projectname="Image Blending"
         imageurl="./assets/matlab/blend.jpg"
         color="#ffffff"
-        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj3/cs194-fx/"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj3-frequencies/index.html"
         type="Image Processing - Matlab"
         ></project-carousel>
       </div>
@@ -445,7 +381,7 @@
         projectname="Prokudin-Gorskii"
         imageurl="./assets/matlab/color.jpg"
         color="#ffffff"
-        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj1/cs194-fx/fang_andrew_proj1/"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj1/index.html"
         type="Image Processing - Matlab"
         ></project-carousel>
       </div>
@@ -454,7 +390,7 @@
         projectname="Mosaicing"
         imageurl="./assets/matlab/mosaic.jpg"
         color="#ffffff"
-        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj7B/cs194-fx/"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj7-stitch/index.html"
         type="Image Processing - Matlab"
         ></project-carousel>
       </div>
@@ -463,7 +399,7 @@
         projectname="Lightfield"
         imageurl="./assets/matlab/lightfield.gif"
         color="#ffffff"
-        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj6/cs194-fx/"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj6-lightfield/index.html"
         type="Image Processing - Matlab"
         ></project-carousel>
       </div>
@@ -472,7 +408,7 @@
         projectname="Pinhole Camera"
         imageurl="./assets/matlab/pinhole.png"
         color="#ffffff"
-        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj2/cs194-fx/proj2/"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj2-camera/index.html"
         type="Image Processing - Matlab"
         ></project-carousel>
       </div>
@@ -481,7 +417,7 @@
         projectname="Seam Resizing"
         imageurl="./assets/matlab/seam.jpg"
         color="#000"
-        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/proj4/cs194-fx/"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj4-seamcarving/index.html"
         type="Image Processing - Matlab"
         ></project-carousel>
       </div>
@@ -490,7 +426,7 @@
         projectname="Fake Miniatures"
         imageurl="./assets/matlab/fakeMini.gif"
         color="#ffffff"
-        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/upload/files/projFinalUndergrad/cs194-fx/"
+        hreflink="http://graphics.cs.cmu.edu/courses/15-463/2010_spring/hw/proj2/index.html"
         type="Image Processing - Matlab"
         ></project-carousel>
       </div>
@@ -501,7 +437,7 @@
         projectname="SKRT"
         imageurl="./assets/arduino/skrt.png"
         color="#ffffff"
-        hreflink="http://www.hackster.io/team-skrt/skrt"
+        hreflink="https://www.hackster.io/team-skrt/skrt-e58330"
         type="Arduino, Laser Cut Acrylic"
         ></project-carousel>
       </div>
@@ -510,7 +446,7 @@
         projectname="Zenrack"
         imageurl="./assets/arduino/zenrack.png"
         color="#ffffff"
-        hreflink="http://www.hackster.io/zenrack/zenrack"
+        hreflink="https://www.hackster.io/team-zenrack/zenrack-16f803"
         type="Arduino, Laser Cut Acrylic"
         ></project-carousel>
       </div>
@@ -519,7 +455,7 @@
         projectname="Old Sole"
         imageurl="./assets/arduino/oldsole.png"
         color="#ffffff"
-        hreflink="http://www.hackster.io/old-sole/old-sole"
+        hreflink="https://www.hackster.io/old-sole/old-sole-d7e32c"
         type="Arduino, CC3000"
         ></project-carousel>
       </div>
@@ -535,18 +471,6 @@
 
 
     </div>
-  </div>
-
-  <!-- About -->
-  <div id="about" class="toBlur">
-    <img src="/assets/andrewfang.jpg" alt="Andrew Fang" style="display: none"/>
-<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="linkedIn" href="https://www.linkedin.com/in/andrewbfang"><i class="fa fa-linkedin"></i></a></h4><p class="aboutDesc" id="linkedInabout"></p></div>
-<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="github" href="https://github.com/andrewfang"><i class="fa fa-github"></i></a></h4><p class="aboutDesc" id="githubabout"></p></div>
-<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="facebook" href="https://www.facebook.com/andrewbfang"><i class="fa fa-facebook"></i></a></h4><p class="aboutDesc" id="facebookabout"></p></div>
-<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="twitter" href="https://twitter.com/andrewfang"><i class="fa fa-twitter"></i></a></h4><p class="aboutDesc" id="twitterabout"></p></div>
-<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="pinterest" href="https://www.pinterest.com/andrewbfang/"><i class="fa fa-pinterest"></i></a></h4><p class="aboutDesc" id="pinterestabout"></p></div>
-<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="instagram" href="https://instagram.com/andrewbfang/"><i class="fa fa-instagram"></i></a></h4><p class="aboutDesc" id="instagramabout"></p></div>
-<div class="aboutitem"><h4 class="abouth4 hvr-pulse"><a class="aboutmelink noA" id="email" href="mailto:me@andrewbfang.com"><i class="fa fa-envelope"></i></a></h4><p class="aboutDesc" id="emailabout"></p><div>
   </div>
 
   </body>
