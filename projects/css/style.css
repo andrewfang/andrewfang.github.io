@@ -1,0 +1,301 @@
+body {
+  background-color: #6f7577;
+  background-image: url("../../assets/desk.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: 100;
+  font-family: "Raleway", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Raleway", sans-serif;
+}
+h1, h2 {
+  color: #fff;
+}
+h1 {
+  font-size: 400%;
+}
+h3 {
+  font-size: 300%;
+}
+h4 {
+  font-size: 200%;
+}
+h5 {
+  font-size: 150%;
+}
+h6 {
+  font-size: 100%;
+}
+.noA {
+  color: #232323;
+}
+.noA:hover {
+  text-decoration: none;
+}
+
+.navbar {
+   background-color: rgba(0,0,0);
+   border: 0px solid;
+   border-radius: 0px;
+   height: 60px;
+   margin-bottom: 0px;
+}
+.navbarIcon-container {
+  padding: 10px;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+}
+.navbarname {
+  color: #fff !important;
+  font-size: 120%;
+  font-weight: 200;
+  margin-left: 0;
+}
+.navbarinfo {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  line-height: 65px;
+  font-size: 150%;
+  padding: 10px !important;
+  color: #fff !important;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+.navbarinfo:hover {
+  color: #EEC42C !important;
+}
+#infoa:focus {
+  outline: none;
+}
+#navbarIcon {
+  height: 80%;
+}
+.doBlur {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+body {
+  -webkit-transition: margin .5s linear;
+}
+.shrink {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Project */
+
+.flexCenter {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fullHeight {
+  height: 100%;
+}
+.halfSection {
+  height: 50%;
+}
+.fortySection {
+  height: 40%;
+}
+.quarterSection {
+  height: 25%;
+}
+.fifthSection {
+  height: 20%;
+}
+.imgThumb {
+  width: 50%;
+  height: 50%;
+}
+.project {
+  height: 50%;
+  padding: 20px 0;
+  opacity: 0.9;
+}
+.project:hover {
+  opacity: 1.0;
+}
+.projectSmall {
+  padding: 30px 0;
+}
+.flexAcross {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flexDown{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+}
+#foodFind {
+  background-image: url("../assets/nutrigood.png");
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* ABOUT */
+#about {
+  color: #fff;
+  background: rgba(0, 0, 0, .95);
+  width: 100%;
+  padding: 50px 20%;
+}
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* Carousel */
+#projects {
+  background-color: transparent;
+}
+project-carousel {
+  height: 40%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#projectTitle {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+#projectTitle i {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.projectJump {
+  cursor: pointer;
+}
+.projectJump:hover {
+  color: #EEC42C;
+}
+.owl-item > div {
+  opacity: 0.85;
+}
+.owl-item > div:hover {
+  opacity: 1.0;
+}
+.owl-controls {
+  margin-top: 0 !important;
+  background-color: #000;
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 1em) {
+  .smallProject {
+    display: none;
+  }
+  .smallProjectNormalVersion {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .smallProject {
+    display: block;
+  }
+  .smallProjectNormalVersion {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #splash {
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 300%;
+  }
+  h2 {
+    font-size: 240%;
+  }
+  .halfSection {
+    display: none;
+  }
+  .owl-controls,
+  #about {
+    background-image: none;
+    background-color: #000;
+  }
+  project-carousel {
+    height: 60%;
+  }
+}

@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Smashtag by Andrew Fang</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../assets/ios/smashtag.png" />
+    <style>
+      html {
+        background-color: #5b8cb2;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1, h2, h3, h4, h5, p, a {
+        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 300;
+        color: #fff;
+      }
+      .containerCentering {
+        position: relative;
+        height: calc(100%);
+      }
+      .centerCenter {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      video#bgvid { 
+          position: fixed;
+          top: 0%;
+          left: 50%;
+          width: auto;
+          height: calc(100%);
+          z-index: -100;
+          -webkit-transform: translateX(-50%) translateY(0%);
+          transform: translateX(-50%) translateY(0%);
+          background: url(smashtagScreenshot.png) no-repeat;
+          background-size: cover; 
+      }
+    </style>
+  </head>
+  <body>
+    <video id="bgvid" src="smashtag.mov" poster="smashtagScreenshot.png" muted loop autoplay> </video>
+    <div class="containerCentering">
+      <div class="centerCenter" align="center">
+        <h1>Smashtag</h1>
+      </div>
+    </div>
+  </body>
+</html>

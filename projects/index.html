@@ -1,0 +1,471 @@
+<html>
+  <head>
+    <!-- Meta -->
+    <meta name="author" content="Andrew Fang">
+    <meta name="description" content="These are projects made by Andrew Fang.">
+    <meta property="og:image" content="../assets/Andrew-Fang-profile.png" />
+    <meta property="og:image" content="../assets/andrewfang.jpg" />
+    <meta property="og:title" content="Andrew Fang" />
+    <meta property="og:description" content="These are projects made by Andrew Fang." />
+    <link rel="image_src" href="../assets/Andrew-Fang-profile.png" />
+    <link rel="image_src" href="../assets/andrewfang.jpg" />
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Andrew Fang</title>
+
+    <!-- config -->
+    <link rel="shortcut icon" href="../assets/andrewLogoGold.png" />
+    <link href='//fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+
+    <!-- Polymer -->
+    <script src="plugins/bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="plugins/bower_components/paper-button/paper-button.html">
+
+    <!-- Plugins -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,200' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="plugins/owl/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/owl/owl.theme.css">
+    <script src="plugins/owl/owl.carousel.js"></script>
+
+    <!-- Custom stuff -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="import" href="./polymer/project-item.html" >
+    <link rel="import" href="./polymer/project-item-small.html" >
+    <link rel="import" href="./polymer/project-carousel.html">
+
+  </head>
+  <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-default toBlur">
+    <div class="container-fluid">
+      <div class="navbarIcon-container">
+        <a href="../"> <img id="navbarIcon" src="../assets/andrewLogoGold.png" alt="Andrew Fang Logo"> </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pure-g" id="about">
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1 pure-u-lg-1" id="aboutContent">
+      <p>These days, I specalize in iOS development, but throughout my career, I've worked on projects across various platforms. Check them out, and support me by downloading the ones that are published to the App Store!</p>
+    </div>
+  </div>
+
+  <div id="myProjects" class="pure-g">
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2 project" style="background-color: #F76B1B">
+      <project-item
+      projectname="Memories"
+      tagline="Photo Widget for iOS 14"
+      imageurl="../assets/ios/memories.png"
+      hreflink="./memories/"
+      platform="iOS - SwiftUI"
+      color="#fff"
+      ></project-item>
+    </div>
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2 project" style="background-color: #8e44ad">
+      <project-item
+      projectname="Shortcuts"
+      tagline="3D Touch"
+      imageurl="../assets/ios/shortcut.png"
+      hreflink="./shortcuts/"
+      platform="iOS - Swift"
+      color="#fff"
+      ></project-item>
+    </div>
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2 project" style="background-color: #673AB7">
+      <project-item
+      projectname="Next Caltrain"
+      tagline="RealTime Estimates"
+      imageurl="../assets/ios/caltrainapp.png"
+      hreflink="http://nextcaltrain.herokuapp.com"
+      platform="iOS, Web (NodeJS)"
+      color="#fff"
+      ></project-item>
+    </div>
+    <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-2 project" style="background-color: #fff">
+      <project-item
+      projectname="Mo"
+      tagline="Stickers"
+      imageurl="../assets/ios/mo.gif"
+      hreflink="./mo/"
+      platform="iOS"
+      color="#000"
+      ></project-item>
+    </div>
+  </div>
+
+  <div id="projects">
+    <div id="carousel">
+      <!-- iOS -->
+      <div style="background: #49C1ED">
+        <project-carousel
+        projectname="Küdos"
+        imageurl="./assets/ios/kudos.png"
+        color="#ffffff"
+        hreflink="./projects/kudos"
+        type="iOS - Swift"
+        ></project-carousel>
+      </div>
+      <div style="background: #191919">
+        <project-carousel
+        projectname="Samapitan"
+        imageurl="./assets/ios/samapitan.png"
+        color="#ffffff"
+        hreflink="./projects/samapitan"
+        type="iOS - Swift"
+        ></project-carousel>
+      </div>
+      <div style="background: #48C469">
+        <project-carousel
+        projectname="Buckets"
+        imageurl="./assets/ios/buckets.png"
+        color="#fff"
+        hreflink="https://vimeo.com/157857212"
+        type="iOS - Swift, HTML/CSS"
+        ></project-carousel>
+      </div>
+      <div style="background: #F73F51">
+        <project-carousel
+        projectname="Leo"
+        imageurl="./assets/ios/leo.png"
+        color="#ffffff"
+        hreflink="https://github.com/andrewfang/Leo"
+        type="iOS - Swift"
+        ></project-carousel>
+      </div>
+
+      <div style="background: #fff">
+        <project-carousel
+        projectname="Nutri-GOOD"
+        imageurl="./assets/ios/nutrigood.png"
+        color="#000"
+        hreflink="https://vimeo.com/147299501"
+        type="iOS - Swift, HTML/CSS"
+        ></project-carousel>
+      </div>
+      <div style="background: #673AB7">
+        <project-carousel
+        projectname="Around"
+        imageurl="./assets/ios/around.png"
+        color="#ffffff"
+        hreflink="./around/"
+        type="iOS, WatchOS - Swift"
+        ></project-carousel>
+      </div>
+      <div style="background: #b71c1c">
+        <project-carousel
+        projectname="FoodFinder"
+        imageurl="./assets/ios/FoodFinder.png"
+        color="#ffffff"
+        hreflink="./foodfinder/"
+        type="iOS, WatchOS - Swift"
+        ></project-carousel>
+      </div>
+      <div style="background: #5f7c8a">
+        <project-carousel
+        projectname="Calculator"
+        imageurl="./assets/ios/calculator.png"
+        color="#ffffff"
+        hreflink="./projects/calculator/"
+        type="iOS - Swift"
+        ></project-carousel>
+      </div>
+      <div style="background: #fff">
+        <project-carousel
+        projectname="Breakout"
+        imageurl="./assets/ios/breakout.png"
+        color="#000"
+        hreflink="./projects/breakout/"
+        type="iOS - Swift"
+        ></project-carousel>
+      </div>
+      <div style="background: #4099FF">
+        <project-carousel
+        projectname="Smashtag"
+        imageurl="./assets/ios/smashtag.png"
+        color="#ffffff"
+        hreflink="./projects/smashtag/"
+        type="iOS - Swift"
+        ></project-carousel>
+      </div>
+      <div style="background: #16a085">
+        <project-carousel
+        projectname="iTrackEasy"
+        imageurl="./assets/ios/iTrack.png"
+        color="#ffffff"
+        hreflink="https://itunes.apple.com/us/app/itrack-easy-easily-find-your/id1009170318?mt=8"
+        type="iOS - Objective-C"
+        ></project-carousel>
+      </div>
+
+
+      <!--  Android -->
+      <div style="background: #191919">
+        <project-carousel
+        projectname="IoARTango"
+        imageurl="./assets/android/ioartango.png"
+        color="#ffffff"
+        hreflink="http://ioartango.herokuapp.com"
+        type="Android"
+        ></project-carousel>
+      </div>
+      <div style="background: #2980b9">
+        <project-carousel
+        projectname="ClapCam"
+        imageurl="./assets/android/clapcam.png"
+        color="#ffffff"
+        hreflink="https://github.com/andrewfang/ClapCam"
+        type="Android"
+        ></project-carousel>
+      </div>
+      <div style="background: #8e44ad">
+        <project-carousel
+        projectname="ClockWidget"
+        imageurl="./assets/android/clock.png"
+        color="#ffffff"
+        hreflink="https://github.com/andrewfang/ClockWidget"
+        type="Android"
+        ></project-carousel>
+      </div>
+      <div style="background: #fff">
+        <project-carousel
+        projectname="Bop"
+        imageurl="./assets/android/bop.png"
+        color="#000"
+        hreflink="https://github.com/andrewfang/bop"
+        type="Android"
+        ></project-carousel>
+      </div>
+      <div style="background: #7f8c8d">
+        <project-carousel
+        projectname="GreyMeOut"
+        imageurl="./assets/android/grey.png"
+        color="#ffffff"
+        hreflink="https://github.com/andrewfang/GreyMeOut"
+        type="Android"
+        ></project-carousel>
+      </div>
+      <div style="background: #2c3e50">
+        <project-carousel
+        projectname="ListenUp"
+        imageurl="./assets/android/listenup.png"
+        color="#ffffff"
+        hreflink="https://github.com/andrewfang/ListenUp"
+        type="Android"
+        ></project-carousel>
+      </div>
+      <div style="background: #232323">
+        <project-carousel
+        projectname="Magic8"
+        imageurl="./assets/android/magic8.png"
+        color="#ffffff"
+        hreflink="https://github.com/andrewfang/Magic8"
+        type="Android"
+        ></project-carousel>
+      </div>
+
+      <!-- Web -->
+
+      <div style="background: #3E57BC">
+        <project-carousel
+        projectname="PhotoShare"
+        imageurl="./assets/web/photoshare.png"
+        color="#ffffff"
+        hreflink="http://vimeo.com/andrewfang/photoshare"
+        type="Web - Angular, HTML, CSS, Javascript"
+        ></project-carousel>
+      </div>
+      <div style="background: #fd6051">
+        <project-carousel
+        projectname="RunSnap"
+        imageurl="./assets/web/runsnap.png"
+        color="#ffffff"
+        hreflink="https://github.com/andrewfang/runsnap"
+        type="Web - HTML, CSS, Javascript"
+        ></project-carousel>
+      </div>
+      <div style="background: #27ae60">
+        <project-carousel
+        projectname="STCK"
+        imageurl="./assets/web/stck.png"
+        color="#ffffff"
+        hreflink="http://stck.herokuapp.com"
+        type="Web - Polymer, HTML, CSS, Javascript"
+        ></project-carousel>
+      </div>
+      <div style="background: #607d8b">
+        <project-carousel
+        projectname="Nvelop"
+        imageurl="./assets/web/nvelop.png"
+        color="#ffffff"
+        hreflink="http://nvelop.herokuapp.com"
+        type="Web - HTML, CSS, Javascript"
+        ></project-carousel>
+      </div>
+      <div style="background: #232323">
+        <project-carousel
+        projectname="This Website"
+        imageurl="./assets/andrewLogoGold.png"
+        color="#ffffff"
+        hreflink="#"
+        type="Web - HTML, CSS, Javascript"
+        ></project-carousel>
+      </div>
+
+
+      <!-- Matlab -->
+      <div style="background: #795548">
+        <project-carousel
+        projectname="Coin Count"
+        imageurl="./assets/matlab/coin.jpg"
+        color="#ffffff"
+        hreflink="http://andrewbfang.com/resources/coin.pdf"
+        type="Image Processing - Matlab"
+        ></project-carousel>
+      </div>
+      <div style="background: #3498db">
+        <project-carousel
+        projectname="Face Morphing"
+        imageurl="./assets/matlab/morph.gif"
+        color="#ffffff"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj5-morph/index.html"
+        type="Image Processing - Matlab"
+        ></project-carousel>
+      </div>
+      <div style="background: #232323">
+        <project-carousel
+        projectname="Domain Fusion"
+        imageurl="./assets/matlab/gradientBlending.jpg"
+        color="#ffffff"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj4g-gradient/index.html"
+        type="Image Processing - Matlab"
+        ></project-carousel>
+      </div>
+      <div style="background: #c0392b">
+        <project-carousel
+        projectname="Image Blending"
+        imageurl="./assets/matlab/blend.jpg"
+        color="#ffffff"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj3-frequencies/index.html"
+        type="Image Processing - Matlab"
+        ></project-carousel>
+      </div>
+      <div style="background: #7f8c8d">
+        <project-carousel
+        projectname="Prokudin-Gorskii"
+        imageurl="./assets/matlab/color.jpg"
+        color="#ffffff"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj1/index.html"
+        type="Image Processing - Matlab"
+        ></project-carousel>
+      </div>
+      <div style="background: #9b59b6">
+        <project-carousel
+        projectname="Mosaicing"
+        imageurl="./assets/matlab/mosaic.jpg"
+        color="#ffffff"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj7-stitch/index.html"
+        type="Image Processing - Matlab"
+        ></project-carousel>
+      </div>
+      <div style="background: #34495e">
+        <project-carousel
+        projectname="Lightfield"
+        imageurl="./assets/matlab/lightfield.gif"
+        color="#ffffff"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj6-lightfield/index.html"
+        type="Image Processing - Matlab"
+        ></project-carousel>
+      </div>
+      <div style="background: #7f8c8d">
+        <project-carousel
+        projectname="Pinhole Camera"
+        imageurl="./assets/matlab/pinhole.png"
+        color="#ffffff"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj2-camera/index.html"
+        type="Image Processing - Matlab"
+        ></project-carousel>
+      </div>
+      <div style="background: #f1c40f">
+        <project-carousel
+        projectname="Seam Resizing"
+        imageurl="./assets/matlab/seam.jpg"
+        color="#000"
+        hreflink="https://inst.eecs.berkeley.edu/~cs194-26/fa14/hw/proj4-seamcarving/index.html"
+        type="Image Processing - Matlab"
+        ></project-carousel>
+      </div>
+      <div style="background: #232323">
+        <project-carousel
+        projectname="Fake Miniatures"
+        imageurl="./assets/matlab/fakeMini.gif"
+        color="#ffffff"
+        hreflink="http://graphics.cs.cmu.edu/courses/15-463/2010_spring/hw/proj2/index.html"
+        type="Image Processing - Matlab"
+        ></project-carousel>
+      </div>
+
+      <!-- Arduino -->
+      <div style="background: #c0392b">
+        <project-carousel
+        projectname="SKRT"
+        imageurl="./assets/arduino/skrt.png"
+        color="#ffffff"
+        hreflink="https://www.hackster.io/team-skrt/skrt-e58330"
+        type="Arduino, Laser Cut Acrylic"
+        ></project-carousel>
+      </div>
+      <div style="background: #27ae60">
+        <project-carousel
+        projectname="Zenrack"
+        imageurl="./assets/arduino/zenrack.png"
+        color="#ffffff"
+        hreflink="https://www.hackster.io/team-zenrack/zenrack-16f803"
+        type="Arduino, Laser Cut Acrylic"
+        ></project-carousel>
+      </div>
+      <div style="background: #34495e">
+        <project-carousel
+        projectname="Old Sole"
+        imageurl="./assets/arduino/oldsole.png"
+        color="#ffffff"
+        hreflink="https://www.hackster.io/old-sole/old-sole-d7e32c"
+        type="Arduino, CC3000"
+        ></project-carousel>
+      </div>
+      <div style="background: #7f8c8d">
+        <project-carousel
+        projectname="meta"
+        imageurl="./assets/arduino/meta.png"
+        color="#ffffff"
+        hreflink="./meta/"
+        type="Processing, Kinect"
+        ></project-carousel>
+      </div>
+
+
+    </div>
+  </div>
+
+  </body>
+  <script>
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42451059-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</html>

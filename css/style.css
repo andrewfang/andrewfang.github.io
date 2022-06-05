@@ -1,6 +1,6 @@
 body {
   background-color: #6f7577;
-  background-image: url("https://source.unsplash.com/random");
+  background-image: url("../assets/desk.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center right;
@@ -43,7 +43,7 @@ h6 {
 }
 #splash {
   height: 100%;
-  background-image: url("../assets/desk.jpg");
+  background: rgba(35, 41, 66, .95);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -223,6 +223,32 @@ body {
   margin: 0 20px;
   font-size: 120%;
 }
+
+.subdirectory {
+  color:#fff;
+  text-align: center;
+  font-size: 250%;
+}
+.subdirectory a {
+  display: block;  
+  text-decoration: none;
+  color:#fff;
+  padding: 100px 0px;
+}
+
+#blog {
+  background-color: rgba(141,130,196, 0.85);
+}
+#blog:hover {
+  background-color: rgb(141,130,196);
+}
+
+#projects {
+  background-color: rgba(111,195,223, 0.85);
+}
+#projects:hover {
+  background-color: rgb(111,195,223);
+}
 @-webkit-keyframes hvr-pulse {
   25% {
     -webkit-transform: scale(1.1);
@@ -266,61 +292,6 @@ body {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-}
-
-/* Carousel */
-#projects {
-  background-color: transparent;
-}
-project-carousel {
-  height: 40%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#projectTitle {
-  display: inline-block;
-  padding-bottom: 20px;
-}
-#projectTitle i {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.projectJump {
-  cursor: pointer;
-}
-.projectJump:hover {
-  color: #EEC42C;
-}
-.owl-item > div:hover {
-  opacity: 0.9;
-}
-.owl-controls {
-  margin-top: 0 !important;
-  background-color: #000;
-  opacity: 0.9;
-}
-
-@media screen and (min-width: 1em) {
-  .smallProject {
-    display: none;
-  }
-  .smallProjectNormalVersion {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 48em) {
-  .smallProject {
-    display: block;
-  }
-  .smallProjectNormalVersion {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 600px) {

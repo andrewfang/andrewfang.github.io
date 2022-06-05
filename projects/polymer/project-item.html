@@ -1,0 +1,102 @@
+<link rel="import" herf="../plugins/bower_components/polymer/polymer.html">
+<meta name="author" content="Andrew Fang">
+
+<dom-module id="project-item">
+  <style>
+    .fullHeight {
+      padding: 20px;
+      height: 100%;
+    }
+    .flexAcross {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .flexDown{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      text-align: center;
+      color: #fff;
+      font-weight: 200;
+    }
+    .imageLogo {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    h4 {
+      font-weight: 200;
+      font-size: 2em;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      margin-bottom: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    #tagline {
+      font-weight: 200;
+      margin-bottom: 0px;
+      font-size: 1.5em;
+    }
+    #platform {
+      font-weight: 200;
+      font-style: italic;
+      opacity: 0.8;
+    }
+  </style>
+  <template>
+  <a href$="{{hreflink}}">
+  <div class="flexAcross fullHeight">
+    <div class="flexDown imageLogo" style$='{{computebackground}}'>
+    </div>
+    <div class="flexDown">
+      <h4 style$="color:{{color}}" >{{projectname}}</h4>
+      <p id="tagline" style$="color:{{color}}" >{{tagline}}</p>
+      <p id="platform" style$="color:{{color}}" >{{platform}}</p>
+    </div>
+  </div>
+  </a>
+  </template>
+ <script>
+      Polymer({
+          is: 'project-item',
+          properties: {
+            projectname: {
+              type: String
+            },
+            tagline: {
+              type: String
+            },
+            buttontitle: {
+              type: String
+            },
+            imageurl: {
+              type: String
+            },
+            hreflink: {
+              type: String
+            },
+            platform: {
+              type: String
+            },
+            color: {
+              type: String
+            },
+            computebackground: {
+             type: String,
+             computed: 'compute(imageurl)'
+            }
+          },
+          compute: function(imageurl) {
+            return 'background-image: url(' + imageurl + ');';
+          }
+      });
+  </script>
+</dom-module>
