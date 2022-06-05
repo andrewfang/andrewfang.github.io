@@ -16,35 +16,6 @@ $(document).ready(function(){
     setTypeAction(idx);
   }
 
-  $("#carousel").owlCarousel({
-    autoPlay: 3000,
-    items : 5,
-    stopOnHover: true
-  });
-
-  var owl = $("#carousel").data('owlCarousel');
-
-  $("#apple").on("click", function() {
-    owl.jumpTo(0);
-  });
-
-  $("#android").on("click", function() {
-    owl.jumpTo(11);
-  });
-
-  $("#web").on("click", function() {
-    owl.jumpTo(19);
-  });
-
-  $("#matlab").on("click", function() {
-    owl.jumpTo(26);
-  });
-
-  $("#arduino").on("click", function() {
-    owl.jumpTo(36);
-  });
-
-
 });
 
 // Cool type out feature for about page
