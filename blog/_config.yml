@@ -28,13 +28,14 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://andrewbfang.com" # the base hostname & protocol for your site, e.g. http://example.com
 disqus:
   shortname: afang
-google_analytics: UA-42451059-1
+google_analytics: G-X4HVC6LRMX
 
 # Build settings
-theme: minima
+remote-theme: jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
