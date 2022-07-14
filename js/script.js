@@ -4,7 +4,7 @@ $(document).ready(function(){
     window.location.href = "resources/Resume_AndrewFang.pdf"
   }
   $(".typy").typed({
-    strings: ["engineering manager.", "iOS engineer.", "software consultant."],
+    strings: ["n engineering manager.", "n iOS engineer.", " software consultant."],
     typeSpeed: 50,
     backSpeed: 40,
     showCursor: false,
